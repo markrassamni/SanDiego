@@ -1,28 +1,22 @@
 //
-//  ViewController.swift
+//  PhotosVC.swift
 //  my-favorite-place
 //
-//  Created by Mark Rassamni on 7/23/16.
+//  Created by Mark Rassamni on 7/24/16.
 //  Copyright © 2016 markrassamni. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
 
-
+class PhotosVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
     }
-
-
     
     
     
     
     
-
 }
-
