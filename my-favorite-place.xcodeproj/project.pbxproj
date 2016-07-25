@@ -16,6 +16,9 @@
 		F98636ED1D44A85C0058B88D /* PhotosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98636EC1D44A85C0058B88D /* PhotosVC.swift */; };
 		F98636F31D44C5040058B88D /* AboutPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98636F21D44C5040058B88D /* AboutPageVC.swift */; };
 		F98636F51D44DAC90058B88D /* PageDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98636F41D44DAC90058B88D /* PageDots.swift */; };
+		F9FF47731D45A6C0006389F0 /* PhotoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FF47721D45A6C0006389F0 /* PhotoButton.swift */; };
+		F9FF47751D45D8CD006389F0 /* PhotosPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FF47741D45D8CD006389F0 /* PhotosPages.swift */; };
+		F9FF47771D45DBD8006389F0 /* PhotosPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FF47761D45DBD8006389F0 /* PhotosPageVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		F98636EC1D44A85C0058B88D /* PhotosVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosVC.swift; sourceTree = "<group>"; };
 		F98636F21D44C5040058B88D /* AboutPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutPageVC.swift; path = ../AboutPageVC.swift; sourceTree = "<group>"; };
 		F98636F41D44DAC90058B88D /* PageDots.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageDots.swift; sourceTree = "<group>"; };
+		F9FF47721D45A6C0006389F0 /* PhotoButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoButton.swift; sourceTree = "<group>"; };
+		F9FF47741D45D8CD006389F0 /* PhotosPages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosPages.swift; sourceTree = "<group>"; };
+		F9FF47761D45DBD8006389F0 /* PhotosPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosPageVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,9 @@
 				F98636EC1D44A85C0058B88D /* PhotosVC.swift */,
 				F98636F21D44C5040058B88D /* AboutPageVC.swift */,
 				F98636F41D44DAC90058B88D /* PageDots.swift */,
+				F9FF47721D45A6C0006389F0 /* PhotoButton.swift */,
+				F9FF47741D45D8CD006389F0 /* PhotosPages.swift */,
+				F9FF47761D45DBD8006389F0 /* PhotosPageVC.swift */,
 			);
 			path = "my-favorite-place";
 			sourceTree = "<group>";
@@ -147,11 +156,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9FF47751D45D8CD006389F0 /* PhotosPages.swift in Sources */,
 				F92D80DC1D438805006778DB /* ViewController.swift in Sources */,
 				F92D80DA1D438805006778DB /* AppDelegate.swift in Sources */,
 				F98636F51D44DAC90058B88D /* PageDots.swift in Sources */,
+				F9FF47731D45A6C0006389F0 /* PhotoButton.swift in Sources */,
 				F98636EB1D44A8510058B88D /* AboutVC.swift in Sources */,
 				F98636ED1D44A85C0058B88D /* PhotosVC.swift in Sources */,
+				F9FF47771D45DBD8006389F0 /* PhotosPageVC.swift in Sources */,
 				F98636F31D44C5040058B88D /* AboutPageVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

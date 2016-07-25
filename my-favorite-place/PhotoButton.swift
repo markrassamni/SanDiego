@@ -1,5 +1,5 @@
 //
-//  AboutVC.swift
+//  PhotoButton.swift
 //  my-favorite-place
 //
 //  Created by Mark Rassamni on 7/24/16.
@@ -8,12 +8,8 @@
 
 import UIKit
 
-class AboutVC: UIViewController {
+class PhotoButton: UIButton {
+
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
 
 }
-

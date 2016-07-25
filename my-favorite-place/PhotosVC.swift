@@ -11,6 +11,21 @@ import UIKit
 
 class PhotosVC: UIViewController {
     
+    
+    
+    @IBAction func onBackPressed(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    @IBAction func thumbnailPressed(btn: UIButton) {
+        
+        btn.hidden = true
+    }
+    
+    
+
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

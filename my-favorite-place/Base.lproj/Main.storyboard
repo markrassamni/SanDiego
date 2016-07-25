@@ -10,10 +10,21 @@
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue</string>
             <string>HelveticaNeue-Bold</string>
         </mutableArray>
     </customFonts>
@@ -34,7 +45,7 @@
                                 <rect key="frame" x="-420" y="-141" width="1440" height="882"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="NFs-i5-P3D" userLabel="COMBINED">
-                                <rect key="frame" x="20" y="31" width="226" height="352"/>
+                                <rect key="frame" x="20" y="31" width="217" height="361"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="prF-vk-wEJ" userLabel="HEADER">
                                         <rect key="frame" x="0.0" y="0.0" width="116" height="62"/>
@@ -51,7 +62,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="BEACH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NG5-xU-NVU">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="BEACH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NG5-xU-NVU">
                                                 <rect key="frame" x="0.0" y="41" width="116" height="21"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -60,27 +71,27 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="IDg-SH-hrd" userLabel="SD CA">
-                                        <rect key="frame" x="0.0" y="162" width="226" height="191"/>
+                                        <rect key="frame" x="0.0" y="162" width="217" height="199"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="D7m-7L-YeV" userLabel="SD">
-                                                <rect key="frame" x="0.0" y="0.0" width="226" height="156"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="217" height="164"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SAN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ov1-xK-I0q">
-                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="72"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="60"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="142" height="82"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="70"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="DIEGO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86O-gY-l0T">
-                                                        <rect key="frame" x="0.0" y="72" width="226" height="84"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="70"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DIEGO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86O-gY-l0T">
+                                                        <rect key="frame" x="0.0" y="82" width="217" height="82"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="70"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="uCo-7l-mLt" userLabel="CA">
-                                                <rect key="frame" x="0.0" y="156" width="155" height="35"/>
+                                                <rect key="frame" x="0.0" y="164" width="155" height="35"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compass" translatesAutoresizingMaskIntoConstraints="NO" id="TXy-nv-TeI">
                                                         <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
@@ -97,22 +108,30 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lDP-Ll-dCz" userLabel="Buttons">
-                                <rect key="frame" x="174" y="534" width="252" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lDP-Ll-dCz" userLabel="Buttons">
+                                <rect key="frame" x="126" y="528" width="312" height="34"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frN-a6-nte">
-                                        <rect key="frame" x="0.0" y="0.0" width="116" height="30"/>
-                                        <color key="backgroundColor" red="1" green="0.91829358640000003" blue="0.015349134800000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="About San Diego"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="146" height="34"/>
+                                        <color key="backgroundColor" red="0.96640961849999996" green="0.32205274249999999" blue="0.3319763255" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        <inset key="contentEdgeInsets" minX="5" minY="8" maxX="5" maxY="8"/>
+                                        <size key="titleShadowOffset" width="2.2250738585072014e-308" height="2.2250738585072014e-308"/>
+                                        <state key="normal" title="ABOUT SAN DIEGO">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
                                             <segue destination="kc2-Lm-pd5" kind="show" id="DOq-D9-zHH"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTU-Q6-GST">
-                                        <rect key="frame" x="136" y="0.0" width="116" height="30"/>
-                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Photos">
-                                            <color key="titleColor" red="1" green="0.91829358640000003" blue="0.015349134800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <rect key="frame" x="166" y="0.0" width="146" height="34"/>
+                                        <color key="backgroundColor" red="0.96640961849999996" green="0.32205274249999999" blue="0.3319763255" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        <inset key="contentEdgeInsets" minX="5" minY="8" maxX="5" maxY="8"/>
+                                        <size key="titleShadowOffset" width="2.2250738585072014e-308" height="2.2250738585072014e-308"/>
+                                        <state key="normal" title="PHOTOS">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <segue destination="3cH-Lj-Xwu" kind="show" id="I2f-Af-lVd"/>
@@ -133,6 +152,10 @@
                             <constraint firstAttribute="trailing" secondItem="Mbf-LX-8v5" secondAttribute="trailing" id="hKE-7D-dDx"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="aboutBtn" destination="frN-a6-nte" id="Bcf-rh-BQp"/>
+                        <outlet property="photosBtn" destination="hTU-Q6-GST" id="0iL-EU-WRS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -227,7 +250,43 @@
                     <view key="view" contentMode="scaleToFill" id="Nnl-xJ-cNd">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.12941176469999999" green="0.3921568627" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="san diego2" translatesAutoresizingMaskIntoConstraints="NO" id="pyh-vf-Jil">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="152"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="152" id="8QY-ZR-MVd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="POPULATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOp-fm-rK2">
+                                <rect key="frame" x="20" y="155" width="110" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HISTORY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tbt-Fx-XrZ">
+                                <rect key="frame" x="20" y="192" width="77" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1,000,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPE-r7-ZgB">
+                                <rect key="frame" x="20" y="172" width="77" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgD-yk-XXT">
+                                <rect key="frame" x="20" y="208" width="568" height="379"/>
+                                <mutableString key="text">The recorded history of the San Diego, California, region began in the present state of California when San Diego Bay was first discovered by Europeans. San Diego was the first part of California that Europeans settled in, so that San Diego has been described as "the birthplace of California."
+
+Native Americans such as the Kumeyaay people had been living in the area for as long as 12,000 years. Explorer Juan Rodriguez Cabrillo discovered San Diego Bay in 1542, but it was 200 years before Europeans settled the area. A fort and mission were established in 1769, which gradually expanded into a settlement under first Spanish and then Mexican rule.
+
+San Diego became part of the U.S. in 1848, and the town was named the county seat of San Diego County when California was granted statehood in 1850. It remained a very small town for several decades, but grew rapidly after 1880 due to development and the establishment of multiple military facilities. Growth was especially rapid during and immediately after World War II. Entrepreneurs and boosters laid the basis for an economy based today on the military, defense industries, tourism, international trade, and manufacturing. San Diego is now the eighth largest city in the country and forms the heart of the larger San Diego metropolitan area.</mutableString>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hsh-wU-MZV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -245,6 +304,27 @@
                     <view key="view" contentMode="scaleToFill" id="w6M-02-C8v">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="san diego2" translatesAutoresizingMaskIntoConstraints="NO" id="FUF-lQ-AXi">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="152"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="152" id="TG3-qi-fWz"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DESCRIPTION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgC-ZT-dae">
+                                <rect key="frame" x="20" y="160" width="118" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gei-Sz-Bsx">
+                                <rect key="frame" x="124" y="323" width="245" height="209"/>
+                                <string key="text">All thumbnails dim in BG, back button top corner, swipe to adjacent big images. container = dim thumbnails and back and &lt;&gt; arrow imgs. Click any TN = new  view with big imgs on sep pages</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.18050496029999999" green="0.9552928665" blue="0.69940240620000005" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
@@ -263,6 +343,20 @@
                     <view key="view" contentMode="scaleToFill" id="0Wo-Mr-Qf5">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="san diego2" translatesAutoresizingMaskIntoConstraints="NO" id="H7d-w0-3ia">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="152"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="152" id="Y0U-1a-atZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="THINGS TO DO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXb-Bo-1FZ">
+                                <rect key="frame" x="20" y="160" width="124" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
@@ -281,12 +375,236 @@
                     <view key="view" contentMode="scaleToFill" id="7KM-Xy-w86">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SD sunset pic?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hst-hf-bQn">
+                                <rect key="frame" x="0.0" y="20" width="600" height="72"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PHOTOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R3v-g9-02a">
+                                <rect key="frame" x="258" y="28" width="84" height="23"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o46-So-H2E">
+                                <rect key="frame" x="20" y="20" width="54" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="&lt; Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onBackPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="12s-oP-7h0"/>
+                                    <action selector="onBackPressed:" destination="kc2-Lm-pd5" eventType="touchUpInside" id="txc-eK-K69"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nf9-bU-QYE">
+                                <rect key="frame" x="134" y="124" width="110" height="110"/>
+                                <state key="normal" backgroundImage="palm trees"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="8JC-yl-wvk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDG-Rg-RW6">
+                                <rect key="frame" x="245" y="124" width="110" height="110"/>
+                                <state key="normal" backgroundImage="palm trees"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="sEf-rv-bu2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqI-vK-r8Q">
+                                <rect key="frame" x="354" y="124" width="110" height="110"/>
+                                <state key="normal" backgroundImage="palm trees"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="aph-ig-iHK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOa-F9-slL">
+                                <rect key="frame" x="465" y="124" width="110" height="110"/>
+                                <state key="normal" backgroundImage="palm trees"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="VMr-xk-gwZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKm-d1-ypI">
+                                <rect key="frame" x="134" y="236" width="110" height="110"/>
+                                <state key="normal" backgroundImage="palm trees"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="TFv-LO-Y1c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfM-yo-4mt">
+                                <rect key="frame" x="245" y="236" width="110" height="110"/>
+                                <state key="normal" backgroundImage="palm trees"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="zNd-1w-64o"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mb5-lR-9cl">
+                                <rect key="frame" x="25" y="236" width="110" height="110"/>
+                                <state key="normal" backgroundImage="palm trees"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="tUo-jL-q7T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGo-HI-JYo">
+                                <rect key="frame" x="354" y="236" width="110" height="110"/>
+                                <state key="normal" backgroundImage="palm trees"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="1Xr-i6-34W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cba-Os-MY8">
+                                <rect key="frame" x="465" y="236" width="110" height="110"/>
+                                <state key="normal" backgroundImage="palm trees"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="25z-RJ-TPq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Atx-m4-uHm">
+                                <rect key="frame" x="134" y="348" width="110" height="110"/>
+                                <state key="normal" backgroundImage="palm trees"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="2Hp-50-1nl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8d5-MJ-Wp0">
+                                <rect key="frame" x="245" y="348" width="110" height="110"/>
+                                <state key="normal" backgroundImage="palm trees"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="gTj-Ac-93Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJZ-sI-atF">
+                                <rect key="frame" x="25" y="348" width="110" height="110"/>
+                                <state key="normal" backgroundImage="palm trees"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="YiX-BM-T4e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTU-SB-gG2">
+                                <rect key="frame" x="354" y="348" width="110" height="110"/>
+                                <state key="normal" backgroundImage="palm trees"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="BlL-pa-F6u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SoR-Ak-lhp">
+                                <rect key="frame" x="465" y="348" width="110" height="110"/>
+                                <state key="normal" backgroundImage="palm trees"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="Cf0-oh-dKb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="16" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktP-lY-gdL">
+                                <rect key="frame" x="134" y="460" width="110" height="110"/>
+                                <state key="normal" backgroundImage="palm trees"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="ZQb-MK-Jeo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="17" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4i-M5-bOn">
+                                <rect key="frame" x="245" y="460" width="110" height="110"/>
+                                <state key="normal" backgroundImage="palm trees"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="uzQ-IU-aFg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="15" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcD-LW-2IX">
+                                <rect key="frame" x="25" y="460" width="110" height="110"/>
+                                <state key="normal" backgroundImage="palm trees"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="7rt-22-Kid"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="18" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1s-oW-4DK">
+                                <rect key="frame" x="354" y="460" width="110" height="110"/>
+                                <state key="normal" backgroundImage="palm trees"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="QrY-gv-ZEc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="19" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0MH-fe-TZ1">
+                                <rect key="frame" x="465" y="460" width="110" height="110"/>
+                                <state key="normal" backgroundImage="palm trees"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="1GY-kf-RUJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuX-Di-g3D">
+                                <rect key="frame" x="25" y="124" width="110" height="110"/>
+                                <state key="normal" backgroundImage="palm trees"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="kWz-zr-OdQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uCY-hP-I16" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1066" y="709"/>
+        </scene>
+        <!--Photos Pages-->
+        <scene sceneID="eOz-CH-sTx">
+            <objects>
+                <viewController id="l14-cj-Fag" customClass="PhotosPages" customModule="my_favorite_place" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gaY-kb-5NC"/>
+                        <viewControllerLayoutGuide type="bottom" id="zJN-mq-nAN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QG9-c3-Dy3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hGR-Yc-zZ2">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <connections>
+                                    <segue destination="74V-mm-tJB" kind="embed" id="tmj-3I-5aW"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bC9-Ob-5NA">
+                                <rect key="frame" x="20" y="20" width="54" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="&lt; Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onBackPressed:" destination="kc2-Lm-pd5" eventType="touchUpInside" id="1qh-jg-KAO"/>
+                                    <action selector="onBackPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="AOK-LB-Yhi"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="fl9-gY-X1q">
+                                <rect key="frame" x="281" y="560" width="39" height="37"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bC9-Ob-5NA" firstAttribute="leading" secondItem="QG9-c3-Dy3" secondAttribute="leadingMargin" id="BDr-Hf-f9a"/>
+                            <constraint firstItem="zJN-mq-nAN" firstAttribute="top" secondItem="fl9-gY-X1q" secondAttribute="bottom" constant="3" id="HTV-zr-m5Q"/>
+                            <constraint firstItem="fl9-gY-X1q" firstAttribute="centerX" secondItem="QG9-c3-Dy3" secondAttribute="centerX" id="mPJ-7C-YXB"/>
+                            <constraint firstItem="bC9-Ob-5NA" firstAttribute="top" secondItem="gaY-kb-5NC" secondAttribute="bottom" id="txq-bZ-yP2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="hGR-Yc-zZ2" id="sRt-oQ-VBP"/>
+                        <outlet property="dots" destination="fl9-gY-X1q" id="Ld6-3e-ik4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vhH-os-RHu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1704" y="709"/>
+        </scene>
+        <!--Photos PageVC-->
+        <scene sceneID="xzg-AG-Cjb">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="74V-mm-tJB" customClass="PhotosPageVC" customModule="my_favorite_place" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LPT-GW-mX1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2332" y="709"/>
         </scene>
     </scenes>
     <resources>
