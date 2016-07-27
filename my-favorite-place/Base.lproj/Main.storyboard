@@ -22,6 +22,8 @@
             <string>HelveticaNeue</string>
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Bold</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -225,7 +227,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="od9-g4-nI1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1066" y="17"/>
+            <point key="canvasLocation" x="1066" y="-613"/>
         </scene>
         <!--About PageVC-->
         <scene sceneID="Zn2-gZ-2fN">
@@ -233,7 +235,7 @@
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="pGD-rn-ZOF" customClass="AboutPageVC" customModule="my_favorite_place" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mha-mD-bJF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1704" y="17"/>
+            <point key="canvasLocation" x="1704" y="-613"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="T2m-BQ-5ao">
@@ -250,7 +252,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hsh-wU-MZV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2348" y="17"/>
+            <point key="canvasLocation" x="1066" y="45"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="jvS-Cb-Pl2">
@@ -288,7 +290,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AwI-WY-9Xg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2986" y="17"/>
+            <point key="canvasLocation" x="1704" y="45"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hQ6-gH-P9s">
@@ -324,7 +326,7 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PRW-cX-xY5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3614" y="17"/>
+            <point key="canvasLocation" x="2332" y="45"/>
         </scene>
         <!--PhotosVC-->
         <scene sceneID="8i2-0g-ZHA">
@@ -348,146 +350,187 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuX-Di-g3D" userLabel="Thumbnail 0">
-                                <rect key="frame" x="25" y="124" width="110" height="110"/>
-                                <state key="normal" backgroundImage="photo0"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="kWz-zr-OdQ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nf9-bU-QYE" userLabel="Thumbnail 1">
-                                <rect key="frame" x="134" y="124" width="110" height="110"/>
-                                <state key="normal" backgroundImage="photo1"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="8JC-yl-wvk"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDG-Rg-RW6" userLabel="Thumbnail 2">
-                                <rect key="frame" x="245" y="124" width="110" height="110"/>
-                                <state key="normal" backgroundImage="photo2"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="sEf-rv-bu2"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqI-vK-r8Q" userLabel="Thumbnail 3">
-                                <rect key="frame" x="354" y="124" width="110" height="110"/>
-                                <state key="normal" backgroundImage="photo3"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="aph-ig-iHK"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOa-F9-slL" userLabel="Thumbnail 4">
-                                <rect key="frame" x="465" y="124" width="110" height="110"/>
-                                <state key="normal" backgroundImage="photo4"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="VMr-xk-gwZ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mb5-lR-9cl" userLabel="Thumbnail 5">
-                                <rect key="frame" x="25" y="236" width="110" height="110"/>
-                                <state key="normal" backgroundImage="photo5"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="tUo-jL-q7T"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKm-d1-ypI" userLabel="Thumbnail 6">
-                                <rect key="frame" x="134" y="236" width="110" height="110"/>
-                                <state key="normal" backgroundImage="photo6"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="TFv-LO-Y1c"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfM-yo-4mt" userLabel="Thumbnail 7">
-                                <rect key="frame" x="245" y="236" width="110" height="110"/>
-                                <state key="normal" backgroundImage="photo7"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="zNd-1w-64o"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGo-HI-JYo" userLabel="Thumbnail 8">
-                                <rect key="frame" x="354" y="236" width="110" height="110"/>
-                                <state key="normal" backgroundImage="photo8"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="1Xr-i6-34W"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cba-Os-MY8" userLabel="Thumbnail 9">
-                                <rect key="frame" x="465" y="236" width="110" height="110"/>
-                                <state key="normal" backgroundImage="photo9"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="25z-RJ-TPq"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJZ-sI-atF" userLabel="Thumbnail 10">
-                                <rect key="frame" x="25" y="348" width="110" height="110"/>
-                                <state key="normal" backgroundImage="photo10"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="YiX-BM-T4e"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Atx-m4-uHm" userLabel="Thumbnail 11">
-                                <rect key="frame" x="134" y="348" width="110" height="110"/>
-                                <state key="normal" backgroundImage="photo11"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="2Hp-50-1nl"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8d5-MJ-Wp0" userLabel="Thumbnail 12">
-                                <rect key="frame" x="245" y="348" width="110" height="110"/>
-                                <state key="normal" backgroundImage="photo12"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="gTj-Ac-93Y"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTU-SB-gG2" userLabel="Thumbnail 13">
-                                <rect key="frame" x="354" y="348" width="110" height="110"/>
-                                <state key="normal" backgroundImage="photo13"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="BlL-pa-F6u"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SoR-Ak-lhp" userLabel="Thumbnail 14">
-                                <rect key="frame" x="465" y="348" width="110" height="110"/>
-                                <state key="normal" backgroundImage="photo14"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="Cf0-oh-dKb"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="15" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcD-LW-2IX" userLabel="Thumbnail 15">
-                                <rect key="frame" x="25" y="460" width="110" height="110"/>
-                                <state key="normal" backgroundImage="photo15"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="7rt-22-Kid"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="16" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktP-lY-gdL" userLabel="Thumbnail 16">
-                                <rect key="frame" x="134" y="460" width="110" height="110"/>
-                                <state key="normal" backgroundImage="photo16"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="ZQb-MK-Jeo"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="17" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4i-M5-bOn" userLabel="Thumbnail 17">
-                                <rect key="frame" x="245" y="460" width="110" height="110"/>
-                                <state key="normal" backgroundImage="photo17"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="uzQ-IU-aFg"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="18" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1s-oW-4DK" userLabel="Thumbnail 18">
-                                <rect key="frame" x="354" y="460" width="110" height="110"/>
-                                <state key="normal" backgroundImage="photo18"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="QrY-gv-ZEc"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="19" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0MH-fe-TZ1" userLabel="Thumbnail 19">
-                                <rect key="frame" x="465" y="460" width="110" height="110"/>
-                                <state key="normal" backgroundImage="photo19"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="1GY-kf-RUJ"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="wm7-NT-K4M">
+                                <rect key="frame" x="23" y="122" width="554" height="443"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="sbU-Wc-x1R">
+                                        <rect key="frame" x="0.0" y="0.0" width="554" height="110"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuX-Di-g3D" userLabel="Thumbnail 0">
+                                                <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                                <state key="normal" backgroundImage="photo0"/>
+                                                <connections>
+                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="kWz-zr-OdQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nf9-bU-QYE" userLabel="Thumbnail 1">
+                                                <rect key="frame" x="111" y="0.0" width="110" height="110"/>
+                                                <state key="normal" backgroundImage="photo1"/>
+                                                <connections>
+                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="8JC-yl-wvk"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDG-Rg-RW6" userLabel="Thumbnail 2">
+                                                <rect key="frame" x="222" y="0.0" width="110" height="110"/>
+                                                <state key="normal" backgroundImage="photo2"/>
+                                                <connections>
+                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="sEf-rv-bu2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqI-vK-r8Q" userLabel="Thumbnail 3">
+                                                <rect key="frame" x="333" y="0.0" width="110" height="110"/>
+                                                <state key="normal" backgroundImage="photo3"/>
+                                                <connections>
+                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="aph-ig-iHK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOa-F9-slL" userLabel="Thumbnail 4">
+                                                <rect key="frame" x="444" y="0.0" width="110" height="110"/>
+                                                <state key="normal" backgroundImage="photo4"/>
+                                                <connections>
+                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="VMr-xk-gwZ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="554" id="61e-RG-OFd"/>
+                                            <constraint firstAttribute="height" constant="110" id="A2i-hy-yT4"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="lkR-NP-9UO">
+                                        <rect key="frame" x="0.0" y="111" width="554" height="110"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mb5-lR-9cl" userLabel="Thumbnail 5">
+                                                <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                                <state key="normal" backgroundImage="photo5"/>
+                                                <connections>
+                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="tUo-jL-q7T"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKm-d1-ypI" userLabel="Thumbnail 6">
+                                                <rect key="frame" x="111" y="0.0" width="110" height="110"/>
+                                                <state key="normal" backgroundImage="photo6"/>
+                                                <connections>
+                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="TFv-LO-Y1c"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfM-yo-4mt" userLabel="Thumbnail 7">
+                                                <rect key="frame" x="222" y="0.0" width="110" height="110"/>
+                                                <state key="normal" backgroundImage="photo7"/>
+                                                <connections>
+                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="zNd-1w-64o"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGo-HI-JYo" userLabel="Thumbnail 8">
+                                                <rect key="frame" x="333" y="0.0" width="110" height="110"/>
+                                                <state key="normal" backgroundImage="photo8"/>
+                                                <connections>
+                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="1Xr-i6-34W"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cba-Os-MY8" userLabel="Thumbnail 9">
+                                                <rect key="frame" x="444" y="0.0" width="110" height="110"/>
+                                                <state key="normal" backgroundImage="photo9"/>
+                                                <connections>
+                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="25z-RJ-TPq"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="554" id="ayq-j7-8wI"/>
+                                            <constraint firstAttribute="height" constant="110" id="esg-yi-HZz"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="OJt-FA-CQd">
+                                        <rect key="frame" x="0.0" y="222" width="554" height="110"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJZ-sI-atF" userLabel="Thumbnail 10">
+                                                <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                                <state key="normal" backgroundImage="photo10"/>
+                                                <connections>
+                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="YiX-BM-T4e"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Atx-m4-uHm" userLabel="Thumbnail 11">
+                                                <rect key="frame" x="111" y="0.0" width="110" height="110"/>
+                                                <state key="normal" backgroundImage="photo11"/>
+                                                <connections>
+                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="2Hp-50-1nl"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8d5-MJ-Wp0" userLabel="Thumbnail 12">
+                                                <rect key="frame" x="222" y="0.0" width="110" height="110"/>
+                                                <state key="normal" backgroundImage="photo12"/>
+                                                <connections>
+                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="gTj-Ac-93Y"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTU-SB-gG2" userLabel="Thumbnail 13">
+                                                <rect key="frame" x="333" y="0.0" width="110" height="110"/>
+                                                <state key="normal" backgroundImage="photo13"/>
+                                                <connections>
+                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="BlL-pa-F6u"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SoR-Ak-lhp" userLabel="Thumbnail 14">
+                                                <rect key="frame" x="444" y="0.0" width="110" height="110"/>
+                                                <state key="normal" backgroundImage="photo14"/>
+                                                <connections>
+                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="Cf0-oh-dKb"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="110" id="XJI-3I-oqc"/>
+                                            <constraint firstAttribute="width" constant="554" id="rDT-Ii-Ya0"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="W20-TJ-6YN">
+                                        <rect key="frame" x="0.0" y="333" width="554" height="110"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcD-LW-2IX" userLabel="Thumbnail 15">
+                                                <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                                <state key="normal" backgroundImage="photo15"/>
+                                                <connections>
+                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="7rt-22-Kid"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktP-lY-gdL" userLabel="Thumbnail 16">
+                                                <rect key="frame" x="111" y="0.0" width="110" height="110"/>
+                                                <state key="normal" backgroundImage="photo16"/>
+                                                <connections>
+                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="ZQb-MK-Jeo"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4i-M5-bOn" userLabel="Thumbnail 17">
+                                                <rect key="frame" x="222" y="0.0" width="110" height="110"/>
+                                                <state key="normal" backgroundImage="photo17"/>
+                                                <connections>
+                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="uzQ-IU-aFg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1s-oW-4DK" userLabel="Thumbnail 18">
+                                                <rect key="frame" x="333" y="0.0" width="110" height="110"/>
+                                                <state key="normal" backgroundImage="photo18"/>
+                                                <connections>
+                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="QrY-gv-ZEc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0MH-fe-TZ1" userLabel="Thumbnail 19">
+                                                <rect key="frame" x="444" y="0.0" width="110" height="110"/>
+                                                <state key="normal" backgroundImage="photo19"/>
+                                                <connections>
+                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="1GY-kf-RUJ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="110" id="KYk-pa-xfl"/>
+                                            <constraint firstAttribute="width" constant="554" id="Y2R-zm-hdE"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bridge" translatesAutoresizingMaskIntoConstraints="NO" id="2Nx-zD-Ney" userLabel="Photo">
                                 <rect key="frame" x="0.0" y="87" width="600" height="513"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -508,43 +551,280 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
                         <constraints>
                             <constraint firstItem="o46-So-H2E" firstAttribute="leading" secondItem="7KM-Xy-w86" secondAttribute="leadingMargin" id="8Dt-r1-Idz"/>
                             <constraint firstItem="2Nx-zD-Ney" firstAttribute="top" secondItem="R3v-g9-02a" secondAttribute="bottom" id="EJT-gS-oJS"/>
+                            <constraint firstItem="wm7-NT-K4M" firstAttribute="centerY" secondItem="2Nx-zD-Ney" secondAttribute="centerY" id="GQe-jU-k1v"/>
                             <constraint firstItem="2Nx-zD-Ney" firstAttribute="leading" secondItem="7KM-Xy-w86" secondAttribute="leading" id="LXe-fD-vLI"/>
                             <constraint firstItem="R3v-g9-02a" firstAttribute="top" secondItem="7KM-Xy-w86" secondAttribute="top" id="YLo-XX-y80"/>
                             <constraint firstAttribute="trailing" secondItem="2Nx-zD-Ney" secondAttribute="trailing" id="fSX-nH-r7u"/>
+                            <constraint firstItem="wm7-NT-K4M" firstAttribute="centerX" secondItem="2Nx-zD-Ney" secondAttribute="centerX" id="gDN-hR-5FI"/>
+                            <constraint firstItem="1O3-s5-MDu" firstAttribute="top" secondItem="2Nx-zD-Ney" secondAttribute="bottom" id="kqP-mi-mMU"/>
                             <constraint firstItem="R3v-g9-02a" firstAttribute="leading" secondItem="7KM-Xy-w86" secondAttribute="leading" id="poZ-Pd-nek"/>
                             <constraint firstItem="o46-So-H2E" firstAttribute="top" secondItem="doe-CV-3GP" secondAttribute="bottom" constant="8" id="sJZ-nG-iCJ"/>
-                            <constraint firstItem="1O3-s5-MDu" firstAttribute="top" secondItem="2Nx-zD-Ney" secondAttribute="bottom" id="xhg-Vg-ad2"/>
                             <constraint firstAttribute="trailing" secondItem="R3v-g9-02a" secondAttribute="trailing" id="yUv-Uz-846"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="bigPhoto" destination="2Nx-zD-Ney" id="ZKi-U7-ZiB"/>
                         <outlet property="home" destination="o46-So-H2E" id="Mud-0w-WMx"/>
+                        <outletCollection property="thumbnails" destination="sOa-F9-slL" collectionClass="NSMutableArray" id="Tmg-Vi-2jS"/>
+                        <outletCollection property="thumbnails" destination="qqI-vK-r8Q" collectionClass="NSMutableArray" id="kh7-1C-l5g"/>
+                        <outletCollection property="thumbnails" destination="kDG-Rg-RW6" collectionClass="NSMutableArray" id="CIz-ek-oge"/>
                         <outletCollection property="thumbnails" destination="xuX-Di-g3D" collectionClass="NSMutableArray" id="h8o-ye-UYv"/>
                         <outletCollection property="thumbnails" destination="Nf9-bU-QYE" collectionClass="NSMutableArray" id="iEi-VZ-KQu"/>
-                        <outletCollection property="thumbnails" destination="kDG-Rg-RW6" collectionClass="NSMutableArray" id="CIz-ek-oge"/>
-                        <outletCollection property="thumbnails" destination="qqI-vK-r8Q" collectionClass="NSMutableArray" id="kh7-1C-l5g"/>
-                        <outletCollection property="thumbnails" destination="sOa-F9-slL" collectionClass="NSMutableArray" id="Tmg-Vi-2jS"/>
                         <outletCollection property="thumbnails" destination="cba-Os-MY8" collectionClass="NSMutableArray" id="UtN-1i-hTS"/>
-                        <outletCollection property="thumbnails" destination="SoR-Ak-lhp" collectionClass="NSMutableArray" id="PtF-SR-DLY"/>
-                        <outletCollection property="thumbnails" destination="0MH-fe-TZ1" collectionClass="NSMutableArray" id="3CE-vb-RCR"/>
-                        <outletCollection property="thumbnails" destination="d1s-oW-4DK" collectionClass="NSMutableArray" id="uMb-GI-Bl8"/>
-                        <outletCollection property="thumbnails" destination="HTU-SB-gG2" collectionClass="NSMutableArray" id="oED-Yp-l3d"/>
-                        <outletCollection property="thumbnails" destination="nGo-HI-JYo" collectionClass="NSMutableArray" id="jf1-pJ-9ya"/>
+                        <outletCollection property="thumbnails" destination="mb5-lR-9cl" collectionClass="NSMutableArray" id="eA9-gf-rNb"/>
                         <outletCollection property="thumbnails" destination="jKm-d1-ypI" collectionClass="NSMutableArray" id="TFL-GS-ILL"/>
                         <outletCollection property="thumbnails" destination="EfM-yo-4mt" collectionClass="NSMutableArray" id="yft-NW-qhb"/>
+                        <outletCollection property="thumbnails" destination="nGo-HI-JYo" collectionClass="NSMutableArray" id="jf1-pJ-9ya"/>
+                        <outletCollection property="thumbnails" destination="HTU-SB-gG2" collectionClass="NSMutableArray" id="oED-Yp-l3d"/>
+                        <outletCollection property="thumbnails" destination="SoR-Ak-lhp" collectionClass="NSMutableArray" id="PtF-SR-DLY"/>
                         <outletCollection property="thumbnails" destination="Atx-m4-uHm" collectionClass="NSMutableArray" id="1Bv-qQ-n36"/>
-                        <outletCollection property="thumbnails" destination="c4i-M5-bOn" collectionClass="NSMutableArray" id="o5c-1J-TUb"/>
-                        <outletCollection property="thumbnails" destination="ktP-lY-gdL" collectionClass="NSMutableArray" id="PW8-fG-s1f"/>
-                        <outletCollection property="thumbnails" destination="mb5-lR-9cl" collectionClass="NSMutableArray" id="eA9-gf-rNb"/>
                         <outletCollection property="thumbnails" destination="TJZ-sI-atF" collectionClass="NSMutableArray" id="Njh-YY-1to"/>
-                        <outletCollection property="thumbnails" destination="gcD-LW-2IX" collectionClass="NSMutableArray" id="2wW-6Y-63q"/>
                         <outletCollection property="thumbnails" destination="8d5-MJ-Wp0" collectionClass="NSMutableArray" id="wN2-HU-sgk"/>
+                        <outletCollection property="thumbnails" destination="d1s-oW-4DK" collectionClass="NSMutableArray" id="uMb-GI-Bl8"/>
+                        <outletCollection property="thumbnails" destination="ktP-lY-gdL" collectionClass="NSMutableArray" id="PW8-fG-s1f"/>
+                        <outletCollection property="thumbnails" destination="c4i-M5-bOn" collectionClass="NSMutableArray" id="o5c-1J-TUb"/>
+                        <outletCollection property="thumbnails" destination="0MH-fe-TZ1" collectionClass="NSMutableArray" id="3CE-vb-RCR"/>
+                        <outletCollection property="thumbnails" destination="gcD-LW-2IX" collectionClass="NSMutableArray" id="2wW-6Y-63q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uCY-hP-I16" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1066" y="709"/>
+        </scene>
+        <!--PhotosVC-->
+        <scene sceneID="AGH-ag-nXC">
+            <objects>
+                <viewController id="rad-YY-8Rf" customClass="PhotosVC" customModule="my_favorite_place" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IUC-xm-Ken"/>
+                        <viewControllerLayoutGuide type="bottom" id="tec-Ty-hVn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1bj-si-rVp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PHOTOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqP-Jc-0y7">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="87"/>
+                                <color key="backgroundColor" red="0.96470588239999999" green="0.32156862749999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="00f-7P-8ec"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="VIz-kB-OVo">
+                                <rect key="frame" x="20" y="120" width="560" height="110"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MD5-aQ-1lc" userLabel="Thumbnail 0">
+                                        <rect key="frame" x="0.0" y="0.0" width="112" height="110"/>
+                                        <state key="normal" backgroundImage="photo0"/>
+                                        <connections>
+                                            <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="cRb-Gs-o0L"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEM-fG-HxV" userLabel="Thumbnail 1">
+                                        <rect key="frame" x="112" y="0.0" width="112" height="110"/>
+                                        <state key="normal" backgroundImage="photo1"/>
+                                        <connections>
+                                            <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="71A-zS-5vc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mJD-2q-3Kh" userLabel="Thumbnail 2">
+                                        <rect key="frame" x="224" y="0.0" width="112" height="110"/>
+                                        <state key="normal" backgroundImage="photo2"/>
+                                        <connections>
+                                            <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="NK4-Tt-Bp0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Zy-en-HO8" userLabel="Thumbnail 3">
+                                        <rect key="frame" x="336" y="0.0" width="112" height="110"/>
+                                        <state key="normal" backgroundImage="photo3"/>
+                                        <connections>
+                                            <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="f1G-1S-M7z"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fp0-wR-ljB" userLabel="Thumbnail 4">
+                                        <rect key="frame" x="448" y="0.0" width="112" height="110"/>
+                                        <state key="normal" backgroundImage="photo4"/>
+                                        <connections>
+                                            <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="lpN-Vz-Wre"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="560" id="PQt-Vv-6ej"/>
+                                    <constraint firstAttribute="height" constant="110" id="yno-e5-VCi"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="PQt-Vv-6ej"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adb-ts-WeB" userLabel="Thumbnail 5">
+                                <rect key="frame" x="23" y="233" width="110" height="110"/>
+                                <state key="normal" backgroundImage="photo5"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="uFf-0c-9LJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8d-BS-Fmj" userLabel="Thumbnail 6">
+                                <rect key="frame" x="134" y="233" width="110" height="110"/>
+                                <state key="normal" backgroundImage="photo6"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="dbB-wV-Sjk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEI-By-J2r" userLabel="Thumbnail 7">
+                                <rect key="frame" x="245" y="233" width="110" height="110"/>
+                                <state key="normal" backgroundImage="photo7"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="czP-xg-mmo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Zp-yi-Kx8" userLabel="Thumbnail 8">
+                                <rect key="frame" x="356" y="233" width="110" height="110"/>
+                                <state key="normal" backgroundImage="photo8"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="5Sy-t3-9ic"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zU2-o4-pn5" userLabel="Thumbnail 9">
+                                <rect key="frame" x="467" y="233" width="110" height="110"/>
+                                <state key="normal" backgroundImage="photo9"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="caI-pX-zoT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6X-ae-uh7" userLabel="Thumbnail 10">
+                                <rect key="frame" x="23" y="345" width="110" height="110"/>
+                                <state key="normal" backgroundImage="photo10"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="ETi-3n-Q12"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCX-Eb-2vh" userLabel="Thumbnail 11">
+                                <rect key="frame" x="134" y="345" width="110" height="110"/>
+                                <state key="normal" backgroundImage="photo11"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="l5R-sg-WoB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGk-ZJ-1zC" userLabel="Thumbnail 12">
+                                <rect key="frame" x="245" y="345" width="110" height="110"/>
+                                <state key="normal" backgroundImage="photo12"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="JNr-4d-ApC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H44-QU-GNJ" userLabel="Thumbnail 13">
+                                <rect key="frame" x="356" y="345" width="110" height="110"/>
+                                <state key="normal" backgroundImage="photo13"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="ncD-11-Kmr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQu-wY-Wl4" userLabel="Thumbnail 14">
+                                <rect key="frame" x="467" y="345" width="110" height="110"/>
+                                <state key="normal" backgroundImage="photo14"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="dcU-2r-utq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="15" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0C-vh-PjA" userLabel="Thumbnail 15">
+                                <rect key="frame" x="23" y="457" width="110" height="110"/>
+                                <state key="normal" backgroundImage="photo15"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="zD7-en-p6e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="16" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o72-eW-GYM" userLabel="Thumbnail 16">
+                                <rect key="frame" x="134" y="457" width="110" height="110"/>
+                                <state key="normal" backgroundImage="photo16"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="8oP-0H-yM0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="17" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2X-T5-SmH" userLabel="Thumbnail 17">
+                                <rect key="frame" x="245" y="457" width="110" height="110"/>
+                                <state key="normal" backgroundImage="photo17"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="DJ6-ki-OqF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="18" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xbr-bW-Qpf" userLabel="Thumbnail 18">
+                                <rect key="frame" x="356" y="457" width="110" height="110"/>
+                                <state key="normal" backgroundImage="photo18"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="LmK-hI-nV4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="19" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0i-g1-gGm" userLabel="Thumbnail 19">
+                                <rect key="frame" x="467" y="457" width="110" height="110"/>
+                                <state key="normal" backgroundImage="photo19"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="MMN-Ho-9c1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="roO-jQ-UnU" userLabel="&lt;Back Home">
+                                <rect key="frame" x="25" y="28" width="59" height="32"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="&lt; Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onBackPressed:" destination="kc2-Lm-pd5" eventType="touchUpInside" id="d1Q-Fo-ilZ"/>
+                                    <action selector="onBackPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="zOS-FZ-pTH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VIz-kB-OVo" firstAttribute="leading" secondItem="1bj-si-rVp" secondAttribute="leadingMargin" id="2IQ-bv-ye9"/>
+                            <constraint firstAttribute="trailing" secondItem="fqP-Jc-0y7" secondAttribute="trailing" id="9Tx-dT-qLR"/>
+                            <constraint firstItem="roO-jQ-UnU" firstAttribute="leading" secondItem="1bj-si-rVp" secondAttribute="leadingMargin" id="NRO-oV-eGM"/>
+                            <constraint firstItem="roO-jQ-UnU" firstAttribute="top" secondItem="IUC-xm-Ken" secondAttribute="bottom" constant="8" id="cGN-07-cAA"/>
+                            <constraint firstItem="fqP-Jc-0y7" firstAttribute="top" secondItem="1bj-si-rVp" secondAttribute="top" id="dWy-OQ-2pG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VIz-kB-OVo" secondAttribute="trailing" id="kVb-o2-MkM"/>
+                            <constraint firstItem="VIz-kB-OVo" firstAttribute="top" secondItem="fqP-Jc-0y7" secondAttribute="bottom" constant="34" id="kbZ-HB-oru"/>
+                            <constraint firstItem="fqP-Jc-0y7" firstAttribute="leading" secondItem="1bj-si-rVp" secondAttribute="leading" id="ml5-PV-Yok"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="VIz-kB-OVo" secondAttribute="bottom" constant="2" id="qAw-4g-Ufv"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="kbZ-HB-oru"/>
+                                <exclude reference="qAw-4g-Ufv"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="home" destination="roO-jQ-UnU" id="oZQ-S6-LM1"/>
+                        <outletCollection property="thumbnails" destination="zU2-o4-pn5" collectionClass="NSMutableArray" id="crg-ct-h1b"/>
+                        <outletCollection property="thumbnails" destination="tQu-wY-Wl4" collectionClass="NSMutableArray" id="735-6L-FCU"/>
+                        <outletCollection property="thumbnails" destination="l0i-g1-gGm" collectionClass="NSMutableArray" id="Qwn-I8-VRA"/>
+                        <outletCollection property="thumbnails" destination="Xbr-bW-Qpf" collectionClass="NSMutableArray" id="e5Q-Wl-TeS"/>
+                        <outletCollection property="thumbnails" destination="H44-QU-GNJ" collectionClass="NSMutableArray" id="3Z7-Fq-jUN"/>
+                        <outletCollection property="thumbnails" destination="6Zp-yi-Kx8" collectionClass="NSMutableArray" id="GTH-1J-di5"/>
+                        <outletCollection property="thumbnails" destination="e8d-BS-Fmj" collectionClass="NSMutableArray" id="yxd-ou-99H"/>
+                        <outletCollection property="thumbnails" destination="UEI-By-J2r" collectionClass="NSMutableArray" id="pU2-Mu-iAU"/>
+                        <outletCollection property="thumbnails" destination="VCX-Eb-2vh" collectionClass="NSMutableArray" id="4DE-zU-N7L"/>
+                        <outletCollection property="thumbnails" destination="I2X-T5-SmH" collectionClass="NSMutableArray" id="uVa-5L-Uvs"/>
+                        <outletCollection property="thumbnails" destination="o72-eW-GYM" collectionClass="NSMutableArray" id="kDz-Mt-pUZ"/>
+                        <outletCollection property="thumbnails" destination="adb-ts-WeB" collectionClass="NSMutableArray" id="MB7-7K-Bll"/>
+                        <outletCollection property="thumbnails" destination="y6X-ae-uh7" collectionClass="NSMutableArray" id="317-0O-Llv"/>
+                        <outletCollection property="thumbnails" destination="s0C-vh-PjA" collectionClass="NSMutableArray" id="94t-pz-9TY"/>
+                        <outletCollection property="thumbnails" destination="uGk-ZJ-1zC" collectionClass="NSMutableArray" id="jJP-Ed-Lge"/>
+                        <outletCollection property="thumbnails" destination="MD5-aQ-1lc" collectionClass="NSMutableArray" id="wmg-Ye-aI2"/>
+                        <outletCollection property="thumbnails" destination="yEM-fG-HxV" collectionClass="NSMutableArray" id="WQZ-Px-fXt"/>
+                        <outletCollection property="thumbnails" destination="mJD-2q-3Kh" collectionClass="NSMutableArray" id="dkE-dA-eC6"/>
+                        <outletCollection property="thumbnails" destination="8Zy-en-HO8" collectionClass="NSMutableArray" id="oW8-3a-xt0"/>
+                        <outletCollection property="thumbnails" destination="Fp0-wR-ljB" collectionClass="NSMutableArray" id="95D-kL-dkh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PMi-JT-eaW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1704" y="709"/>
         </scene>
     </scenes>
     <resources>
