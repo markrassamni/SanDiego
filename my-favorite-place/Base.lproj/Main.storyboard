@@ -3,16 +3,11 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="HelveticaNeue.ttc">
-            <string>HelveticaNeue-Bold</string>
-            <string>HelveticaNeue-Bold</string>
-            <string>HelveticaNeue-Bold</string>
-            <string>HelveticaNeue</string>
-            <string>HelveticaNeue</string>
-            <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
             <string>HelveticaNeue-Bold</string>
@@ -24,6 +19,10 @@
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -39,75 +38,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="palm trees" translatesAutoresizingMaskIntoConstraints="NO" id="Mbf-LX-8v5">
-                                <rect key="frame" x="-420" y="-141" width="1440" height="882"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="palm trees" translatesAutoresizingMaskIntoConstraints="NO" id="Mbf-LX-8v5">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="NFs-i5-P3D" userLabel="COMBINED">
-                                <rect key="frame" x="20" y="31" width="217" height="361"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="prF-vk-wEJ" userLabel="HEADER">
-                                        <rect key="frame" x="0.0" y="0.0" width="116" height="62"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="OUTDOOR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="McS-oy-R6o">
-                                                <rect key="frame" x="0.0" y="0.0" width="116" height="21"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ADVENTURES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTh-aq-4vY">
-                                                <rect key="frame" x="0.0" y="21" width="116" height="21"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="BEACH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NG5-xU-NVU">
-                                                <rect key="frame" x="0.0" y="41" width="116" height="21"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="IDg-SH-hrd" userLabel="SD CA">
-                                        <rect key="frame" x="0.0" y="162" width="217" height="199"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="D7m-7L-YeV" userLabel="SD">
-                                                <rect key="frame" x="0.0" y="0.0" width="217" height="164"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SAN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ov1-xK-I0q">
-                                                        <rect key="frame" x="0.0" y="0.0" width="142" height="82"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="70"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DIEGO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86O-gY-l0T">
-                                                        <rect key="frame" x="0.0" y="82" width="217" height="82"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="70"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="uCo-7l-mLt" userLabel="CA">
-                                                <rect key="frame" x="0.0" y="164" width="155" height="35"/>
-                                                <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compass" translatesAutoresizingMaskIntoConstraints="NO" id="TXy-nv-TeI">
-                                                        <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
-                                                    </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CALIFORNIA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcw-9E-ruJ">
-                                                        <rect key="frame" x="50" y="0.0" width="105" height="35"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lDP-Ll-dCz" userLabel="Buttons">
-                                <rect key="frame" x="126" y="528" width="312" height="34"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="compass" translatesAutoresizingMaskIntoConstraints="NO" id="GqZ-wp-8ma" userLabel="compassStroke">
+                                <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="NVU-B3-Glh"/>
+                                    <constraint firstAttribute="width" constant="36" id="NYt-Ih-g8D"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="NVU-B3-Glh"/>
+                                        <exclude reference="NYt-Ih-g8D"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="23" y="198" width="40" height="40"/>
+                                    <mask key="constraints">
+                                        <include reference="NVU-B3-Glh"/>
+                                        <include reference="NYt-Ih-g8D"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lDP-Ll-dCz" userLabel="Buttons">
+                                <rect key="frame" x="144" y="553" width="312" height="34"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frN-a6-nte">
                                         <rect key="frame" x="0.0" y="0.0" width="146" height="34"/>
@@ -118,6 +73,12 @@
                                         <state key="normal" title="ABOUT SAN DIEGO">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         </state>
+                                        <variation key="widthClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="32"/>
+                                        </variation>
                                         <connections>
                                             <segue destination="kc2-Lm-pd5" kind="show" id="DOq-D9-zHH"/>
                                         </connections>
@@ -131,28 +92,377 @@
                                         <state key="normal" title="PHOTOS">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         </state>
+                                        <variation key="widthClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="148" y="0.0" width="128" height="32"/>
+                                        </variation>
                                         <connections>
                                             <segue destination="3cH-Lj-Xwu" kind="show" id="I2f-Af-lVd"/>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="62" y="556" width="276" height="32"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="62" y="358" width="276" height="32"/>
+                                </variation>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="D7m-7L-YeV" userLabel="SD">
+                                <rect key="frame" x="20" y="20" width="217" height="164"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="SAN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ov1-xK-I0q">
+                                        <rect key="frame" x="0.0" y="0.0" width="142" height="82"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="70"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="80"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="162" height="94"/>
+                                        </variation>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="142" height="82"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="72"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="146" height="84"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="162" height="94"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="142" height="82"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="DIEGO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86O-gY-l0T">
+                                        <rect key="frame" x="0.0" y="82" width="217" height="82"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="70"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="80"/>
+                                            <rect key="frame" x="0.0" y="94" width="248" height="94"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="72"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="94" width="248" height="94"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <variation key="heightClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="20" width="248" height="187"/>
+                                </variation>
+                                <variation key="widthClass=compact" distribution="fill" misplaced="YES">
+                                    <rect key="frame" x="20" y="28" width="217" height="164"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="223" height="168"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="20" y="20" width="248" height="187"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="20" width="217" height="164"/>
+                                </variation>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="prF-vk-wEJ" userLabel="HEADER">
+                                <rect key="frame" x="419" y="53" width="116" height="62"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="OUTDOOR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="McS-oy-R6o">
+                                        <rect key="frame" x="0.0" y="0.0" width="116" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="144" height="26"/>
+                                        </variation>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="21"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="35" y="0.0" width="109" height="26"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="144" height="26"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="21"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="ADVENTURES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTh-aq-4vY">
+                                        <rect key="frame" x="0.0" y="21" width="116" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                            <rect key="frame" x="0.0" y="26" width="144" height="26"/>
+                                        </variation>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="120" y="0.0" width="158" height="21"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="26" width="144" height="26"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="26" width="144" height="26"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="120" y="0.0" width="158" height="21"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="BEACH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NG5-xU-NVU">
+                                        <rect key="frame" x="0.0" y="41" width="116" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                            <rect key="frame" x="0.0" y="51" width="144" height="26"/>
+                                        </variation>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="278" y="0.0" width="82" height="21"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="70" y="51" width="74" height="26"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="51" width="144" height="26"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="278" y="0.0" width="82" height="21"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <variation key="heightClass=compact" axis="vertical" misplaced="YES">
+                                    <rect key="frame" x="464" y="43" width="144" height="77"/>
+                                </variation>
+                                <variation key="widthClass=compact" alignment="fill" axis="horizontal" distribution="fillProportionally" misplaced="YES">
+                                    <rect key="frame" x="20" y="528" width="360" height="21"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" alignment="bottom" axis="vertical" distribution="fillProportionally" misplaced="YES">
+                                    <rect key="frame" x="264" y="35" width="144" height="77"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="457" y="35" width="144" height="77"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="550" width="360" height="21"/>
+                                </variation>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="uCo-7l-mLt" userLabel="CA">
+                                <rect key="frame" x="31" y="192" width="155" height="35"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="compass" translatesAutoresizingMaskIntoConstraints="NO" id="TXy-nv-TeI">
+                                        <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="CALIFORNIA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcw-9E-ruJ">
+                                        <rect key="frame" x="50" y="0.0" width="105" height="35"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                            <rect key="frame" x="50" y="0.0" width="117" height="35"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="50" y="0.0" width="105" height="35"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <variation key="heightClass=compact" misplaced="YES">
+                                    <rect key="frame" x="28" y="185" width="173" height="35"/>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="26" y="200" width="155" height="35"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="164" width="167" height="35"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="28" y="572" width="173" height="35"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="25" y="192" width="155" height="35"/>
+                                </variation>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="GqZ-wp-8ma" firstAttribute="centerY" secondItem="TXy-nv-TeI" secondAttribute="centerY" id="1LL-1t-nH7"/>
+                            <constraint firstItem="D7m-7L-YeV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="2Ly-oH-KCa"/>
+                            <constraint firstItem="D7m-7L-YeV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="5UK-MA-g0Q"/>
+                            <constraint firstItem="uCo-7l-mLt" firstAttribute="top" secondItem="D7m-7L-YeV" secondAttribute="bottom" constant="8" id="6d4-fI-wPU"/>
+                            <constraint firstItem="prF-vk-wEJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="8Y6-Fw-bFF"/>
                             <constraint firstAttribute="bottom" secondItem="Mbf-LX-8v5" secondAttribute="bottom" id="A4x-Wa-ndq"/>
-                            <constraint firstItem="NFs-i5-P3D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="CcF-VN-c0Y"/>
-                            <constraint firstItem="Mbf-LX-8v5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="F7E-jE-Mx8"/>
+                            <constraint firstItem="lDP-Ll-dCz" firstAttribute="top" secondItem="prF-vk-wEJ" secondAttribute="bottom" constant="8" id="DTf-eK-7Vk"/>
+                            <constraint firstItem="D7m-7L-YeV" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="DYM-t4-7ZJ"/>
+                            <constraint firstAttribute="top" secondItem="Mbf-LX-8v5" secondAttribute="top" constant="10" id="F7E-jE-Mx8">
+                                <variation key="widthClass=compact" constant="50"/>
+                            </constraint>
+                            <constraint firstItem="D7m-7L-YeV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="FP6-cx-jtj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="prF-vk-wEJ" secondAttribute="trailing" id="Fo8-C6-jEW"/>
+                            <constraint firstItem="D7m-7L-YeV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HRt-Oa-QKU"/>
                             <constraint firstItem="lDP-Ll-dCz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Imf-Ai-i9j"/>
-                            <constraint firstItem="NFs-i5-P3D" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="11" id="Wvh-eP-gwQ"/>
+                            <constraint firstItem="D7m-7L-YeV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Izr-Qv-DCp"/>
+                            <constraint firstItem="uCo-7l-mLt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="Jgs-eg-GG6"/>
+                            <constraint firstItem="prF-vk-wEJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="M7b-2j-lEf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lDP-Ll-dCz" secondAttribute="bottom" constant="10" id="MJd-cZ-aCH"/>
+                            <constraint firstItem="uCo-7l-mLt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="OoR-MN-JlR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="prF-vk-wEJ" secondAttribute="bottom" constant="29" id="Ora-pQ-btM"/>
+                            <constraint firstItem="uCo-7l-mLt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="PaN-gV-gp0"/>
+                            <constraint firstItem="D7m-7L-YeV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="S3d-0u-mwa"/>
+                            <constraint firstItem="uCo-7l-mLt" firstAttribute="top" secondItem="D7m-7L-YeV" secondAttribute="bottom" constant="5" id="SIe-Mc-1Sr"/>
+                            <constraint firstItem="D7m-7L-YeV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="UJV-tS-zzs"/>
+                            <constraint firstItem="TXy-nv-TeI" firstAttribute="centerX" secondItem="GqZ-wp-8ma" secondAttribute="centerX" id="UOD-bw-ojj"/>
+                            <constraint firstItem="prF-vk-wEJ" firstAttribute="top" secondItem="GqZ-wp-8ma" secondAttribute="bottom" constant="40" id="VlK-es-BBa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="prF-vk-wEJ" secondAttribute="trailing" id="WMd-NR-JJg"/>
+                            <constraint firstItem="prF-vk-wEJ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="XAb-6J-rsa"/>
                             <constraint firstItem="Mbf-LX-8v5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Xc0-dH-74B"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lDP-Ll-dCz" secondAttribute="bottom" constant="36" id="Xpw-sX-pcy"/>
+                            <constraint firstItem="lDP-Ll-dCz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Z9u-yN-9kN"/>
+                            <constraint firstItem="GqZ-wp-8ma" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="g9W-XN-LMz"/>
                             <constraint firstAttribute="trailing" secondItem="Mbf-LX-8v5" secondAttribute="trailing" id="hKE-7D-dDx"/>
+                            <constraint firstItem="D7m-7L-YeV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="213" id="iul-gk-Clb"/>
+                            <constraint firstAttribute="centerY" secondItem="D7m-7L-YeV" secondAttribute="bottom" id="krx-Gd-6H7">
+                                <variation key="widthClass=compact" constant="50"/>
+                            </constraint>
+                            <constraint firstItem="GqZ-wp-8ma" firstAttribute="centerX" secondItem="TXy-nv-TeI" secondAttribute="centerX" id="ldC-ke-hk0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lDP-Ll-dCz" secondAttribute="bottom" constant="13" id="pKn-k8-kRN"/>
+                            <constraint firstItem="D7m-7L-YeV" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="r5b-Yl-WdI"/>
+                            <constraint firstItem="uCo-7l-mLt" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="rEz-Kc-MVf"/>
+                            <constraint firstItem="uCo-7l-mLt" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="rbV-2e-m1w"/>
+                            <constraint firstItem="TXy-nv-TeI" firstAttribute="centerY" secondItem="GqZ-wp-8ma" secondAttribute="centerY" id="uMw-5L-TjS"/>
+                            <constraint firstItem="lDP-Ll-dCz" firstAttribute="top" secondItem="prF-vk-wEJ" secondAttribute="bottom" constant="29" id="wC0-xx-Ugi"/>
+                            <constraint firstItem="D7m-7L-YeV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="x6s-NT-GeC"/>
+                            <constraint firstItem="prF-vk-wEJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="yG4-Kl-qwN"/>
+                            <constraint firstItem="prF-vk-wEJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="yfo-XZ-tg3"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="GqZ-wp-8ma"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="2Ly-oH-KCa"/>
+                                <exclude reference="5UK-MA-g0Q"/>
+                                <exclude reference="DYM-t4-7ZJ"/>
+                                <exclude reference="FP6-cx-jtj"/>
+                                <exclude reference="HRt-Oa-QKU"/>
+                                <exclude reference="Izr-Qv-DCp"/>
+                                <exclude reference="S3d-0u-mwa"/>
+                                <exclude reference="UJV-tS-zzs"/>
+                                <exclude reference="iul-gk-Clb"/>
+                                <exclude reference="krx-Gd-6H7"/>
+                                <exclude reference="r5b-Yl-WdI"/>
+                                <exclude reference="x6s-NT-GeC"/>
+                                <exclude reference="UOD-bw-ojj"/>
+                                <exclude reference="uMw-5L-TjS"/>
+                                <exclude reference="6d4-fI-wPU"/>
+                                <exclude reference="Jgs-eg-GG6"/>
+                                <exclude reference="OoR-MN-JlR"/>
+                                <exclude reference="PaN-gV-gp0"/>
+                                <exclude reference="SIe-Mc-1Sr"/>
+                                <exclude reference="rEz-Kc-MVf"/>
+                                <exclude reference="rbV-2e-m1w"/>
+                                <exclude reference="1LL-1t-nH7"/>
+                                <exclude reference="g9W-XN-LMz"/>
+                                <exclude reference="ldC-ke-hk0"/>
+                                <exclude reference="8Y6-Fw-bFF"/>
+                                <exclude reference="Fo8-C6-jEW"/>
+                                <exclude reference="M7b-2j-lEf"/>
+                                <exclude reference="VlK-es-BBa"/>
+                                <exclude reference="WMd-NR-JJg"/>
+                                <exclude reference="XAb-6J-rsa"/>
+                                <exclude reference="yG4-Kl-qwN"/>
+                                <exclude reference="yfo-XZ-tg3"/>
+                                <exclude reference="DTf-eK-7Vk"/>
+                                <exclude reference="Z9u-yN-9kN"/>
+                                <exclude reference="wC0-xx-Ugi"/>
+                                <exclude reference="MJd-cZ-aCH"/>
+                                <exclude reference="Ora-pQ-btM"/>
+                                <exclude reference="Xpw-sX-pcy"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="FP6-cx-jtj"/>
+                                <include reference="Izr-Qv-DCp"/>
+                                <include reference="OoR-MN-JlR"/>
+                                <include reference="SIe-Mc-1Sr"/>
+                                <include reference="M7b-2j-lEf"/>
+                                <include reference="XAb-6J-rsa"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="GqZ-wp-8ma"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="2Ly-oH-KCa"/>
+                                <include reference="5UK-MA-g0Q"/>
+                                <exclude reference="DYM-t4-7ZJ"/>
+                                <exclude reference="HRt-Oa-QKU"/>
+                                <include reference="S3d-0u-mwa"/>
+                                <exclude reference="UJV-tS-zzs"/>
+                                <exclude reference="iul-gk-Clb"/>
+                                <exclude reference="krx-Gd-6H7"/>
+                                <exclude reference="r5b-Yl-WdI"/>
+                                <exclude reference="x6s-NT-GeC"/>
+                                <include reference="UOD-bw-ojj"/>
+                                <include reference="uMw-5L-TjS"/>
+                                <include reference="6d4-fI-wPU"/>
+                                <include reference="Jgs-eg-GG6"/>
+                                <exclude reference="PaN-gV-gp0"/>
+                                <exclude reference="rEz-Kc-MVf"/>
+                                <exclude reference="rbV-2e-m1w"/>
+                                <exclude reference="1LL-1t-nH7"/>
+                                <exclude reference="g9W-XN-LMz"/>
+                                <exclude reference="ldC-ke-hk0"/>
+                                <exclude reference="8Y6-Fw-bFF"/>
+                                <include reference="Fo8-C6-jEW"/>
+                                <exclude reference="VlK-es-BBa"/>
+                                <include reference="yG4-Kl-qwN"/>
+                                <exclude reference="yfo-XZ-tg3"/>
+                                <include reference="DTf-eK-7Vk"/>
+                                <exclude reference="Z9u-yN-9kN"/>
+                                <exclude reference="wC0-xx-Ugi"/>
+                                <include reference="MJd-cZ-aCH"/>
+                                <exclude reference="Ora-pQ-btM"/>
+                                <exclude reference="pKn-k8-kRN"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="FP6-cx-jtj"/>
+                                <exclude reference="Izr-Qv-DCp"/>
+                                <exclude reference="6d4-fI-wPU"/>
+                                <exclude reference="Jgs-eg-GG6"/>
+                                <exclude reference="Fo8-C6-jEW"/>
+                                <include reference="WMd-NR-JJg"/>
+                                <exclude reference="XAb-6J-rsa"/>
+                                <exclude reference="yG4-Kl-qwN"/>
+                                <exclude reference="DTf-eK-7Vk"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="aboutBtn" destination="frN-a6-nte" id="Bcf-rh-BQp"/>
+                        <outlet property="adventure" destination="tTh-aq-4vY" id="EPO-7S-Ifx"/>
+                        <outlet property="beach" destination="NG5-xU-NVU" id="Mrx-VP-WZO"/>
+                        <outlet property="california" destination="vcw-9E-ruJ" id="lmb-Wl-q01"/>
+                        <outlet property="compass" destination="GqZ-wp-8ma" id="cxP-YU-0sz"/>
+                        <outlet property="diego" destination="86O-gY-l0T" id="hde-ym-BJD"/>
+                        <outlet property="outdoor" destination="McS-oy-R6o" id="LBe-FH-bAT"/>
                         <outlet property="photosBtn" destination="hTU-Q6-GST" id="0iL-EU-WRS"/>
+                        <outlet property="san" destination="Ov1-xK-I0q" id="0p0-vp-spR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -186,8 +496,8 @@
                                     <constraint firstAttribute="height" constant="181" id="D60-R7-jja"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RR4-Sw-iqe">
-                                <rect key="frame" x="20" y="14" width="54" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RR4-Sw-iqe">
+                                <rect key="frame" x="20" y="14" width="53" height="32"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                 <state key="normal" title="&lt; Back">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -196,8 +506,8 @@
                                     <action selector="onBackPressed:" destination="kc2-Lm-pd5" eventType="touchUpInside" id="vTK-ct-ahk"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ABOUT SAN DIEGO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAs-dg-xge">
-                                <rect key="frame" x="209" y="80" width="182" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT SAN DIEGO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAs-dg-xge">
+                                <rect key="frame" x="211" y="79" width="178" height="23"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -269,13 +579,6 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DESCRIPTION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgC-ZT-dae">
                                 <rect key="frame" x="20" y="160" width="118" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gei-Sz-Bsx">
-                                <rect key="frame" x="124" y="323" width="245" height="209"/>
-                                <string key="text">All thumbnails dim in BG, back button top corner, swipe to adjacent big images. container = dim thumbnails and back and &lt;&gt; arrow imgs. Click any TN = new  view with big imgs on sep pages</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -351,192 +654,184 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="wm7-NT-K4M">
-                                <rect key="frame" x="23" y="122" width="554" height="443"/>
+                                <rect key="frame" x="20" y="107" width="560" height="473"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="sbU-Wc-x1R">
-                                        <rect key="frame" x="0.0" y="0.0" width="554" height="110"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="118"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuX-Di-g3D" userLabel="Thumbnail 0">
-                                                <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="111" height="118"/>
                                                 <state key="normal" backgroundImage="photo0"/>
                                                 <connections>
                                                     <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="kWz-zr-OdQ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nf9-bU-QYE" userLabel="Thumbnail 1">
-                                                <rect key="frame" x="111" y="0.0" width="110" height="110"/>
+                                                <rect key="frame" x="112" y="0.0" width="112" height="118"/>
                                                 <state key="normal" backgroundImage="photo1"/>
                                                 <connections>
                                                     <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="8JC-yl-wvk"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDG-Rg-RW6" userLabel="Thumbnail 2">
-                                                <rect key="frame" x="222" y="0.0" width="110" height="110"/>
+                                                <rect key="frame" x="225" y="0.0" width="111" height="118"/>
                                                 <state key="normal" backgroundImage="photo2"/>
                                                 <connections>
                                                     <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="sEf-rv-bu2"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqI-vK-r8Q" userLabel="Thumbnail 3">
-                                                <rect key="frame" x="333" y="0.0" width="110" height="110"/>
+                                                <rect key="frame" x="337" y="0.0" width="112" height="118"/>
                                                 <state key="normal" backgroundImage="photo3"/>
                                                 <connections>
                                                     <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="aph-ig-iHK"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOa-F9-slL" userLabel="Thumbnail 4">
-                                                <rect key="frame" x="444" y="0.0" width="110" height="110"/>
+                                                <rect key="frame" x="449" y="0.0" width="111" height="118"/>
                                                 <state key="normal" backgroundImage="photo4"/>
                                                 <connections>
                                                     <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="VMr-xk-gwZ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="554" id="61e-RG-OFd"/>
-                                            <constraint firstAttribute="height" constant="110" id="A2i-hy-yT4"/>
-                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="lkR-NP-9UO">
-                                        <rect key="frame" x="0.0" y="111" width="554" height="110"/>
+                                        <rect key="frame" x="0.0" y="119" width="560" height="118"/>
                                         <subviews>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mb5-lR-9cl" userLabel="Thumbnail 5">
-                                                <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="111" height="118"/>
                                                 <state key="normal" backgroundImage="photo5"/>
                                                 <connections>
                                                     <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="tUo-jL-q7T"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKm-d1-ypI" userLabel="Thumbnail 6">
-                                                <rect key="frame" x="111" y="0.0" width="110" height="110"/>
+                                                <rect key="frame" x="112" y="0.0" width="112" height="118"/>
                                                 <state key="normal" backgroundImage="photo6"/>
                                                 <connections>
                                                     <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="TFv-LO-Y1c"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfM-yo-4mt" userLabel="Thumbnail 7">
-                                                <rect key="frame" x="222" y="0.0" width="110" height="110"/>
+                                                <rect key="frame" x="225" y="0.0" width="111" height="118"/>
                                                 <state key="normal" backgroundImage="photo7"/>
                                                 <connections>
                                                     <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="zNd-1w-64o"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGo-HI-JYo" userLabel="Thumbnail 8">
-                                                <rect key="frame" x="333" y="0.0" width="110" height="110"/>
+                                                <rect key="frame" x="337" y="0.0" width="112" height="118"/>
                                                 <state key="normal" backgroundImage="photo8"/>
                                                 <connections>
                                                     <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="1Xr-i6-34W"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cba-Os-MY8" userLabel="Thumbnail 9">
-                                                <rect key="frame" x="444" y="0.0" width="110" height="110"/>
+                                                <rect key="frame" x="449" y="0.0" width="111" height="118"/>
                                                 <state key="normal" backgroundImage="photo9"/>
                                                 <connections>
                                                     <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="25z-RJ-TPq"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="554" id="ayq-j7-8wI"/>
-                                            <constraint firstAttribute="height" constant="110" id="esg-yi-HZz"/>
-                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="OJt-FA-CQd">
-                                        <rect key="frame" x="0.0" y="222" width="554" height="110"/>
+                                        <rect key="frame" x="0.0" y="237" width="560" height="118"/>
                                         <subviews>
                                             <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJZ-sI-atF" userLabel="Thumbnail 10">
-                                                <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="111" height="118"/>
                                                 <state key="normal" backgroundImage="photo10"/>
                                                 <connections>
                                                     <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="YiX-BM-T4e"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Atx-m4-uHm" userLabel="Thumbnail 11">
-                                                <rect key="frame" x="111" y="0.0" width="110" height="110"/>
+                                                <rect key="frame" x="112" y="0.0" width="112" height="118"/>
                                                 <state key="normal" backgroundImage="photo11"/>
                                                 <connections>
                                                     <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="2Hp-50-1nl"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8d5-MJ-Wp0" userLabel="Thumbnail 12">
-                                                <rect key="frame" x="222" y="0.0" width="110" height="110"/>
+                                                <rect key="frame" x="225" y="0.0" width="111" height="118"/>
                                                 <state key="normal" backgroundImage="photo12"/>
                                                 <connections>
                                                     <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="gTj-Ac-93Y"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTU-SB-gG2" userLabel="Thumbnail 13">
-                                                <rect key="frame" x="333" y="0.0" width="110" height="110"/>
+                                                <rect key="frame" x="337" y="0.0" width="112" height="118"/>
                                                 <state key="normal" backgroundImage="photo13"/>
                                                 <connections>
                                                     <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="BlL-pa-F6u"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SoR-Ak-lhp" userLabel="Thumbnail 14">
-                                                <rect key="frame" x="444" y="0.0" width="110" height="110"/>
+                                                <rect key="frame" x="449" y="0.0" width="111" height="118"/>
                                                 <state key="normal" backgroundImage="photo14"/>
                                                 <connections>
                                                     <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="Cf0-oh-dKb"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="110" id="XJI-3I-oqc"/>
-                                            <constraint firstAttribute="width" constant="554" id="rDT-Ii-Ya0"/>
-                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="W20-TJ-6YN">
-                                        <rect key="frame" x="0.0" y="333" width="554" height="110"/>
+                                        <rect key="frame" x="0.0" y="356" width="560" height="118"/>
                                         <subviews>
                                             <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcD-LW-2IX" userLabel="Thumbnail 15">
-                                                <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="111" height="118"/>
                                                 <state key="normal" backgroundImage="photo15"/>
                                                 <connections>
                                                     <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="7rt-22-Kid"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktP-lY-gdL" userLabel="Thumbnail 16">
-                                                <rect key="frame" x="111" y="0.0" width="110" height="110"/>
+                                                <rect key="frame" x="112" y="0.0" width="112" height="118"/>
                                                 <state key="normal" backgroundImage="photo16"/>
                                                 <connections>
                                                     <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="ZQb-MK-Jeo"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4i-M5-bOn" userLabel="Thumbnail 17">
-                                                <rect key="frame" x="222" y="0.0" width="110" height="110"/>
+                                                <rect key="frame" x="225" y="0.0" width="111" height="118"/>
                                                 <state key="normal" backgroundImage="photo17"/>
                                                 <connections>
                                                     <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="uzQ-IU-aFg"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1s-oW-4DK" userLabel="Thumbnail 18">
-                                                <rect key="frame" x="333" y="0.0" width="110" height="110"/>
+                                                <rect key="frame" x="337" y="0.0" width="112" height="118"/>
                                                 <state key="normal" backgroundImage="photo18"/>
                                                 <connections>
                                                     <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="QrY-gv-ZEc"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0MH-fe-TZ1" userLabel="Thumbnail 19">
-                                                <rect key="frame" x="444" y="0.0" width="110" height="110"/>
+                                                <rect key="frame" x="449" y="0.0" width="111" height="118"/>
                                                 <state key="normal" backgroundImage="photo19"/>
                                                 <connections>
                                                     <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="1GY-kf-RUJ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="110" id="KYk-pa-xfl"/>
-                                            <constraint firstAttribute="width" constant="554" id="Y2R-zm-hdE"/>
-                                        </constraints>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="W20-TJ-6YN" firstAttribute="height" secondItem="sbU-Wc-x1R" secondAttribute="height" id="Gcp-sb-1Y7"/>
+                                    <constraint firstItem="OJt-FA-CQd" firstAttribute="height" secondItem="sbU-Wc-x1R" secondAttribute="height" id="QAo-WS-JGL"/>
+                                    <constraint firstItem="W20-TJ-6YN" firstAttribute="width" secondItem="sbU-Wc-x1R" secondAttribute="width" id="V7N-KQ-OBC"/>
+                                    <constraint firstItem="lkR-NP-9UO" firstAttribute="height" secondItem="sbU-Wc-x1R" secondAttribute="height" id="WTM-xb-fN5"/>
+                                    <constraint firstItem="lkR-NP-9UO" firstAttribute="width" secondItem="sbU-Wc-x1R" secondAttribute="width" id="guN-7s-24e"/>
+                                    <constraint firstItem="OJt-FA-CQd" firstAttribute="width" secondItem="sbU-Wc-x1R" secondAttribute="width" id="uNe-R0-foa"/>
+                                </constraints>
                             </stackView>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bridge" translatesAutoresizingMaskIntoConstraints="NO" id="2Nx-zD-Ney" userLabel="Photo">
                                 <rect key="frame" x="0.0" y="87" width="600" height="513"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o46-So-H2E" userLabel="&lt;Back Home">
-                                <rect key="frame" x="25" y="28" width="59" height="32"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o46-So-H2E" userLabel="&lt;Back Home">
+                                <rect key="frame" x="20" y="27" width="53" height="32"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                 <state key="normal" title="&lt; Back">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -552,15 +847,35 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
                             <constraint firstItem="o46-So-H2E" firstAttribute="leading" secondItem="7KM-Xy-w86" secondAttribute="leadingMargin" id="8Dt-r1-Idz"/>
                             <constraint firstItem="2Nx-zD-Ney" firstAttribute="top" secondItem="R3v-g9-02a" secondAttribute="bottom" id="EJT-gS-oJS"/>
                             <constraint firstItem="wm7-NT-K4M" firstAttribute="centerY" secondItem="2Nx-zD-Ney" secondAttribute="centerY" id="GQe-jU-k1v"/>
+                            <constraint firstItem="o46-So-H2E" firstAttribute="centerY" secondItem="R3v-g9-02a" secondAttribute="centerY" id="HN5-bs-bce"/>
                             <constraint firstItem="2Nx-zD-Ney" firstAttribute="leading" secondItem="7KM-Xy-w86" secondAttribute="leading" id="LXe-fD-vLI"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="wm7-NT-K4M" secondAttribute="bottom" constant="35" id="OFt-0w-tAc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wm7-NT-K4M" secondAttribute="trailing" id="W5B-Iy-tzV"/>
                             <constraint firstItem="R3v-g9-02a" firstAttribute="top" secondItem="7KM-Xy-w86" secondAttribute="top" id="YLo-XX-y80"/>
+                            <constraint firstItem="wm7-NT-K4M" firstAttribute="top" secondItem="R3v-g9-02a" secondAttribute="bottom" constant="35" id="b8I-Gv-j2Q"/>
+                            <constraint firstItem="wm7-NT-K4M" firstAttribute="leading" secondItem="7KM-Xy-w86" secondAttribute="leadingMargin" id="eh2-kl-XHY"/>
                             <constraint firstAttribute="trailing" secondItem="2Nx-zD-Ney" secondAttribute="trailing" id="fSX-nH-r7u"/>
                             <constraint firstItem="wm7-NT-K4M" firstAttribute="centerX" secondItem="2Nx-zD-Ney" secondAttribute="centerX" id="gDN-hR-5FI"/>
                             <constraint firstItem="1O3-s5-MDu" firstAttribute="top" secondItem="2Nx-zD-Ney" secondAttribute="bottom" id="kqP-mi-mMU"/>
+                            <constraint firstItem="wm7-NT-K4M" firstAttribute="centerY" secondItem="2Nx-zD-Ney" secondAttribute="centerY" id="lJV-8E-LWY"/>
+                            <constraint firstItem="wm7-NT-K4M" firstAttribute="centerX" secondItem="2Nx-zD-Ney" secondAttribute="centerX" id="oTj-DS-HSU"/>
                             <constraint firstItem="R3v-g9-02a" firstAttribute="leading" secondItem="7KM-Xy-w86" secondAttribute="leading" id="poZ-Pd-nek"/>
+                            <constraint firstItem="wm7-NT-K4M" firstAttribute="top" relation="greaterThanOrEqual" secondItem="R3v-g9-02a" secondAttribute="bottom" constant="20" id="s3N-FK-Lae"/>
                             <constraint firstItem="o46-So-H2E" firstAttribute="top" secondItem="doe-CV-3GP" secondAttribute="bottom" constant="8" id="sJZ-nG-iCJ"/>
+                            <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="wm7-NT-K4M" secondAttribute="bottom" constant="20" id="vES-1b-YH2"/>
                             <constraint firstAttribute="trailing" secondItem="R3v-g9-02a" secondAttribute="trailing" id="yUv-Uz-846"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="sJZ-nG-iCJ"/>
+                                <exclude reference="GQe-jU-k1v"/>
+                                <exclude reference="OFt-0w-tAc"/>
+                                <exclude reference="b8I-Gv-j2Q"/>
+                                <exclude reference="gDN-hR-5FI"/>
+                                <exclude reference="lJV-8E-LWY"/>
+                                <exclude reference="oTj-DS-HSU"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="bigPhoto" destination="2Nx-zD-Ney" id="ZKi-U7-ZiB"/>
@@ -590,241 +905,6 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uCY-hP-I16" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1066" y="709"/>
-        </scene>
-        <!--PhotosVC-->
-        <scene sceneID="AGH-ag-nXC">
-            <objects>
-                <viewController id="rad-YY-8Rf" customClass="PhotosVC" customModule="my_favorite_place" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="IUC-xm-Ken"/>
-                        <viewControllerLayoutGuide type="bottom" id="tec-Ty-hVn"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="1bj-si-rVp">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PHOTOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqP-Jc-0y7">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="87"/>
-                                <color key="backgroundColor" red="0.96470588239999999" green="0.32156862749999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="87" id="00f-7P-8ec"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="VIz-kB-OVo">
-                                <rect key="frame" x="20" y="120" width="560" height="110"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MD5-aQ-1lc" userLabel="Thumbnail 0">
-                                        <rect key="frame" x="0.0" y="0.0" width="112" height="110"/>
-                                        <state key="normal" backgroundImage="photo0"/>
-                                        <connections>
-                                            <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="cRb-Gs-o0L"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEM-fG-HxV" userLabel="Thumbnail 1">
-                                        <rect key="frame" x="112" y="0.0" width="112" height="110"/>
-                                        <state key="normal" backgroundImage="photo1"/>
-                                        <connections>
-                                            <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="71A-zS-5vc"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mJD-2q-3Kh" userLabel="Thumbnail 2">
-                                        <rect key="frame" x="224" y="0.0" width="112" height="110"/>
-                                        <state key="normal" backgroundImage="photo2"/>
-                                        <connections>
-                                            <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="NK4-Tt-Bp0"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Zy-en-HO8" userLabel="Thumbnail 3">
-                                        <rect key="frame" x="336" y="0.0" width="112" height="110"/>
-                                        <state key="normal" backgroundImage="photo3"/>
-                                        <connections>
-                                            <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="f1G-1S-M7z"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fp0-wR-ljB" userLabel="Thumbnail 4">
-                                        <rect key="frame" x="448" y="0.0" width="112" height="110"/>
-                                        <state key="normal" backgroundImage="photo4"/>
-                                        <connections>
-                                            <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="lpN-Vz-Wre"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="560" id="PQt-Vv-6ej"/>
-                                    <constraint firstAttribute="height" constant="110" id="yno-e5-VCi"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="PQt-Vv-6ej"/>
-                                    </mask>
-                                </variation>
-                            </stackView>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adb-ts-WeB" userLabel="Thumbnail 5">
-                                <rect key="frame" x="23" y="233" width="110" height="110"/>
-                                <state key="normal" backgroundImage="photo5"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="uFf-0c-9LJ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8d-BS-Fmj" userLabel="Thumbnail 6">
-                                <rect key="frame" x="134" y="233" width="110" height="110"/>
-                                <state key="normal" backgroundImage="photo6"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="dbB-wV-Sjk"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEI-By-J2r" userLabel="Thumbnail 7">
-                                <rect key="frame" x="245" y="233" width="110" height="110"/>
-                                <state key="normal" backgroundImage="photo7"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="czP-xg-mmo"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Zp-yi-Kx8" userLabel="Thumbnail 8">
-                                <rect key="frame" x="356" y="233" width="110" height="110"/>
-                                <state key="normal" backgroundImage="photo8"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="5Sy-t3-9ic"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zU2-o4-pn5" userLabel="Thumbnail 9">
-                                <rect key="frame" x="467" y="233" width="110" height="110"/>
-                                <state key="normal" backgroundImage="photo9"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="caI-pX-zoT"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6X-ae-uh7" userLabel="Thumbnail 10">
-                                <rect key="frame" x="23" y="345" width="110" height="110"/>
-                                <state key="normal" backgroundImage="photo10"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="ETi-3n-Q12"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCX-Eb-2vh" userLabel="Thumbnail 11">
-                                <rect key="frame" x="134" y="345" width="110" height="110"/>
-                                <state key="normal" backgroundImage="photo11"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="l5R-sg-WoB"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGk-ZJ-1zC" userLabel="Thumbnail 12">
-                                <rect key="frame" x="245" y="345" width="110" height="110"/>
-                                <state key="normal" backgroundImage="photo12"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="JNr-4d-ApC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H44-QU-GNJ" userLabel="Thumbnail 13">
-                                <rect key="frame" x="356" y="345" width="110" height="110"/>
-                                <state key="normal" backgroundImage="photo13"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="ncD-11-Kmr"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQu-wY-Wl4" userLabel="Thumbnail 14">
-                                <rect key="frame" x="467" y="345" width="110" height="110"/>
-                                <state key="normal" backgroundImage="photo14"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="dcU-2r-utq"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="15" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0C-vh-PjA" userLabel="Thumbnail 15">
-                                <rect key="frame" x="23" y="457" width="110" height="110"/>
-                                <state key="normal" backgroundImage="photo15"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="zD7-en-p6e"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="16" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o72-eW-GYM" userLabel="Thumbnail 16">
-                                <rect key="frame" x="134" y="457" width="110" height="110"/>
-                                <state key="normal" backgroundImage="photo16"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="8oP-0H-yM0"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="17" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2X-T5-SmH" userLabel="Thumbnail 17">
-                                <rect key="frame" x="245" y="457" width="110" height="110"/>
-                                <state key="normal" backgroundImage="photo17"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="DJ6-ki-OqF"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="18" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xbr-bW-Qpf" userLabel="Thumbnail 18">
-                                <rect key="frame" x="356" y="457" width="110" height="110"/>
-                                <state key="normal" backgroundImage="photo18"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="LmK-hI-nV4"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="19" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0i-g1-gGm" userLabel="Thumbnail 19">
-                                <rect key="frame" x="467" y="457" width="110" height="110"/>
-                                <state key="normal" backgroundImage="photo19"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="MMN-Ho-9c1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="roO-jQ-UnU" userLabel="&lt;Back Home">
-                                <rect key="frame" x="25" y="28" width="59" height="32"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
-                                <state key="normal" title="&lt; Back">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="onBackPressed:" destination="kc2-Lm-pd5" eventType="touchUpInside" id="d1Q-Fo-ilZ"/>
-                                    <action selector="onBackPressed:" destination="rad-YY-8Rf" eventType="touchUpInside" id="zOS-FZ-pTH"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="VIz-kB-OVo" firstAttribute="leading" secondItem="1bj-si-rVp" secondAttribute="leadingMargin" id="2IQ-bv-ye9"/>
-                            <constraint firstAttribute="trailing" secondItem="fqP-Jc-0y7" secondAttribute="trailing" id="9Tx-dT-qLR"/>
-                            <constraint firstItem="roO-jQ-UnU" firstAttribute="leading" secondItem="1bj-si-rVp" secondAttribute="leadingMargin" id="NRO-oV-eGM"/>
-                            <constraint firstItem="roO-jQ-UnU" firstAttribute="top" secondItem="IUC-xm-Ken" secondAttribute="bottom" constant="8" id="cGN-07-cAA"/>
-                            <constraint firstItem="fqP-Jc-0y7" firstAttribute="top" secondItem="1bj-si-rVp" secondAttribute="top" id="dWy-OQ-2pG"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="VIz-kB-OVo" secondAttribute="trailing" id="kVb-o2-MkM"/>
-                            <constraint firstItem="VIz-kB-OVo" firstAttribute="top" secondItem="fqP-Jc-0y7" secondAttribute="bottom" constant="34" id="kbZ-HB-oru"/>
-                            <constraint firstItem="fqP-Jc-0y7" firstAttribute="leading" secondItem="1bj-si-rVp" secondAttribute="leading" id="ml5-PV-Yok"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="VIz-kB-OVo" secondAttribute="bottom" constant="2" id="qAw-4g-Ufv"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="kbZ-HB-oru"/>
-                                <exclude reference="qAw-4g-Ufv"/>
-                            </mask>
-                        </variation>
-                    </view>
-                    <connections>
-                        <outlet property="home" destination="roO-jQ-UnU" id="oZQ-S6-LM1"/>
-                        <outletCollection property="thumbnails" destination="zU2-o4-pn5" collectionClass="NSMutableArray" id="crg-ct-h1b"/>
-                        <outletCollection property="thumbnails" destination="tQu-wY-Wl4" collectionClass="NSMutableArray" id="735-6L-FCU"/>
-                        <outletCollection property="thumbnails" destination="l0i-g1-gGm" collectionClass="NSMutableArray" id="Qwn-I8-VRA"/>
-                        <outletCollection property="thumbnails" destination="Xbr-bW-Qpf" collectionClass="NSMutableArray" id="e5Q-Wl-TeS"/>
-                        <outletCollection property="thumbnails" destination="H44-QU-GNJ" collectionClass="NSMutableArray" id="3Z7-Fq-jUN"/>
-                        <outletCollection property="thumbnails" destination="6Zp-yi-Kx8" collectionClass="NSMutableArray" id="GTH-1J-di5"/>
-                        <outletCollection property="thumbnails" destination="e8d-BS-Fmj" collectionClass="NSMutableArray" id="yxd-ou-99H"/>
-                        <outletCollection property="thumbnails" destination="UEI-By-J2r" collectionClass="NSMutableArray" id="pU2-Mu-iAU"/>
-                        <outletCollection property="thumbnails" destination="VCX-Eb-2vh" collectionClass="NSMutableArray" id="4DE-zU-N7L"/>
-                        <outletCollection property="thumbnails" destination="I2X-T5-SmH" collectionClass="NSMutableArray" id="uVa-5L-Uvs"/>
-                        <outletCollection property="thumbnails" destination="o72-eW-GYM" collectionClass="NSMutableArray" id="kDz-Mt-pUZ"/>
-                        <outletCollection property="thumbnails" destination="adb-ts-WeB" collectionClass="NSMutableArray" id="MB7-7K-Bll"/>
-                        <outletCollection property="thumbnails" destination="y6X-ae-uh7" collectionClass="NSMutableArray" id="317-0O-Llv"/>
-                        <outletCollection property="thumbnails" destination="s0C-vh-PjA" collectionClass="NSMutableArray" id="94t-pz-9TY"/>
-                        <outletCollection property="thumbnails" destination="uGk-ZJ-1zC" collectionClass="NSMutableArray" id="jJP-Ed-Lge"/>
-                        <outletCollection property="thumbnails" destination="MD5-aQ-1lc" collectionClass="NSMutableArray" id="wmg-Ye-aI2"/>
-                        <outletCollection property="thumbnails" destination="yEM-fG-HxV" collectionClass="NSMutableArray" id="WQZ-Px-fXt"/>
-                        <outletCollection property="thumbnails" destination="mJD-2q-3Kh" collectionClass="NSMutableArray" id="dkE-dA-eC6"/>
-                        <outletCollection property="thumbnails" destination="8Zy-en-HO8" collectionClass="NSMutableArray" id="oW8-3a-xt0"/>
-                        <outletCollection property="thumbnails" destination="Fp0-wR-ljB" collectionClass="NSMutableArray" id="95D-kL-dkh"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PMi-JT-eaW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1704" y="709"/>
         </scene>
     </scenes>
     <resources>

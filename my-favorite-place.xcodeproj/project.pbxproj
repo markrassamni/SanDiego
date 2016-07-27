@@ -12,13 +12,9 @@
 		F92D80DF1D438805006778DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92D80DD1D438805006778DB /* Main.storyboard */; };
 		F92D80E11D438805006778DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F92D80E01D438805006778DB /* Assets.xcassets */; };
 		F92D80E41D438805006778DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92D80E21D438805006778DB /* LaunchScreen.storyboard */; };
-		F93FBABE1D464C9A00EF8CE5 /* masterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93FBABD1D464C9A00EF8CE5 /* masterVC.swift */; };
 		F98636ED1D44A85C0058B88D /* PhotosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98636EC1D44A85C0058B88D /* PhotosVC.swift */; };
 		F98636F31D44C5040058B88D /* AboutPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98636F21D44C5040058B88D /* AboutPageVC.swift */; };
 		F98636F51D44DAC90058B88D /* PageDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98636F41D44DAC90058B88D /* PageDots.swift */; };
-		F9E4D63A1D47DC5A00344AC7 /* PhotoBG.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E4D6391D47DC5A00344AC7 /* PhotoBG.swift */; };
-		F9FF47751D45D8CD006389F0 /* PhotosPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FF47741D45D8CD006389F0 /* PhotosPages.swift */; };
-		F9FF47771D45DBD8006389F0 /* PhotosPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FF47761D45DBD8006389F0 /* PhotosPageVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,13 +25,9 @@
 		F92D80E01D438805006778DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F92D80E31D438805006778DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F92D80E51D438805006778DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F93FBABD1D464C9A00EF8CE5 /* masterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = masterVC.swift; sourceTree = "<group>"; };
 		F98636EC1D44A85C0058B88D /* PhotosVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosVC.swift; sourceTree = "<group>"; };
 		F98636F21D44C5040058B88D /* AboutPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutPageVC.swift; path = ../AboutPageVC.swift; sourceTree = "<group>"; };
 		F98636F41D44DAC90058B88D /* PageDots.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageDots.swift; sourceTree = "<group>"; };
-		F9E4D6391D47DC5A00344AC7 /* PhotoBG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBG.swift; sourceTree = "<group>"; };
-		F9FF47741D45D8CD006389F0 /* PhotosPages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosPages.swift; sourceTree = "<group>"; };
-		F9FF47761D45DBD8006389F0 /* PhotosPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosPageVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,10 +69,6 @@
 				F98636EC1D44A85C0058B88D /* PhotosVC.swift */,
 				F98636F21D44C5040058B88D /* AboutPageVC.swift */,
 				F98636F41D44DAC90058B88D /* PageDots.swift */,
-				F9FF47741D45D8CD006389F0 /* PhotosPages.swift */,
-				F9FF47761D45DBD8006389F0 /* PhotosPageVC.swift */,
-				F93FBABD1D464C9A00EF8CE5 /* masterVC.swift */,
-				F9E4D6391D47DC5A00344AC7 /* PhotoBG.swift */,
 			);
 			path = "my-favorite-place";
 			sourceTree = "<group>";
@@ -156,14 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9FF47751D45D8CD006389F0 /* PhotosPages.swift in Sources */,
 				F92D80DC1D438805006778DB /* ViewController.swift in Sources */,
 				F92D80DA1D438805006778DB /* AppDelegate.swift in Sources */,
 				F98636F51D44DAC90058B88D /* PageDots.swift in Sources */,
-				F9E4D63A1D47DC5A00344AC7 /* PhotoBG.swift in Sources */,
 				F98636ED1D44A85C0058B88D /* PhotosVC.swift in Sources */,
-				F9FF47771D45DBD8006389F0 /* PhotosPageVC.swift in Sources */,
-				F93FBABE1D464C9A00EF8CE5 /* masterVC.swift in Sources */,
 				F98636F31D44C5040058B88D /* AboutPageVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

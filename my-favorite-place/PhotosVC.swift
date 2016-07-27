@@ -51,7 +51,7 @@ class PhotosVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        var shownPhoto = UIImage(named: "")
+        //var shownPhoto = UIImage(named: "")
     }
     
     func hideThumbnails(){
@@ -59,7 +59,6 @@ class PhotosVC: UIViewController {
             thumbnails.alpha = 0.3
             thumbnails.userInteractionEnabled = false
         }
-        //set black background
     }
     
     func showThumbnails(){
@@ -67,7 +66,6 @@ class PhotosVC: UIViewController {
             thumbnails.alpha = 1.0
             thumbnails.userInteractionEnabled = true
         }
-        //remove black background
     }
     
     
