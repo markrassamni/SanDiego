@@ -14,15 +14,30 @@ class PhotosPageVC: UIPageViewController {
     
     weak var photoDelegate: PhotosPageVCDelegate?
     
+    var firstCall = true
+    
+    var photoPages = ["photo0", "photo1", "photo2", "photo3"]
+    
     private(set) lazy var orderedViewControllers: [UIViewController] = {
         //Add more pages here
-        return [self.nextVC("FirstPage"), self.nextVC("SecondPage"), self.nextVC("ThirdPage")]
+        return [self.nextVC("noPhoto"), self.nextVC("photo0"), self.nextVC("photo1"), self.nextVC("photo2"), self.nextVC("photo3"), self.nextVC("photo4"), self.nextVC("photo5"), self.nextVC("photo6")]
+        
     }()
     
     private func nextVC(page: String) -> UIViewController {
         return UIStoryboard(name: "Main", bundle: nil) .
             instantiateViewControllerWithIdentifier("\(page)")
+        // PASS BUTTON PRESSED TO HERE
     }
+    
+    func firstVC (photoTag: Int) -> UIViewController {
+        firstCall = false
+        return self.nextVC("photo\(photoTag)")
+       // setViewControllers(<#T##viewControllers: [UIViewController]?##[UIViewController]?#>, direction: .Forward, animated: true, completion: nil)
+       // return UIStoryboard(name: "Main", bundle: nil) .instantiateViewControllerWithIdentifier("photo\(photoTag)")
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,12 +45,15 @@ class PhotosPageVC: UIPageViewController {
         dataSource = self
         delegate = self
         
-        if let firstVC = orderedViewControllers.first {
-            setViewControllers([firstVC], direction: .Forward, animated: true, completion: nil)
+        if !firstCall {
+            if let firstVC = orderedViewControllers.first {
+                setViewControllers([firstVC], direction: .Forward, animated: true, completion: nil)
+            }
+            
+            photoDelegate?.photosPageVC(self, didUpdatePageCount: orderedViewControllers.count)
         }
-        
-        photoDelegate?.photosPageVC(self, didUpdatePageCount: orderedViewControllers.count)
-    }
+        }
+      
 }
 
 extension PhotosPageVC: UIPageViewControllerDataSource {

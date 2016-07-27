@@ -19,12 +19,8 @@
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue-Bold</string>
-            <string>HelveticaNeue-Bold</string>
-            <string>HelveticaNeue-Bold</string>
-            <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue</string>
             <string>HelveticaNeue-Bold</string>
-            <string>HelveticaNeue</string>
             <string>HelveticaNeue-Bold</string>
         </mutableArray>
     </customFonts>
@@ -182,18 +178,12 @@
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="5LE-yo-vX9">
                                 <rect key="frame" x="281" y="560" width="39" height="37"/>
                             </pageControl>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="san diego2" translatesAutoresizingMaskIntoConstraints="NO" id="8GX-yS-ORM">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="152"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bridge" translatesAutoresizingMaskIntoConstraints="NO" id="8GX-yS-ORM">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="181"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="152" id="D60-R7-jja"/>
+                                    <constraint firstAttribute="height" constant="181" id="D60-R7-jja"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ABOUT SAN DIEGO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAs-dg-xge">
-                                <rect key="frame" x="209" y="65" width="182" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RR4-Sw-iqe">
                                 <rect key="frame" x="20" y="14" width="54" height="30"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
@@ -204,6 +194,12 @@
                                     <action selector="onBackPressed:" destination="kc2-Lm-pd5" eventType="touchUpInside" id="vTK-ct-ahk"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ABOUT SAN DIEGO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAs-dg-xge">
+                                <rect key="frame" x="209" y="80" width="182" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -229,7 +225,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="od9-g4-nI1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1066" y="-615"/>
+            <point key="canvasLocation" x="1066" y="17"/>
         </scene>
         <!--About PageVC-->
         <scene sceneID="Zn2-gZ-2fN">
@@ -237,7 +233,7 @@
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="pGD-rn-ZOF" customClass="AboutPageVC" customModule="my_favorite_place" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mha-mD-bJF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1704" y="-615"/>
+            <point key="canvasLocation" x="1704" y="17"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="T2m-BQ-5ao">
@@ -250,48 +246,11 @@
                     <view key="view" contentMode="scaleToFill" id="Nnl-xJ-cNd">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="san diego2" translatesAutoresizingMaskIntoConstraints="NO" id="pyh-vf-Jil">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="152"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="152" id="8QY-ZR-MVd"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="POPULATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOp-fm-rK2">
-                                <rect key="frame" x="20" y="155" width="110" height="20"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HISTORY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tbt-Fx-XrZ">
-                                <rect key="frame" x="20" y="192" width="77" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1,000,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPE-r7-ZgB">
-                                <rect key="frame" x="20" y="172" width="77" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgD-yk-XXT">
-                                <rect key="frame" x="20" y="208" width="568" height="379"/>
-                                <mutableString key="text">The recorded history of the San Diego, California, region began in the present state of California when San Diego Bay was first discovered by Europeans. San Diego was the first part of California that Europeans settled in, so that San Diego has been described as "the birthplace of California."
-
-Native Americans such as the Kumeyaay people had been living in the area for as long as 12,000 years. Explorer Juan Rodriguez Cabrillo discovered San Diego Bay in 1542, but it was 200 years before Europeans settled the area. A fort and mission were established in 1769, which gradually expanded into a settlement under first Spanish and then Mexican rule.
-
-San Diego became part of the U.S. in 1848, and the town was named the county seat of San Diego County when California was granted statehood in 1850. It remained a very small town for several decades, but grew rapidly after 1880 due to development and the establishment of multiple military facilities. Growth was especially rapid during and immediately after World War II. Entrepreneurs and boosters laid the basis for an economy based today on the military, defense industries, tourism, international trade, and manufacturing. San Diego is now the eighth largest city in the country and forms the heart of the larger San Diego metropolitan area.</mutableString>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hsh-wU-MZV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1066" y="50"/>
+            <point key="canvasLocation" x="2348" y="17"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="jvS-Cb-Pl2">
@@ -305,32 +264,31 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="san diego2" translatesAutoresizingMaskIntoConstraints="NO" id="FUF-lQ-AXi">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="152"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="152" id="TG3-qi-fWz"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DESCRIPTION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgC-ZT-dae">
                                 <rect key="frame" x="20" y="160" width="118" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gei-Sz-Bsx">
                                 <rect key="frame" x="124" y="323" width="245" height="209"/>
                                 <string key="text">All thumbnails dim in BG, back button top corner, swipe to adjacent big images. container = dim thumbnails and back and &lt;&gt; arrow imgs. Click any TN = new  view with big imgs on sep pages</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="THINGS TO DO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXb-Bo-1FZ">
+                                <rect key="frame" x="440" y="181" width="124" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.18050496029999999" green="0.9552928665" blue="0.69940240620000005" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AwI-WY-9Xg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1704" y="50"/>
+            <point key="canvasLocation" x="2986" y="17"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hQ6-gH-P9s">
@@ -344,25 +302,29 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="san diego2" translatesAutoresizingMaskIntoConstraints="NO" id="H7d-w0-3ia">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="152"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="152" id="Y0U-1a-atZ"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="THINGS TO DO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXb-Bo-1FZ">
-                                <rect key="frame" x="20" y="160" width="124" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fz3-p5-A3C">
+                                <rect key="frame" x="16" y="185" width="568" height="400"/>
+                                <string key="text">The recorded history of the San Diego, California, region began in the present state of California when San Diego Bay was first discovered by Europeans. San Diego was the first part of California that Europeans settled in, so that San Diego has been described as "the birthplace of California."
+
+Native Americans such as the Kumeyaay people had been living in the area for as long as 12,000 years. Explorer Juan Rodriguez Cabrillo discovered San Diego Bay in 1542, but it was 200 years before Europeans settled the area. A fort and mission were established in 1769, which gradually expanded into a settlement under first Spanish and then Mexican rule.
+
+San Diego became part of the U.S. in 1848, and the town was named the county seat of San Diego County when California was granted statehood in 1850. It remained a very small town for several decades, but grew rapidly after 1880 due to development and the establishment of multiple military facilities. Growth was especially rapid during and immediately after World War II. Entrepreneurs and boosters laid the basis for an economy based today on the military, defense industries, tourism, international trade, and manufacturing. San Diego is now the eighth largest city in the country and forms the heart of the larger San Diego metropolitan area.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="fz3-p5-A3C" firstAttribute="leading" secondItem="0Wo-Mr-Qf5" secondAttribute="leadingMargin" constant="-4" id="8fb-2Q-lad"/>
+                            <constraint firstItem="JLe-GV-pGN" firstAttribute="top" secondItem="fz3-p5-A3C" secondAttribute="bottom" constant="15" id="GG0-FI-exz"/>
+                            <constraint firstItem="fz3-p5-A3C" firstAttribute="top" secondItem="cAJ-eY-dox" secondAttribute="bottom" constant="165" id="f5t-Uf-u3j"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fz3-p5-A3C" secondAttribute="trailing" constant="-4" id="hMf-zS-sim"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PRW-cX-xY5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2332" y="50"/>
+            <point key="canvasLocation" x="3614" y="17"/>
         </scene>
         <!--PhotosVC-->
         <scene sceneID="8i2-0g-ZHA">
@@ -376,21 +338,162 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SD sunset pic?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hst-hf-bQn">
-                                <rect key="frame" x="0.0" y="20" width="600" height="72"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PHOTOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R3v-g9-02a">
-                                <rect key="frame" x="258" y="28" width="84" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PHOTOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R3v-g9-02a">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="87"/>
+                                <color key="backgroundColor" red="0.96470588235294119" green="0.32156862745098036" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="q8Q-yh-NY8"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o46-So-H2E">
-                                <rect key="frame" x="20" y="20" width="54" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuX-Di-g3D" userLabel="Thumbnail 0">
+                                <rect key="frame" x="25" y="124" width="110" height="110"/>
+                                <state key="normal" backgroundImage="photo0"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="kWz-zr-OdQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nf9-bU-QYE" userLabel="Thumbnail 1">
+                                <rect key="frame" x="134" y="124" width="110" height="110"/>
+                                <state key="normal" backgroundImage="photo1"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="8JC-yl-wvk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDG-Rg-RW6" userLabel="Thumbnail 2">
+                                <rect key="frame" x="245" y="124" width="110" height="110"/>
+                                <state key="normal" backgroundImage="photo2"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="sEf-rv-bu2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqI-vK-r8Q" userLabel="Thumbnail 3">
+                                <rect key="frame" x="354" y="124" width="110" height="110"/>
+                                <state key="normal" backgroundImage="photo3"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="aph-ig-iHK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOa-F9-slL" userLabel="Thumbnail 4">
+                                <rect key="frame" x="465" y="124" width="110" height="110"/>
+                                <state key="normal" backgroundImage="photo4"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="VMr-xk-gwZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mb5-lR-9cl" userLabel="Thumbnail 5">
+                                <rect key="frame" x="25" y="236" width="110" height="110"/>
+                                <state key="normal" backgroundImage="photo5"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="tUo-jL-q7T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKm-d1-ypI" userLabel="Thumbnail 6">
+                                <rect key="frame" x="134" y="236" width="110" height="110"/>
+                                <state key="normal" backgroundImage="photo6"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="TFv-LO-Y1c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfM-yo-4mt" userLabel="Thumbnail 7">
+                                <rect key="frame" x="245" y="236" width="110" height="110"/>
+                                <state key="normal" backgroundImage="photo7"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="zNd-1w-64o"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGo-HI-JYo" userLabel="Thumbnail 8">
+                                <rect key="frame" x="354" y="236" width="110" height="110"/>
+                                <state key="normal" backgroundImage="photo8"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="1Xr-i6-34W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cba-Os-MY8" userLabel="Thumbnail 9">
+                                <rect key="frame" x="465" y="236" width="110" height="110"/>
+                                <state key="normal" backgroundImage="photo9"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="25z-RJ-TPq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJZ-sI-atF" userLabel="Thumbnail 10">
+                                <rect key="frame" x="25" y="348" width="110" height="110"/>
+                                <state key="normal" backgroundImage="photo10"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="YiX-BM-T4e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Atx-m4-uHm" userLabel="Thumbnail 11">
+                                <rect key="frame" x="134" y="348" width="110" height="110"/>
+                                <state key="normal" backgroundImage="photo11"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="2Hp-50-1nl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8d5-MJ-Wp0" userLabel="Thumbnail 12">
+                                <rect key="frame" x="245" y="348" width="110" height="110"/>
+                                <state key="normal" backgroundImage="photo12"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="gTj-Ac-93Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTU-SB-gG2" userLabel="Thumbnail 13">
+                                <rect key="frame" x="354" y="348" width="110" height="110"/>
+                                <state key="normal" backgroundImage="photo13"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="BlL-pa-F6u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SoR-Ak-lhp" userLabel="Thumbnail 14">
+                                <rect key="frame" x="465" y="348" width="110" height="110"/>
+                                <state key="normal" backgroundImage="photo14"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="Cf0-oh-dKb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="15" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcD-LW-2IX" userLabel="Thumbnail 15">
+                                <rect key="frame" x="25" y="460" width="110" height="110"/>
+                                <state key="normal" backgroundImage="photo15"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="7rt-22-Kid"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="16" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktP-lY-gdL" userLabel="Thumbnail 16">
+                                <rect key="frame" x="134" y="460" width="110" height="110"/>
+                                <state key="normal" backgroundImage="photo16"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="ZQb-MK-Jeo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="17" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4i-M5-bOn" userLabel="Thumbnail 17">
+                                <rect key="frame" x="245" y="460" width="110" height="110"/>
+                                <state key="normal" backgroundImage="photo17"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="uzQ-IU-aFg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="18" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1s-oW-4DK" userLabel="Thumbnail 18">
+                                <rect key="frame" x="354" y="460" width="110" height="110"/>
+                                <state key="normal" backgroundImage="photo18"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="QrY-gv-ZEc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="19" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0MH-fe-TZ1" userLabel="Thumbnail 19">
+                                <rect key="frame" x="465" y="460" width="110" height="110"/>
+                                <state key="normal" backgroundImage="photo19"/>
+                                <connections>
+                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="1GY-kf-RUJ"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bridge" translatesAutoresizingMaskIntoConstraints="NO" id="2Nx-zD-Ney" userLabel="Photo">
+                                <rect key="frame" x="0.0" y="87" width="600" height="513"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o46-So-H2E" userLabel="&lt;Back Home">
+                                <rect key="frame" x="25" y="28" width="59" height="32"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                 <state key="normal" title="&lt; Back">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -400,216 +503,73 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
                                     <action selector="onBackPressed:" destination="kc2-Lm-pd5" eventType="touchUpInside" id="txc-eK-K69"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nf9-bU-QYE">
-                                <rect key="frame" x="134" y="124" width="110" height="110"/>
-                                <state key="normal" backgroundImage="palm trees"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="8JC-yl-wvk"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDG-Rg-RW6">
-                                <rect key="frame" x="245" y="124" width="110" height="110"/>
-                                <state key="normal" backgroundImage="palm trees"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="sEf-rv-bu2"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqI-vK-r8Q">
-                                <rect key="frame" x="354" y="124" width="110" height="110"/>
-                                <state key="normal" backgroundImage="palm trees"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="aph-ig-iHK"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOa-F9-slL">
-                                <rect key="frame" x="465" y="124" width="110" height="110"/>
-                                <state key="normal" backgroundImage="palm trees"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="VMr-xk-gwZ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKm-d1-ypI">
-                                <rect key="frame" x="134" y="236" width="110" height="110"/>
-                                <state key="normal" backgroundImage="palm trees"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="TFv-LO-Y1c"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfM-yo-4mt">
-                                <rect key="frame" x="245" y="236" width="110" height="110"/>
-                                <state key="normal" backgroundImage="palm trees"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="zNd-1w-64o"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mb5-lR-9cl">
-                                <rect key="frame" x="25" y="236" width="110" height="110"/>
-                                <state key="normal" backgroundImage="palm trees"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="tUo-jL-q7T"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGo-HI-JYo">
-                                <rect key="frame" x="354" y="236" width="110" height="110"/>
-                                <state key="normal" backgroundImage="palm trees"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="1Xr-i6-34W"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cba-Os-MY8">
-                                <rect key="frame" x="465" y="236" width="110" height="110"/>
-                                <state key="normal" backgroundImage="palm trees"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="25z-RJ-TPq"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Atx-m4-uHm">
-                                <rect key="frame" x="134" y="348" width="110" height="110"/>
-                                <state key="normal" backgroundImage="palm trees"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="2Hp-50-1nl"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8d5-MJ-Wp0">
-                                <rect key="frame" x="245" y="348" width="110" height="110"/>
-                                <state key="normal" backgroundImage="palm trees"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="gTj-Ac-93Y"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJZ-sI-atF">
-                                <rect key="frame" x="25" y="348" width="110" height="110"/>
-                                <state key="normal" backgroundImage="palm trees"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="YiX-BM-T4e"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTU-SB-gG2">
-                                <rect key="frame" x="354" y="348" width="110" height="110"/>
-                                <state key="normal" backgroundImage="palm trees"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="BlL-pa-F6u"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SoR-Ak-lhp">
-                                <rect key="frame" x="465" y="348" width="110" height="110"/>
-                                <state key="normal" backgroundImage="palm trees"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="Cf0-oh-dKb"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="16" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktP-lY-gdL">
-                                <rect key="frame" x="134" y="460" width="110" height="110"/>
-                                <state key="normal" backgroundImage="palm trees"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="ZQb-MK-Jeo"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="17" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4i-M5-bOn">
-                                <rect key="frame" x="245" y="460" width="110" height="110"/>
-                                <state key="normal" backgroundImage="palm trees"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="uzQ-IU-aFg"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="15" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcD-LW-2IX">
-                                <rect key="frame" x="25" y="460" width="110" height="110"/>
-                                <state key="normal" backgroundImage="palm trees"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="7rt-22-Kid"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="18" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1s-oW-4DK">
-                                <rect key="frame" x="354" y="460" width="110" height="110"/>
-                                <state key="normal" backgroundImage="palm trees"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="QrY-gv-ZEc"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="19" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0MH-fe-TZ1">
-                                <rect key="frame" x="465" y="460" width="110" height="110"/>
-                                <state key="normal" backgroundImage="palm trees"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="1GY-kf-RUJ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuX-Di-g3D">
-                                <rect key="frame" x="25" y="124" width="110" height="110"/>
-                                <state key="normal" backgroundImage="palm trees"/>
-                                <connections>
-                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="kWz-zr-OdQ"/>
-                                </connections>
-                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="o46-So-H2E" firstAttribute="leading" secondItem="7KM-Xy-w86" secondAttribute="leadingMargin" id="8Dt-r1-Idz"/>
+                            <constraint firstItem="2Nx-zD-Ney" firstAttribute="top" secondItem="R3v-g9-02a" secondAttribute="bottom" id="EJT-gS-oJS"/>
+                            <constraint firstItem="2Nx-zD-Ney" firstAttribute="leading" secondItem="7KM-Xy-w86" secondAttribute="leading" id="LXe-fD-vLI"/>
+                            <constraint firstItem="R3v-g9-02a" firstAttribute="top" secondItem="7KM-Xy-w86" secondAttribute="top" id="YLo-XX-y80"/>
+                            <constraint firstAttribute="trailing" secondItem="2Nx-zD-Ney" secondAttribute="trailing" id="fSX-nH-r7u"/>
+                            <constraint firstItem="R3v-g9-02a" firstAttribute="leading" secondItem="7KM-Xy-w86" secondAttribute="leading" id="poZ-Pd-nek"/>
+                            <constraint firstItem="o46-So-H2E" firstAttribute="top" secondItem="doe-CV-3GP" secondAttribute="bottom" constant="8" id="sJZ-nG-iCJ"/>
+                            <constraint firstItem="1O3-s5-MDu" firstAttribute="top" secondItem="2Nx-zD-Ney" secondAttribute="bottom" id="xhg-Vg-ad2"/>
+                            <constraint firstAttribute="trailing" secondItem="R3v-g9-02a" secondAttribute="trailing" id="yUv-Uz-846"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bigPhoto" destination="2Nx-zD-Ney" id="ZKi-U7-ZiB"/>
+                        <outlet property="home" destination="o46-So-H2E" id="Mud-0w-WMx"/>
+                        <outletCollection property="thumbnails" destination="xuX-Di-g3D" collectionClass="NSMutableArray" id="h8o-ye-UYv"/>
+                        <outletCollection property="thumbnails" destination="Nf9-bU-QYE" collectionClass="NSMutableArray" id="iEi-VZ-KQu"/>
+                        <outletCollection property="thumbnails" destination="kDG-Rg-RW6" collectionClass="NSMutableArray" id="CIz-ek-oge"/>
+                        <outletCollection property="thumbnails" destination="qqI-vK-r8Q" collectionClass="NSMutableArray" id="kh7-1C-l5g"/>
+                        <outletCollection property="thumbnails" destination="sOa-F9-slL" collectionClass="NSMutableArray" id="Tmg-Vi-2jS"/>
+                        <outletCollection property="thumbnails" destination="cba-Os-MY8" collectionClass="NSMutableArray" id="UtN-1i-hTS"/>
+                        <outletCollection property="thumbnails" destination="SoR-Ak-lhp" collectionClass="NSMutableArray" id="PtF-SR-DLY"/>
+                        <outletCollection property="thumbnails" destination="0MH-fe-TZ1" collectionClass="NSMutableArray" id="3CE-vb-RCR"/>
+                        <outletCollection property="thumbnails" destination="d1s-oW-4DK" collectionClass="NSMutableArray" id="uMb-GI-Bl8"/>
+                        <outletCollection property="thumbnails" destination="HTU-SB-gG2" collectionClass="NSMutableArray" id="oED-Yp-l3d"/>
+                        <outletCollection property="thumbnails" destination="nGo-HI-JYo" collectionClass="NSMutableArray" id="jf1-pJ-9ya"/>
+                        <outletCollection property="thumbnails" destination="jKm-d1-ypI" collectionClass="NSMutableArray" id="TFL-GS-ILL"/>
+                        <outletCollection property="thumbnails" destination="EfM-yo-4mt" collectionClass="NSMutableArray" id="yft-NW-qhb"/>
+                        <outletCollection property="thumbnails" destination="Atx-m4-uHm" collectionClass="NSMutableArray" id="1Bv-qQ-n36"/>
+                        <outletCollection property="thumbnails" destination="c4i-M5-bOn" collectionClass="NSMutableArray" id="o5c-1J-TUb"/>
+                        <outletCollection property="thumbnails" destination="ktP-lY-gdL" collectionClass="NSMutableArray" id="PW8-fG-s1f"/>
+                        <outletCollection property="thumbnails" destination="mb5-lR-9cl" collectionClass="NSMutableArray" id="eA9-gf-rNb"/>
+                        <outletCollection property="thumbnails" destination="TJZ-sI-atF" collectionClass="NSMutableArray" id="Njh-YY-1to"/>
+                        <outletCollection property="thumbnails" destination="gcD-LW-2IX" collectionClass="NSMutableArray" id="2wW-6Y-63q"/>
+                        <outletCollection property="thumbnails" destination="8d5-MJ-Wp0" collectionClass="NSMutableArray" id="wN2-HU-sgk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uCY-hP-I16" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1066" y="709"/>
         </scene>
-        <!--Photos Pages-->
-        <scene sceneID="eOz-CH-sTx">
-            <objects>
-                <viewController id="l14-cj-Fag" customClass="PhotosPages" customModule="my_favorite_place" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="gaY-kb-5NC"/>
-                        <viewControllerLayoutGuide type="bottom" id="zJN-mq-nAN"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="QG9-c3-Dy3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hGR-Yc-zZ2">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <connections>
-                                    <segue destination="74V-mm-tJB" kind="embed" id="tmj-3I-5aW"/>
-                                </connections>
-                            </containerView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bC9-Ob-5NA">
-                                <rect key="frame" x="20" y="20" width="54" height="30"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
-                                <state key="normal" title="&lt; Back">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="onBackPressed:" destination="kc2-Lm-pd5" eventType="touchUpInside" id="1qh-jg-KAO"/>
-                                    <action selector="onBackPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="AOK-LB-Yhi"/>
-                                </connections>
-                            </button>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="fl9-gY-X1q">
-                                <rect key="frame" x="281" y="560" width="39" height="37"/>
-                            </pageControl>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="bC9-Ob-5NA" firstAttribute="leading" secondItem="QG9-c3-Dy3" secondAttribute="leadingMargin" id="BDr-Hf-f9a"/>
-                            <constraint firstItem="zJN-mq-nAN" firstAttribute="top" secondItem="fl9-gY-X1q" secondAttribute="bottom" constant="3" id="HTV-zr-m5Q"/>
-                            <constraint firstItem="fl9-gY-X1q" firstAttribute="centerX" secondItem="QG9-c3-Dy3" secondAttribute="centerX" id="mPJ-7C-YXB"/>
-                            <constraint firstItem="bC9-Ob-5NA" firstAttribute="top" secondItem="gaY-kb-5NC" secondAttribute="bottom" id="txq-bZ-yP2"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="containerView" destination="hGR-Yc-zZ2" id="sRt-oQ-VBP"/>
-                        <outlet property="dots" destination="fl9-gY-X1q" id="Ld6-3e-ik4"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vhH-os-RHu" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1704" y="709"/>
-        </scene>
-        <!--Photos PageVC-->
-        <scene sceneID="xzg-AG-Cjb">
-            <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="74V-mm-tJB" customClass="PhotosPageVC" customModule="my_favorite_place" customModuleProvider="target" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LPT-GW-mX1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2332" y="709"/>
-        </scene>
     </scenes>
     <resources>
+        <image name="Bridge" width="1200" height="400"/>
         <image name="compass" width="35" height="35"/>
         <image name="palm trees" width="1440" height="882"/>
-        <image name="san diego2" width="1200" height="400"/>
+        <image name="photo0" width="1600" height="1067"/>
+        <image name="photo1" width="1600" height="1067"/>
+        <image name="photo10" width="3840" height="2160"/>
+        <image name="photo11" width="3840" height="2160"/>
+        <image name="photo12" width="3840" height="2160"/>
+        <image name="photo13" width="3840" height="2160"/>
+        <image name="photo14" width="3840" height="2160"/>
+        <image name="photo15" width="3840" height="2160"/>
+        <image name="photo16" width="3840" height="2160"/>
+        <image name="photo17" width="3840" height="2160"/>
+        <image name="photo18" width="3840" height="2160"/>
+        <image name="photo19" width="3840" height="2160"/>
+        <image name="photo2" width="616" height="347"/>
+        <image name="photo3" width="1280" height="885"/>
+        <image name="photo4" width="3840" height="2160"/>
+        <image name="photo5" width="3840" height="2160"/>
+        <image name="photo6" width="3840" height="2160"/>
+        <image name="photo7" width="3840" height="2160"/>
+        <image name="photo8" width="3840" height="2160"/>
+        <image name="photo9" width="3840" height="2160"/>
     </resources>
 </document>

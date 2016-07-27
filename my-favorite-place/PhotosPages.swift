@@ -10,15 +10,57 @@ import UIKit
 
 class PhotosPages: UIViewController {
     
+    //var tag: Int!
     
     @IBOutlet weak var containerView: UIView!
 
     @IBOutlet weak var dots: UIPageControl!
     
-//    @IBAction func onBackPressed(sender: AnyObject) {
-//        dismissViewControllerAnimated(true, completion: nil)
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    convenience init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?, btnTag: Int) {
+        self.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        //tag = btnTag
+        imagePressed(btnTag)
+    }
+    
+
+    func imagePressed (photoTag: Int) {
+        print("photo\(photoTag)")
+        PhotosPageVC().firstVC(photoTag)
+    
+        //       let nextVC = self.storyboard?.instantiateViewControllerWithIdentifier("photo\(photoTag)") as? PhotosPageVC
+//            self.navigationController?.pushViewController(nextVC!, animated: true)
+        
+        //vvv current testing
+//    
+//        let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//        let vc : UIViewController = storyboard.instantiateViewControllerWithIdentifier("photo\(photoTag)") as UIViewController
+//        
+//        //vc.teststring = "hello"     
+//        
+//        let navigationController = UINavigationController(rootViewController: vc) // unneeded?
+//
+//        self.presentViewController(navigationController, animated: true, completion: nil) // CRASH
+       
+        
+    }
+    
+//    convenience init(btnTag: UIViewController){
+//        self.init(btnTag: btnTag)
+//        self.navigationController?.pushViewController(btnTag, animated: true)
 //    }
     
+    @IBAction func backPressed(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let photosPageVC = segue.destinationViewController as? PhotosPageVC {
