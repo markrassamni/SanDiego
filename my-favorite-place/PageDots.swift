@@ -14,10 +14,24 @@ class PageDots: UIViewController {
     
     @IBOutlet weak var dotsView: UIPageControl!
     
+    @IBOutlet weak var aboutLbl: UILabel!
+    
+    @IBOutlet weak var backBtn: UIButton!
+    
+    
     @IBAction func onBackPressed(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        backBtn.layer.cornerRadius = 5.0
+        
+        aboutLbl.attributedText = NSAttributedString(string: "ABOUT SAN DIEGO", attributes: [NSStrokeColorAttributeName: UIColor.blackColor(), NSStrokeWidthAttributeName: -3.5])
+        
+      //  backBtn.titleLabel?.attributedText = NSAttributedString(string: "< Back", attributes: [NSStrokeColorAttributeName: UIColor.blackColor(), NSStrokeWidthAttributeName: -2.5])
+    }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let aboutPageVC = segue.destinationViewController as? AboutPageVC {

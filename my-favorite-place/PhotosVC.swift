@@ -13,14 +13,14 @@ class PhotosVC: UIViewController {
     
     
     @IBOutlet var thumbnails: [UIButton]!
-    //var bigPic: UIImageView!
     
     @IBOutlet weak var home: UIButton!
 
     @IBOutlet weak var bigPhoto: UIImageView!
     
     var photoView: UIImageView?
-   
+    
+    @IBOutlet var stackViews: [UIStackView]!
     
     
     @IBAction func onBackPressed(sender: UIButton) {
@@ -49,8 +49,30 @@ class PhotosVC: UIViewController {
     }
     
 
+    
+    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
+        
+        if UIDevice.currentDevice().model != "iPad"{
+            if size.width > size.height {
+                for stackView in stackViews {
+                    stackView.axis = UILayoutConstraintAxis.Horizontal
+                }
+            } else{
+                for stackView in stackViews {
+                    stackView.axis = UILayoutConstraintAxis.Vertical
+                }
+            }
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        for thumbnail in self.thumbnails {
+            thumbnail.imageView?.contentMode = UIViewContentMode.ScaleAspectFill
+        }
+        
         //var shownPhoto = UIImage(named: "")
     }
     

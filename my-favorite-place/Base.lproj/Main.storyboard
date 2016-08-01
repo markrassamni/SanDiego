@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -15,21 +14,34 @@
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue</string>
-            <string>HelveticaNeue-Bold</string>
-            <string>HelveticaNeue-Bold</string>
-            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue</string>
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Bold</string>
         </mutableArray>
     </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="my_favorite_place" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="San_Diego" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -38,19 +50,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="palm trees" translatesAutoresizingMaskIntoConstraints="NO" id="Mbf-LX-8v5">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="palm trees" translatesAutoresizingMaskIntoConstraints="NO" id="Mbf-LX-8v5">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="compass" translatesAutoresizingMaskIntoConstraints="NO" id="GqZ-wp-8ma" userLabel="compassStroke">
                                 <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="BMS-5k-5by"/>
+                                    <constraint firstAttribute="height" constant="36" id="DCv-w3-f4x"/>
                                     <constraint firstAttribute="height" constant="36" id="NVU-B3-Glh"/>
                                     <constraint firstAttribute="width" constant="36" id="NYt-Ih-g8D"/>
+                                    <constraint firstAttribute="width" constant="52" id="R9H-UB-hOm"/>
+                                    <constraint firstAttribute="width" constant="36" id="SSN-mY-jkn"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="BMS-5k-5by"/>
+                                        <exclude reference="DCv-w3-f4x"/>
                                         <exclude reference="NVU-B3-Glh"/>
                                         <exclude reference="NYt-Ih-g8D"/>
+                                        <exclude reference="R9H-UB-hOm"/>
+                                        <exclude reference="SSN-mY-jkn"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact" misplaced="YES">
+                                    <rect key="frame" x="25" y="186" width="41" height="41"/>
+                                    <mask key="constraints">
+                                        <include reference="DCv-w3-f4x"/>
+                                        <include reference="SSN-mY-jkn"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact" misplaced="YES">
@@ -60,57 +87,18 @@
                                         <include reference="NYt-Ih-g8D"/>
                                     </mask>
                                 </variation>
+                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="27.5" y="571.5" width="36" height="36"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="41" y="300" width="35" height="35"/>
+                                    <mask key="constraints">
+                                        <include reference="BMS-5k-5by"/>
+                                        <include reference="R9H-UB-hOm"/>
+                                    </mask>
+                                </variation>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lDP-Ll-dCz" userLabel="Buttons">
-                                <rect key="frame" x="144" y="553" width="312" height="34"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frN-a6-nte">
-                                        <rect key="frame" x="0.0" y="0.0" width="146" height="34"/>
-                                        <color key="backgroundColor" red="0.96640961849999996" green="0.32205274249999999" blue="0.3319763255" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                        <inset key="contentEdgeInsets" minX="5" minY="8" maxX="5" maxY="8"/>
-                                        <size key="titleShadowOffset" width="2.2250738585072014e-308" height="2.2250738585072014e-308"/>
-                                        <state key="normal" title="ABOUT SAN DIEGO">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                        </state>
-                                        <variation key="widthClass=compact">
-                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
-                                        </variation>
-                                        <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="32"/>
-                                        </variation>
-                                        <connections>
-                                            <segue destination="kc2-Lm-pd5" kind="show" id="DOq-D9-zHH"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTU-Q6-GST">
-                                        <rect key="frame" x="166" y="0.0" width="146" height="34"/>
-                                        <color key="backgroundColor" red="0.96640961849999996" green="0.32205274249999999" blue="0.3319763255" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                        <inset key="contentEdgeInsets" minX="5" minY="8" maxX="5" maxY="8"/>
-                                        <size key="titleShadowOffset" width="2.2250738585072014e-308" height="2.2250738585072014e-308"/>
-                                        <state key="normal" title="PHOTOS">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                        </state>
-                                        <variation key="widthClass=compact">
-                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
-                                        </variation>
-                                        <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="148" y="0.0" width="128" height="32"/>
-                                        </variation>
-                                        <connections>
-                                            <segue destination="3cH-Lj-Xwu" kind="show" id="I2f-Af-lVd"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="62" y="556" width="276" height="32"/>
-                                </variation>
-                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="62" y="358" width="276" height="32"/>
-                                </variation>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="D7m-7L-YeV" userLabel="SD">
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="D7m-7L-YeV" userLabel="SD">
                                 <rect key="frame" x="20" y="20" width="217" height="164"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="SAN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ov1-xK-I0q">
@@ -130,10 +118,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="146" height="84"/>
                                         </variation>
                                         <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="0.0" width="162" height="94"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="90"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="182" height="105"/>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                             <rect key="frame" x="0.0" y="0.0" width="142" height="82"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="135"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="273" height="158"/>
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="DIEGO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86O-gY-l0T">
@@ -149,117 +142,55 @@
                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="72"/>
                                         </variation>
                                         <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="94" width="248" height="94"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="90"/>
+                                            <rect key="frame" x="0.0" y="105" width="279" height="105"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="135"/>
+                                            <rect key="frame" x="303" y="0.0" width="418" height="158"/>
                                         </variation>
                                     </label>
                                 </subviews>
                                 <variation key="heightClass=compact" misplaced="YES">
                                     <rect key="frame" x="20" y="20" width="248" height="187"/>
                                 </variation>
-                                <variation key="widthClass=compact" distribution="fill" misplaced="YES">
+                                <variation key="widthClass=compact" distribution="fillEqually" misplaced="YES">
                                     <rect key="frame" x="20" y="28" width="217" height="164"/>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="0.0" y="0.0" width="223" height="168"/>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="20" y="20" width="248" height="187"/>
+                                    <rect key="frame" x="20" y="20" width="279" height="210"/>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="20" y="20" width="217" height="164"/>
                                 </variation>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="prF-vk-wEJ" userLabel="HEADER">
-                                <rect key="frame" x="419" y="53" width="116" height="62"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="OUTDOOR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="McS-oy-R6o">
-                                        <rect key="frame" x="0.0" y="0.0" width="116" height="21"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="heightClass=compact" misplaced="YES">
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
-                                            <rect key="frame" x="0.0" y="0.0" width="144" height="26"/>
-                                        </variation>
-                                        <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="0.0" width="120" height="21"/>
-                                        </variation>
-                                        <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="35" y="0.0" width="109" height="26"/>
-                                        </variation>
-                                        <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="0.0" width="144" height="26"/>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="0.0" width="120" height="21"/>
-                                        </variation>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="ADVENTURES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTh-aq-4vY">
-                                        <rect key="frame" x="0.0" y="21" width="116" height="21"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="heightClass=compact" misplaced="YES">
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
-                                            <rect key="frame" x="0.0" y="26" width="144" height="26"/>
-                                        </variation>
-                                        <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="120" y="0.0" width="158" height="21"/>
-                                        </variation>
-                                        <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="26" width="144" height="26"/>
-                                        </variation>
-                                        <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="26" width="144" height="26"/>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="120" y="0.0" width="158" height="21"/>
-                                        </variation>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="BEACH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NG5-xU-NVU">
-                                        <rect key="frame" x="0.0" y="41" width="116" height="21"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="heightClass=compact" misplaced="YES">
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
-                                            <rect key="frame" x="0.0" y="51" width="144" height="26"/>
-                                        </variation>
-                                        <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="278" y="0.0" width="82" height="21"/>
-                                        </variation>
-                                        <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="70" y="51" width="74" height="26"/>
-                                        </variation>
-                                        <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="51" width="144" height="26"/>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="278" y="0.0" width="82" height="21"/>
-                                        </variation>
-                                    </label>
-                                </subviews>
-                                <variation key="heightClass=compact" axis="vertical" misplaced="YES">
-                                    <rect key="frame" x="464" y="43" width="144" height="77"/>
-                                </variation>
-                                <variation key="widthClass=compact" alignment="fill" axis="horizontal" distribution="fillProportionally" misplaced="YES">
-                                    <rect key="frame" x="20" y="528" width="360" height="21"/>
-                                </variation>
-                                <variation key="heightClass=compact-widthClass=compact" alignment="bottom" axis="vertical" distribution="fillProportionally" misplaced="YES">
-                                    <rect key="frame" x="264" y="35" width="144" height="77"/>
-                                </variation>
-                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="457" y="35" width="144" height="77"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="20" y="550" width="360" height="21"/>
+                                <variation key="heightClass=regular-widthClass=regular" axis="horizontal" misplaced="YES" spacing="30">
+                                    <rect key="frame" x="20" y="20" width="721" height="158"/>
                                 </variation>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="uCo-7l-mLt" userLabel="CA">
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="uCo-7l-mLt" userLabel="CA">
                                 <rect key="frame" x="31" y="192" width="155" height="35"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="compass" translatesAutoresizingMaskIntoConstraints="NO" id="TXy-nv-TeI">
                                         <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="3BF-aa-r1G"/>
+                                            <constraint firstAttribute="width" constant="50" id="4DU-Hd-DG3"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="3BF-aa-r1G"/>
+                                                <exclude reference="4DU-Hd-DG3"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="3BF-aa-r1G"/>
+                                                <include reference="4DU-Hd-DG3"/>
+                                            </mask>
+                                        </variation>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="CALIFORNIA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcw-9E-ruJ">
                                         <rect key="frame" x="50" y="0.0" width="105" height="35"/>
@@ -275,6 +206,9 @@
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                             <rect key="frame" x="50" y="0.0" width="105" height="35"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="31"/>
                                         </variation>
                                     </label>
                                 </subviews>
@@ -293,6 +227,208 @@
                                 <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="25" y="192" width="155" height="35"/>
                                 </variation>
+                                <variation key="heightClass=regular-widthClass=regular" alignment="top" misplaced="YES">
+                                    <rect key="frame" x="31" y="192" width="255" height="50"/>
+                                </variation>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="prF-vk-wEJ" userLabel="HEADER">
+                                <rect key="frame" x="419" y="53" width="116" height="62"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="OUTDOOR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="McS-oy-R6o">
+                                        <rect key="frame" x="0.0" y="0.0" width="116" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="144" height="26"/>
+                                        </variation>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="21"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="35" y="0.0" width="109" height="26"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="171" height="30"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="21"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="ADVENTURES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTh-aq-4vY">
+                                        <rect key="frame" x="0.0" y="21" width="116" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                            <rect key="frame" x="0.0" y="26" width="144" height="26"/>
+                                        </variation>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="120" y="0.0" width="158" height="21"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="26" width="144" height="26"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                            <rect key="frame" x="0.0" y="30" width="171" height="30"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="120" y="0.0" width="158" height="21"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="BEACH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NG5-xU-NVU">
+                                        <rect key="frame" x="0.0" y="41" width="116" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                            <rect key="frame" x="0.0" y="51" width="144" height="26"/>
+                                        </variation>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="278" y="0.0" width="82" height="21"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="70" y="51" width="74" height="26"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                            <rect key="frame" x="0.0" y="60" width="171" height="30"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="278" y="0.0" width="82" height="21"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <variation key="heightClass=compact" axis="vertical" misplaced="YES">
+                                    <rect key="frame" x="464" y="43" width="144" height="77"/>
+                                </variation>
+                                <variation key="widthClass=compact" alignment="fill" axis="horizontal" distribution="fillProportionally" misplaced="YES">
+                                    <rect key="frame" x="20" y="528" width="360" height="21"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" alignment="bottom" axis="vertical" distribution="fillProportionally" misplaced="YES">
+                                    <rect key="frame" x="264" y="35" width="144" height="77"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="457" y="35" width="171" height="90"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="550" width="360" height="21"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" axis="horizontal" distribution="fillEqually" misplaced="YES" spacing="0.0">
+                                    <rect key="frame" x="31" y="636" width="760" height="42"/>
+                                </variation>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="lDP-Ll-dCz" userLabel="Buttons">
+                                <rect key="frame" x="218" y="553" width="181" height="34"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frN-a6-nte">
+                                        <rect key="frame" x="0.0" y="0.0" width="78" height="34"/>
+                                        <color key="backgroundColor" red="0.96640961849999996" green="0.32205274249999999" blue="0.3319763255" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                        <size key="titleShadowOffset" width="2.2250738585072014e-308" height="2.2250738585072014e-308"/>
+                                        <state key="normal" title="ABOUT">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="32"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                        </variation>
+                                        <connections>
+                                            <segue destination="kc2-Lm-pd5" kind="show" id="DOq-D9-zHH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTU-Q6-GST">
+                                        <rect key="frame" x="103" y="0.0" width="78" height="34"/>
+                                        <color key="backgroundColor" red="0.96640961849999996" green="0.32205274249999999" blue="0.3319763255" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                        <size key="titleShadowOffset" width="2.2250738585072014e-308" height="2.2250738585072014e-308"/>
+                                        <state key="normal" title="PHOTOS">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                            <rect key="frame" x="148" y="0.0" width="128" height="32"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                        </variation>
+                                        <connections>
+                                            <segue destination="3cH-Lj-Xwu" kind="show" id="I2f-Af-lVd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="3eP-L0-lFM"/>
+                                    <constraint firstAttribute="height" constant="80" id="gby-Rh-5hh">
+                                        <variation key="widthClass=compact" constant="40"/>
+                                        <variation key="heightClass=compact-widthClass=compact" constant="60"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="60"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3eP-L0-lFM"/>
+                                        <exclude reference="gby-Rh-5hh"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="62" y="556" width="276" height="32"/>
+                                    <mask key="constraints">
+                                        <exclude reference="gby-Rh-5hh"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="62" y="358" width="276" height="32"/>
+                                    <mask key="constraints">
+                                        <exclude reference="gby-Rh-5hh"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="310" y="353" width="305" height="51"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="gby-Rh-5hh"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" spacing="150">
+                                    <mask key="constraints">
+                                        <include reference="3eP-L0-lFM"/>
+                                        <include reference="gby-Rh-5hh"/>
+                                    </mask>
+                                </variation>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -300,20 +436,31 @@
                             <constraint firstItem="GqZ-wp-8ma" firstAttribute="centerY" secondItem="TXy-nv-TeI" secondAttribute="centerY" id="1LL-1t-nH7"/>
                             <constraint firstItem="D7m-7L-YeV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="2Ly-oH-KCa"/>
                             <constraint firstItem="D7m-7L-YeV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="5UK-MA-g0Q"/>
+                            <constraint firstItem="86O-gY-l0T" firstAttribute="leading" secondItem="vcw-9E-ruJ" secondAttribute="leading" constant="50" id="5sd-mH-lAv"/>
                             <constraint firstItem="uCo-7l-mLt" firstAttribute="top" secondItem="D7m-7L-YeV" secondAttribute="bottom" constant="8" id="6d4-fI-wPU"/>
+                            <constraint firstItem="TXy-nv-TeI" firstAttribute="centerY" secondItem="GqZ-wp-8ma" secondAttribute="centerY" id="8Mg-OB-K0U"/>
                             <constraint firstItem="prF-vk-wEJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="8Y6-Fw-bFF"/>
+                            <constraint firstItem="GqZ-wp-8ma" firstAttribute="centerY" secondItem="TXy-nv-TeI" secondAttribute="centerY" id="9bm-0r-E7S"/>
                             <constraint firstAttribute="bottom" secondItem="Mbf-LX-8v5" secondAttribute="bottom" id="A4x-Wa-ndq"/>
+                            <constraint firstItem="uCo-7l-mLt" firstAttribute="trailing" secondItem="D7m-7L-YeV" secondAttribute="trailing" id="D8o-lH-BlA">
+                                <variation key="heightClass=regular-widthClass=regular" constant="-15"/>
+                            </constraint>
                             <constraint firstItem="lDP-Ll-dCz" firstAttribute="top" secondItem="prF-vk-wEJ" secondAttribute="bottom" constant="8" id="DTf-eK-7Vk"/>
                             <constraint firstItem="D7m-7L-YeV" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="DYM-t4-7ZJ"/>
                             <constraint firstAttribute="top" secondItem="Mbf-LX-8v5" secondAttribute="top" constant="10" id="F7E-jE-Mx8">
                                 <variation key="widthClass=compact" constant="50"/>
                             </constraint>
+                            <constraint firstItem="D7m-7L-YeV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-10" id="FH2-F4-ByW"/>
                             <constraint firstItem="D7m-7L-YeV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="FP6-cx-jtj"/>
                             <constraint firstAttribute="trailingMargin" secondItem="prF-vk-wEJ" secondAttribute="trailing" id="Fo8-C6-jEW"/>
+                            <constraint firstItem="D7m-7L-YeV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H01-6l-dwj"/>
                             <constraint firstItem="D7m-7L-YeV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HRt-Oa-QKU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="prF-vk-wEJ" secondAttribute="trailing" id="IhH-r4-2bT"/>
                             <constraint firstItem="lDP-Ll-dCz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Imf-Ai-i9j"/>
                             <constraint firstItem="D7m-7L-YeV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Izr-Qv-DCp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="prF-vk-wEJ" secondAttribute="trailing" id="JW0-re-Ms8"/>
                             <constraint firstItem="uCo-7l-mLt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="Jgs-eg-GG6"/>
+                            <constraint firstItem="D7m-7L-YeV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="KoC-8S-JJG"/>
                             <constraint firstItem="prF-vk-wEJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="M7b-2j-lEf"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lDP-Ll-dCz" secondAttribute="bottom" constant="10" id="MJd-cZ-aCH"/>
                             <constraint firstItem="uCo-7l-mLt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="OoR-MN-JlR"/>
@@ -321,14 +468,17 @@
                             <constraint firstItem="uCo-7l-mLt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="PaN-gV-gp0"/>
                             <constraint firstItem="D7m-7L-YeV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="S3d-0u-mwa"/>
                             <constraint firstItem="uCo-7l-mLt" firstAttribute="top" secondItem="D7m-7L-YeV" secondAttribute="bottom" constant="5" id="SIe-Mc-1Sr"/>
+                            <constraint firstItem="TXy-nv-TeI" firstAttribute="centerX" secondItem="GqZ-wp-8ma" secondAttribute="centerX" id="U1Y-2g-YA4"/>
                             <constraint firstItem="D7m-7L-YeV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="UJV-tS-zzs"/>
                             <constraint firstItem="TXy-nv-TeI" firstAttribute="centerX" secondItem="GqZ-wp-8ma" secondAttribute="centerX" id="UOD-bw-ojj"/>
                             <constraint firstItem="prF-vk-wEJ" firstAttribute="top" secondItem="GqZ-wp-8ma" secondAttribute="bottom" constant="40" id="VlK-es-BBa"/>
+                            <constraint firstItem="uCo-7l-mLt" firstAttribute="top" secondItem="D7m-7L-YeV" secondAttribute="bottom" constant="-20" id="VyE-pQ-J1K"/>
                             <constraint firstAttribute="trailingMargin" secondItem="prF-vk-wEJ" secondAttribute="trailing" id="WMd-NR-JJg"/>
                             <constraint firstItem="prF-vk-wEJ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="XAb-6J-rsa"/>
                             <constraint firstItem="Mbf-LX-8v5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Xc0-dH-74B"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lDP-Ll-dCz" secondAttribute="bottom" constant="36" id="Xpw-sX-pcy"/>
                             <constraint firstItem="lDP-Ll-dCz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Z9u-yN-9kN"/>
+                            <constraint firstItem="GqZ-wp-8ma" firstAttribute="centerX" secondItem="TXy-nv-TeI" secondAttribute="centerX" id="bi1-bW-IFj"/>
                             <constraint firstItem="GqZ-wp-8ma" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="g9W-XN-LMz"/>
                             <constraint firstAttribute="trailing" secondItem="Mbf-LX-8v5" secondAttribute="trailing" id="hKE-7D-dDx"/>
                             <constraint firstItem="D7m-7L-YeV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="213" id="iul-gk-Clb"/>
@@ -336,55 +486,80 @@
                                 <variation key="widthClass=compact" constant="50"/>
                             </constraint>
                             <constraint firstItem="GqZ-wp-8ma" firstAttribute="centerX" secondItem="TXy-nv-TeI" secondAttribute="centerX" id="ldC-ke-hk0"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lDP-Ll-dCz" secondAttribute="bottom" constant="13" id="pKn-k8-kRN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lDP-Ll-dCz" secondAttribute="bottom" constant="13" id="pKn-k8-kRN">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="prF-vk-wEJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pcI-w7-W5K"/>
+                            <constraint firstItem="lDP-Ll-dCz" firstAttribute="top" secondItem="prF-vk-wEJ" secondAttribute="bottom" constant="15" id="qPR-LL-mcM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="D7m-7L-YeV" secondAttribute="trailing" id="qpT-nu-qKH"/>
                             <constraint firstItem="D7m-7L-YeV" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="r5b-Yl-WdI"/>
                             <constraint firstItem="uCo-7l-mLt" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="rEz-Kc-MVf"/>
                             <constraint firstItem="uCo-7l-mLt" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="rbV-2e-m1w"/>
+                            <constraint firstItem="prF-vk-wEJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="txL-ye-bax"/>
                             <constraint firstItem="TXy-nv-TeI" firstAttribute="centerY" secondItem="GqZ-wp-8ma" secondAttribute="centerY" id="uMw-5L-TjS"/>
                             <constraint firstItem="lDP-Ll-dCz" firstAttribute="top" secondItem="prF-vk-wEJ" secondAttribute="bottom" constant="29" id="wC0-xx-Ugi"/>
+                            <constraint firstItem="prF-vk-wEJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="waq-z9-kaw"/>
                             <constraint firstItem="D7m-7L-YeV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="x6s-NT-GeC"/>
+                            <constraint firstItem="86O-gY-l0T" firstAttribute="leading" secondItem="uCo-7l-mLt" secondAttribute="leading" id="x7f-2A-JKB"/>
                             <constraint firstItem="prF-vk-wEJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="yG4-Kl-qwN"/>
                             <constraint firstItem="prF-vk-wEJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="yfo-XZ-tg3"/>
+                            <constraint firstItem="prF-vk-wEJ" firstAttribute="leading" secondItem="D7m-7L-YeV" secondAttribute="trailing" id="zZG-ia-ewV"/>
                         </constraints>
                         <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="GqZ-wp-8ma"/>
-                            </mask>
                             <mask key="constraints">
+                                <exclude reference="1LL-1t-nH7"/>
+                                <exclude reference="9bm-0r-E7S"/>
+                                <exclude reference="bi1-bW-IFj"/>
+                                <exclude reference="g9W-XN-LMz"/>
+                                <exclude reference="ldC-ke-hk0"/>
                                 <exclude reference="2Ly-oH-KCa"/>
                                 <exclude reference="5UK-MA-g0Q"/>
                                 <exclude reference="DYM-t4-7ZJ"/>
+                                <exclude reference="FH2-F4-ByW"/>
                                 <exclude reference="FP6-cx-jtj"/>
+                                <exclude reference="H01-6l-dwj"/>
                                 <exclude reference="HRt-Oa-QKU"/>
                                 <exclude reference="Izr-Qv-DCp"/>
+                                <exclude reference="KoC-8S-JJG"/>
                                 <exclude reference="S3d-0u-mwa"/>
                                 <exclude reference="UJV-tS-zzs"/>
                                 <exclude reference="iul-gk-Clb"/>
                                 <exclude reference="krx-Gd-6H7"/>
+                                <exclude reference="qpT-nu-qKH"/>
                                 <exclude reference="r5b-Yl-WdI"/>
                                 <exclude reference="x6s-NT-GeC"/>
+                                <exclude reference="5sd-mH-lAv"/>
+                                <exclude reference="x7f-2A-JKB"/>
+                                <exclude reference="8Mg-OB-K0U"/>
+                                <exclude reference="U1Y-2g-YA4"/>
                                 <exclude reference="UOD-bw-ojj"/>
                                 <exclude reference="uMw-5L-TjS"/>
                                 <exclude reference="6d4-fI-wPU"/>
+                                <exclude reference="D8o-lH-BlA"/>
                                 <exclude reference="Jgs-eg-GG6"/>
                                 <exclude reference="OoR-MN-JlR"/>
                                 <exclude reference="PaN-gV-gp0"/>
                                 <exclude reference="SIe-Mc-1Sr"/>
+                                <exclude reference="VyE-pQ-J1K"/>
                                 <exclude reference="rEz-Kc-MVf"/>
                                 <exclude reference="rbV-2e-m1w"/>
-                                <exclude reference="1LL-1t-nH7"/>
-                                <exclude reference="g9W-XN-LMz"/>
-                                <exclude reference="ldC-ke-hk0"/>
                                 <exclude reference="8Y6-Fw-bFF"/>
                                 <exclude reference="Fo8-C6-jEW"/>
+                                <exclude reference="IhH-r4-2bT"/>
+                                <exclude reference="JW0-re-Ms8"/>
                                 <exclude reference="M7b-2j-lEf"/>
                                 <exclude reference="VlK-es-BBa"/>
                                 <exclude reference="WMd-NR-JJg"/>
                                 <exclude reference="XAb-6J-rsa"/>
+                                <exclude reference="pcI-w7-W5K"/>
+                                <exclude reference="txL-ye-bax"/>
+                                <exclude reference="waq-z9-kaw"/>
                                 <exclude reference="yG4-Kl-qwN"/>
                                 <exclude reference="yfo-XZ-tg3"/>
+                                <exclude reference="zZG-ia-ewV"/>
                                 <exclude reference="DTf-eK-7Vk"/>
                                 <exclude reference="Z9u-yN-9kN"/>
+                                <exclude reference="qPR-LL-mcM"/>
                                 <exclude reference="wC0-xx-Ugi"/>
                                 <exclude reference="MJd-cZ-aCH"/>
                                 <exclude reference="Ora-pQ-btM"/>
@@ -392,9 +567,14 @@
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <include reference="GqZ-wp-8ma"/>
+                            </mask>
                             <mask key="constraints">
                                 <include reference="FP6-cx-jtj"/>
                                 <include reference="Izr-Qv-DCp"/>
+                                <include reference="8Mg-OB-K0U"/>
+                                <include reference="U1Y-2g-YA4"/>
                                 <include reference="OoR-MN-JlR"/>
                                 <include reference="SIe-Mc-1Sr"/>
                                 <include reference="M7b-2j-lEf"/>
@@ -406,6 +586,9 @@
                                 <include reference="GqZ-wp-8ma"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="1LL-1t-nH7"/>
+                                <exclude reference="g9W-XN-LMz"/>
+                                <exclude reference="ldC-ke-hk0"/>
                                 <exclude reference="2Ly-oH-KCa"/>
                                 <include reference="5UK-MA-g0Q"/>
                                 <exclude reference="DYM-t4-7ZJ"/>
@@ -423,9 +606,6 @@
                                 <exclude reference="PaN-gV-gp0"/>
                                 <exclude reference="rEz-Kc-MVf"/>
                                 <exclude reference="rbV-2e-m1w"/>
-                                <exclude reference="1LL-1t-nH7"/>
-                                <exclude reference="g9W-XN-LMz"/>
-                                <exclude reference="ldC-ke-hk0"/>
                                 <exclude reference="8Y6-Fw-bFF"/>
                                 <include reference="Fo8-C6-jEW"/>
                                 <exclude reference="VlK-es-BBa"/>
@@ -452,6 +632,27 @@
                                 <exclude reference="DTf-eK-7Vk"/>
                             </mask>
                         </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="9bm-0r-E7S"/>
+                                <include reference="bi1-bW-IFj"/>
+                                <include reference="FH2-F4-ByW"/>
+                                <include reference="H01-6l-dwj"/>
+                                <exclude reference="KoC-8S-JJG"/>
+                                <exclude reference="qpT-nu-qKH"/>
+                                <exclude reference="5sd-mH-lAv"/>
+                                <exclude reference="x7f-2A-JKB"/>
+                                <include reference="D8o-lH-BlA"/>
+                                <include reference="VyE-pQ-J1K"/>
+                                <exclude reference="IhH-r4-2bT"/>
+                                <include reference="JW0-re-Ms8"/>
+                                <exclude reference="pcI-w7-W5K"/>
+                                <include reference="txL-ye-bax"/>
+                                <include reference="waq-z9-kaw"/>
+                                <exclude reference="zZG-ia-ewV"/>
+                                <include reference="qPR-LL-mcM"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="aboutBtn" destination="frN-a6-nte" id="Bcf-rh-BQp"/>
@@ -467,12 +668,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="340" y="377"/>
+            <point key="canvasLocation" x="207" y="167.25"/>
         </scene>
         <!--Page Dots-->
         <scene sceneID="quk-Bh-8OD">
             <objects>
-                <viewController id="kc2-Lm-pd5" customClass="PageDots" customModule="my_favorite_place" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kc2-Lm-pd5" customClass="PageDots" customModule="San_Diego" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TDI-KB-Ows"/>
                         <viewControllerLayoutGuide type="bottom" id="eDF-JI-h2q"/>
@@ -487,30 +688,51 @@
                                     <segue destination="pGD-rn-ZOF" kind="embed" id="p8K-nJ-GRc"/>
                                 </connections>
                             </containerView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="5LE-yo-vX9">
-                                <rect key="frame" x="281" y="560" width="39" height="37"/>
-                            </pageControl>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bridge" translatesAutoresizingMaskIntoConstraints="NO" id="8GX-yS-ORM">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="181"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bridge" translatesAutoresizingMaskIntoConstraints="NO" id="8GX-yS-ORM">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="181" id="D60-R7-jja"/>
+                                    <constraint firstAttribute="height" constant="150" id="D60-R7-jja">
+                                        <variation key="heightClass=compact" constant="100"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                    </constraint>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RR4-Sw-iqe">
-                                <rect key="frame" x="20" y="14" width="53" height="32"/>
+                                <rect key="frame" x="20" y="16" width="49" height="25"/>
+                                <color key="backgroundColor" red="0.96470588235294119" green="0.32156862745098036" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="Vqq-ey-zl2"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
-                                <state key="normal" title="&lt; Back">
+                                <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                <state key="normal" title="Back">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="27" y="14" width="39" height="32"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="29"/>
+                                    <rect key="frame" x="20" y="14" width="110" height="32"/>
+                                </variation>
                                 <connections>
                                     <action selector="onBackPressed:" destination="kc2-Lm-pd5" eventType="touchUpInside" id="vTK-ct-ahk"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT SAN DIEGO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAs-dg-xge">
-                                <rect key="frame" x="211" y="79" width="178" height="23"/>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="5LE-yo-vX9">
+                                <rect key="frame" x="281" y="568" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </pageControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ABOUT SAN DIEGO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAs-dg-xge">
+                                <rect key="frame" x="209" y="79" width="182" height="23"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="38"/>
+                                    <rect key="frame" x="213" y="80" width="374" height="39"/>
+                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -519,30 +741,32 @@
                             <constraint firstItem="mP5-PA-F8b" firstAttribute="leading" secondItem="7YF-UP-HZd" secondAttribute="leading" id="EYJ-fd-qdN"/>
                             <constraint firstItem="5LE-yo-vX9" firstAttribute="centerX" secondItem="7YF-UP-HZd" secondAttribute="centerX" id="FsQ-jO-Xwm"/>
                             <constraint firstItem="8GX-yS-ORM" firstAttribute="top" secondItem="7YF-UP-HZd" secondAttribute="top" id="JXW-qh-G2h"/>
-                            <constraint firstItem="RR4-Sw-iqe" firstAttribute="top" secondItem="7YF-UP-HZd" secondAttribute="topMargin" constant="14" id="Kf2-eO-544"/>
+                            <constraint firstItem="RR4-Sw-iqe" firstAttribute="top" secondItem="7YF-UP-HZd" secondAttribute="topMargin" constant="16" id="Kf2-eO-544"/>
                             <constraint firstItem="HAs-dg-xge" firstAttribute="centerY" secondItem="8GX-yS-ORM" secondAttribute="centerY" id="Ly8-he-jhi"/>
                             <constraint firstAttribute="trailing" secondItem="mP5-PA-F8b" secondAttribute="trailing" id="YXi-Mu-tI5"/>
                             <constraint firstAttribute="trailing" secondItem="8GX-yS-ORM" secondAttribute="trailing" id="cmR-U0-34Q"/>
                             <constraint firstItem="mP5-PA-F8b" firstAttribute="top" secondItem="7YF-UP-HZd" secondAttribute="top" id="dFs-Je-I9z"/>
-                            <constraint firstItem="eDF-JI-h2q" firstAttribute="top" secondItem="5LE-yo-vX9" secondAttribute="bottom" constant="3" id="j36-2e-JeW"/>
+                            <constraint firstItem="eDF-JI-h2q" firstAttribute="top" secondItem="5LE-yo-vX9" secondAttribute="bottom" constant="-5" id="j36-2e-JeW"/>
                             <constraint firstItem="8GX-yS-ORM" firstAttribute="leading" secondItem="7YF-UP-HZd" secondAttribute="leading" id="nss-tN-Kme"/>
                             <constraint firstItem="eDF-JI-h2q" firstAttribute="top" secondItem="mP5-PA-F8b" secondAttribute="bottom" id="uLu-S8-T6w"/>
                             <constraint firstItem="RR4-Sw-iqe" firstAttribute="leading" secondItem="7YF-UP-HZd" secondAttribute="leadingMargin" id="vC0-fe-Ekk"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="aboutLbl" destination="HAs-dg-xge" id="tPS-ms-iN7"/>
+                        <outlet property="backBtn" destination="RR4-Sw-iqe" id="0KM-Ee-LbW"/>
                         <outlet property="containerView" destination="mP5-PA-F8b" id="b6N-I1-oFo"/>
                         <outlet property="dotsView" destination="5LE-yo-vX9" id="P7q-Bi-Gbs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="od9-g4-nI1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1066" y="-613"/>
+            <point key="canvasLocation" x="1065.75" y="-613.5"/>
         </scene>
         <!--About PageVC-->
         <scene sceneID="Zn2-gZ-2fN">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="pGD-rn-ZOF" customClass="AboutPageVC" customModule="my_favorite_place" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="pGD-rn-ZOF" customClass="AboutPageVC" customModule="San_Diego" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mha-mD-bJF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1704" y="-613"/>
@@ -550,7 +774,7 @@
         <!--View Controller-->
         <scene sceneID="T2m-BQ-5ao">
             <objects>
-                <viewController storyboardIdentifier="FirstPage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TYf-Im-t8Y" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondPage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TYf-Im-t8Y" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tXE-vY-OtW"/>
                         <viewControllerLayoutGuide type="bottom" id="NFw-cH-c4Y"/>
@@ -558,16 +782,99 @@
                     <view key="view" contentMode="scaleToFill" id="Nnl-xJ-cNd">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Bridge" translatesAutoresizingMaskIntoConstraints="NO" id="nyd-XW-ern">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="181"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="181" id="pxn-hT-OUS"/>
+                                </constraints>
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="800" height="181"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="THINGS TO DO:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4z-K4-oUK">
+                                <rect key="frame" x="18" y="189" width="214" height="28"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="• option 8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRf-2j-iEC">
+                                <rect key="frame" x="20" y="234" width="108" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="• option 8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PyS-mZ-VAg">
+                                <rect key="frame" x="20" y="270" width="108" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="• option 8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8E-AE-69u">
+                                <rect key="frame" x="20" y="303" width="108" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="• option 8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S82-oF-9ej">
+                                <rect key="frame" x="20" y="335" width="108" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="• option 8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5G-3F-SER">
+                                <rect key="frame" x="20" y="371" width="108" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="• option 8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9y-2K-wbX">
+                                <rect key="frame" x="20" y="406" width="108" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="• option 8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SM4-Mu-k19">
+                                <rect key="frame" x="20" y="443" width="108" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="• option 8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nV-hN-U36">
+                                <rect key="frame" x="20" y="477" width="108" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="• option 8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="108-WW-Ufz">
+                                <rect key="frame" x="20" y="506" width="108" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="• option 8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iMd-fM-Wzi">
+                                <rect key="frame" x="20" y="543" width="108" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="• option 8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r4F-Ct-qPw">
+                                <rect key="frame" x="20" y="577" width="108" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hsh-wU-MZV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1066" y="45"/>
+            <point key="canvasLocation" x="1704" y="45"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="jvS-Cb-Pl2">
             <objects>
-                <viewController storyboardIdentifier="SecondPage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fhO-Rp-bGb" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirstPage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fhO-Rp-bGb" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Gdu-uZ-qam"/>
                         <viewControllerLayoutGuide type="bottom" id="3Hx-CN-103"/>
@@ -576,24 +883,128 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DESCRIPTION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgC-ZT-dae">
-                                <rect key="frame" x="20" y="160" width="118" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="THINGS TO DO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXb-Bo-1FZ">
-                                <rect key="frame" x="440" y="181" width="124" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fR1-S4-YzM">
+                                <rect key="frame" x="0.0" y="165" width="600" height="418"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="slt-V7-2dZ">
+                                        <rect key="frame" x="20" y="8" width="560" height="638"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="POPULATION:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJA-EQ-0p9">
+                                                <rect key="frame" x="0.0" y="0.0" width="156" height="28"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="156" height="28"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="156" height="28"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="38"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="257" height="46"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1,394,928" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="78E-Rd-JAG">
+                                                <rect key="frame" x="0.0" y="28" width="89" height="24"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="28" width="89" height="24"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="28" width="89" height="24"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
+                                                    <rect key="frame" x="0.0" y="46" width="156" height="41"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="HISTORY:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4l-zK-lSn">
+                                                <rect key="frame" x="0.0" y="51" width="107" height="28"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="51" width="107" height="28"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="51" width="107" height="28"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="38"/>
+                                                    <rect key="frame" x="0.0" y="87" width="176" height="46"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="maz-Cu-OzL">
+                                                <rect key="frame" x="0.0" y="79" width="559" height="560"/>
+                                                <string key="text">The recorded history of the San Diego, California, region began in the present state of California when San Diego Bay was first discovered by Europeans. San Diego was the first part of California that Europeans settled in, so that San Diego has been described as "the birthplace of California."
+
+Native Americans such as the Kumeyaay people had been living in the area for as long as 12,000 years. Explorer Juan Rodriguez Cabrillo discovered San Diego Bay in 1542, but it was 200 years before Europeans settled the area. A fort and mission were established in 1769, which gradually expanded into a settlement under first Spanish and then Mexican rule.
+
+San Diego became part of the U.S. in 1848, and the town was named the county seat of San Diego County when California was granted statehood in 1850. It remained a very small town for several decades, but grew rapidly after 1880 due to development and the establishment of multiple military facilities. Growth was especially rapid during and immediately after World War II. Entrepreneurs and boosters laid the basis for an economy based today on the military, defense industries, tourism, international trade, and manufacturing. San Diego is now the eighth largest city in the country and forms the heart of the larger San Diego metropolitan area.</string>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="79" width="559" height="560"/>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="79" width="760" height="467"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="79" width="360" height="886"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
+                                                    <rect key="frame" x="0.0" y="132" width="760" height="1265"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <rect key="frame" x="20" y="190" width="560" height="638"/>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="20" y="0.0" width="760" height="545"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="20" y="8" width="360" height="964"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="20" y="0.0" width="760" height="1397"/>
+                                        </variation>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="slt-V7-2dZ" secondAttribute="trailing" constant="20" id="9bB-W9-kvt"/>
+                                    <constraint firstItem="slt-V7-2dZ" firstAttribute="leading" secondItem="fR1-S4-YzM" secondAttribute="leading" constant="20" id="Kmw-HE-HzX"/>
+                                    <constraint firstAttribute="bottom" secondItem="slt-V7-2dZ" secondAttribute="bottom" constant="10" id="OE8-Lb-I3y"/>
+                                    <constraint firstItem="slt-V7-2dZ" firstAttribute="top" secondItem="fR1-S4-YzM" secondAttribute="top" id="aHW-B6-0C3"/>
+                                </constraints>
+                                <variation key="heightClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="182" width="400" height="418"/>
+                                </variation>
+                            </scrollView>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="3Hx-CN-103" firstAttribute="top" secondItem="fR1-S4-YzM" secondAttribute="bottom" constant="20" id="80f-Ko-pLm"/>
+                            <constraint firstItem="fR1-S4-YzM" firstAttribute="top" secondItem="Gdu-uZ-qam" secondAttribute="bottom" constant="145" id="CYt-vj-ZT8">
+                                <variation key="heightClass=compact" constant="115"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="195"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="fR1-S4-YzM" secondAttribute="trailing" id="JwR-g5-ySF"/>
+                            <constraint firstItem="slt-V7-2dZ" firstAttribute="width" secondItem="w6M-02-C8v" secondAttribute="width" constant="-40" id="fdc-jz-ODF"/>
+                            <constraint firstItem="fR1-S4-YzM" firstAttribute="leading" secondItem="w6M-02-C8v" secondAttribute="leading" id="xdH-Y4-Gat"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AwI-WY-9Xg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1704" y="45"/>
+            <point key="canvasLocation" x="1066" y="45"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hQ6-gH-P9s">
@@ -607,24 +1018,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fz3-p5-A3C">
-                                <rect key="frame" x="16" y="185" width="568" height="400"/>
-                                <string key="text">The recorded history of the San Diego, California, region began in the present state of California when San Diego Bay was first discovered by Europeans. San Diego was the first part of California that Europeans settled in, so that San Diego has been described as "the birthplace of California."
-
-Native Americans such as the Kumeyaay people had been living in the area for as long as 12,000 years. Explorer Juan Rodriguez Cabrillo discovered San Diego Bay in 1542, but it was 200 years before Europeans settled the area. A fort and mission were established in 1769, which gradually expanded into a settlement under first Spanish and then Mexican rule.
-
-San Diego became part of the U.S. in 1848, and the town was named the county seat of San Diego County when California was granted statehood in 1850. It remained a very small town for several decades, but grew rapidly after 1880 due to development and the establishment of multiple military facilities. Growth was especially rapid during and immediately after World War II. Entrepreneurs and boosters laid the basis for an economy based today on the military, defense industries, tourism, international trade, and manufacturing. San Diego is now the eighth largest city in the country and forms the heart of the larger San Diego metropolitan area.</string>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Where to eat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61f-Vz-hO9">
+                                <rect key="frame" x="16" y="191" width="99" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Bridge" translatesAutoresizingMaskIntoConstraints="NO" id="I1l-Gu-eHA">
+                                <rect key="frame" x="0.0" y="2" width="600" height="181"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="181" id="KaT-Sw-17F"/>
+                                </constraints>
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="800" height="181"/>
+                                </variation>
+                            </imageView>
                         </subviews>
-                        <constraints>
-                            <constraint firstItem="fz3-p5-A3C" firstAttribute="leading" secondItem="0Wo-Mr-Qf5" secondAttribute="leadingMargin" constant="-4" id="8fb-2Q-lad"/>
-                            <constraint firstItem="JLe-GV-pGN" firstAttribute="top" secondItem="fz3-p5-A3C" secondAttribute="bottom" constant="15" id="GG0-FI-exz"/>
-                            <constraint firstItem="fz3-p5-A3C" firstAttribute="top" secondItem="cAJ-eY-dox" secondAttribute="bottom" constant="165" id="f5t-Uf-u3j"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="fz3-p5-A3C" secondAttribute="trailing" constant="-4" id="hMf-zS-sim"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PRW-cX-xY5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -634,7 +1043,7 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
         <!--PhotosVC-->
         <scene sceneID="8i2-0g-ZHA">
             <objects>
-                <viewController id="3cH-Lj-Xwu" customClass="PhotosVC" customModule="my_favorite_place" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3cH-Lj-Xwu" customClass="PhotosVC" customModule="San_Diego" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="doe-CV-3GP"/>
                         <viewControllerLayoutGuide type="bottom" id="1O3-s5-MDu"/>
@@ -644,267 +1053,473 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PHOTOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R3v-g9-02a">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="87"/>
+                                <rect key="frame" x="0.0" y="3" width="600" height="87"/>
                                 <color key="backgroundColor" red="0.96470588235294119" green="0.32156862745098036" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="87" id="q8Q-yh-NY8"/>
+                                    <constraint firstAttribute="height" constant="87" id="q8Q-yh-NY8">
+                                        <variation key="heightClass=compact" constant="35"/>
+                                    </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="wm7-NT-K4M">
-                                <rect key="frame" x="20" y="107" width="560" height="473"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="sbU-Wc-x1R">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="118"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuX-Di-g3D" userLabel="Thumbnail 0">
-                                                <rect key="frame" x="0.0" y="0.0" width="111" height="118"/>
-                                                <state key="normal" backgroundImage="photo0"/>
-                                                <connections>
-                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="kWz-zr-OdQ"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nf9-bU-QYE" userLabel="Thumbnail 1">
-                                                <rect key="frame" x="112" y="0.0" width="112" height="118"/>
-                                                <state key="normal" backgroundImage="photo1"/>
-                                                <connections>
-                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="8JC-yl-wvk"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDG-Rg-RW6" userLabel="Thumbnail 2">
-                                                <rect key="frame" x="225" y="0.0" width="111" height="118"/>
-                                                <state key="normal" backgroundImage="photo2"/>
-                                                <connections>
-                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="sEf-rv-bu2"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqI-vK-r8Q" userLabel="Thumbnail 3">
-                                                <rect key="frame" x="337" y="0.0" width="112" height="118"/>
-                                                <state key="normal" backgroundImage="photo3"/>
-                                                <connections>
-                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="aph-ig-iHK"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOa-F9-slL" userLabel="Thumbnail 4">
-                                                <rect key="frame" x="449" y="0.0" width="111" height="118"/>
-                                                <state key="normal" backgroundImage="photo4"/>
-                                                <connections>
-                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="VMr-xk-gwZ"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="lkR-NP-9UO">
-                                        <rect key="frame" x="0.0" y="119" width="560" height="118"/>
-                                        <subviews>
-                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mb5-lR-9cl" userLabel="Thumbnail 5">
-                                                <rect key="frame" x="0.0" y="0.0" width="111" height="118"/>
-                                                <state key="normal" backgroundImage="photo5"/>
-                                                <connections>
-                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="tUo-jL-q7T"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKm-d1-ypI" userLabel="Thumbnail 6">
-                                                <rect key="frame" x="112" y="0.0" width="112" height="118"/>
-                                                <state key="normal" backgroundImage="photo6"/>
-                                                <connections>
-                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="TFv-LO-Y1c"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfM-yo-4mt" userLabel="Thumbnail 7">
-                                                <rect key="frame" x="225" y="0.0" width="111" height="118"/>
-                                                <state key="normal" backgroundImage="photo7"/>
-                                                <connections>
-                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="zNd-1w-64o"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGo-HI-JYo" userLabel="Thumbnail 8">
-                                                <rect key="frame" x="337" y="0.0" width="112" height="118"/>
-                                                <state key="normal" backgroundImage="photo8"/>
-                                                <connections>
-                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="1Xr-i6-34W"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cba-Os-MY8" userLabel="Thumbnail 9">
-                                                <rect key="frame" x="449" y="0.0" width="111" height="118"/>
-                                                <state key="normal" backgroundImage="photo9"/>
-                                                <connections>
-                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="25z-RJ-TPq"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="OJt-FA-CQd">
-                                        <rect key="frame" x="0.0" y="237" width="560" height="118"/>
-                                        <subviews>
-                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJZ-sI-atF" userLabel="Thumbnail 10">
-                                                <rect key="frame" x="0.0" y="0.0" width="111" height="118"/>
-                                                <state key="normal" backgroundImage="photo10"/>
-                                                <connections>
-                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="YiX-BM-T4e"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Atx-m4-uHm" userLabel="Thumbnail 11">
-                                                <rect key="frame" x="112" y="0.0" width="112" height="118"/>
-                                                <state key="normal" backgroundImage="photo11"/>
-                                                <connections>
-                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="2Hp-50-1nl"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8d5-MJ-Wp0" userLabel="Thumbnail 12">
-                                                <rect key="frame" x="225" y="0.0" width="111" height="118"/>
-                                                <state key="normal" backgroundImage="photo12"/>
-                                                <connections>
-                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="gTj-Ac-93Y"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTU-SB-gG2" userLabel="Thumbnail 13">
-                                                <rect key="frame" x="337" y="0.0" width="112" height="118"/>
-                                                <state key="normal" backgroundImage="photo13"/>
-                                                <connections>
-                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="BlL-pa-F6u"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SoR-Ak-lhp" userLabel="Thumbnail 14">
-                                                <rect key="frame" x="449" y="0.0" width="111" height="118"/>
-                                                <state key="normal" backgroundImage="photo14"/>
-                                                <connections>
-                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="Cf0-oh-dKb"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="W20-TJ-6YN">
-                                        <rect key="frame" x="0.0" y="356" width="560" height="118"/>
-                                        <subviews>
-                                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcD-LW-2IX" userLabel="Thumbnail 15">
-                                                <rect key="frame" x="0.0" y="0.0" width="111" height="118"/>
-                                                <state key="normal" backgroundImage="photo15"/>
-                                                <connections>
-                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="7rt-22-Kid"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktP-lY-gdL" userLabel="Thumbnail 16">
-                                                <rect key="frame" x="112" y="0.0" width="112" height="118"/>
-                                                <state key="normal" backgroundImage="photo16"/>
-                                                <connections>
-                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="ZQb-MK-Jeo"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4i-M5-bOn" userLabel="Thumbnail 17">
-                                                <rect key="frame" x="225" y="0.0" width="111" height="118"/>
-                                                <state key="normal" backgroundImage="photo17"/>
-                                                <connections>
-                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="uzQ-IU-aFg"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1s-oW-4DK" userLabel="Thumbnail 18">
-                                                <rect key="frame" x="337" y="0.0" width="112" height="118"/>
-                                                <state key="normal" backgroundImage="photo18"/>
-                                                <connections>
-                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="QrY-gv-ZEc"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0MH-fe-TZ1" userLabel="Thumbnail 19">
-                                                <rect key="frame" x="449" y="0.0" width="111" height="118"/>
-                                                <state key="normal" backgroundImage="photo19"/>
-                                                <connections>
-                                                    <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="1GY-kf-RUJ"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="W20-TJ-6YN" firstAttribute="height" secondItem="sbU-Wc-x1R" secondAttribute="height" id="Gcp-sb-1Y7"/>
-                                    <constraint firstItem="OJt-FA-CQd" firstAttribute="height" secondItem="sbU-Wc-x1R" secondAttribute="height" id="QAo-WS-JGL"/>
-                                    <constraint firstItem="W20-TJ-6YN" firstAttribute="width" secondItem="sbU-Wc-x1R" secondAttribute="width" id="V7N-KQ-OBC"/>
-                                    <constraint firstItem="lkR-NP-9UO" firstAttribute="height" secondItem="sbU-Wc-x1R" secondAttribute="height" id="WTM-xb-fN5"/>
-                                    <constraint firstItem="lkR-NP-9UO" firstAttribute="width" secondItem="sbU-Wc-x1R" secondAttribute="width" id="guN-7s-24e"/>
-                                    <constraint firstItem="OJt-FA-CQd" firstAttribute="width" secondItem="sbU-Wc-x1R" secondAttribute="width" id="uNe-R0-foa"/>
-                                </constraints>
-                            </stackView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bridge" translatesAutoresizingMaskIntoConstraints="NO" id="2Nx-zD-Ney" userLabel="Photo">
-                                <rect key="frame" x="0.0" y="87" width="600" height="513"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o46-So-H2E" userLabel="&lt;Back Home">
-                                <rect key="frame" x="20" y="27" width="53" height="32"/>
+                                <rect key="frame" x="20" y="30" width="53" height="32"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                 <state key="normal" title="&lt; Back">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=compact" misplaced="YES">
+                                    <rect key="frame" x="10" y="303" width="53" height="32"/>
+                                </variation>
                                 <connections>
                                     <action selector="onBackPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="12s-oP-7h0"/>
                                     <action selector="onBackPressed:" destination="kc2-Lm-pd5" eventType="touchUpInside" id="txc-eK-K69"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="cnk-qW-z86" userLabel="Stack 3">
+                                <rect key="frame" x="307" y="95" width="143" height="500"/>
+                                <subviews>
+                                    <button opaque="NO" tag="10" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJZ-sI-atF" userLabel="Thumbnail 10">
+                                        <rect key="frame" x="0.0" y="0.0" width="143" height="98"/>
+                                        <state key="normal" image="photo10"/>
+                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="89"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="YiX-BM-T4e"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="11" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Atx-m4-uHm" userLabel="Thumbnail 11">
+                                        <rect key="frame" x="0.0" y="101" width="143" height="98"/>
+                                        <state key="normal" image="photo11"/>
+                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="91" width="120" height="89"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="2Hp-50-1nl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="12" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8d5-MJ-Wp0" userLabel="Thumbnail 12">
+                                        <rect key="frame" x="0.0" y="201" width="143" height="98"/>
+                                        <state key="normal" image="photo12"/>
+                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="181" width="120" height="88"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="gTj-Ac-93Y"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="13" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTU-SB-gG2" userLabel="Thumbnail 13">
+                                        <rect key="frame" x="0.0" y="302" width="143" height="98"/>
+                                        <state key="normal" image="photo13"/>
+                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="271" width="120" height="89"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="BlL-pa-F6u"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="14" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SoR-Ak-lhp" userLabel="Thumbnail 14">
+                                        <rect key="frame" x="0.0" y="403" width="143" height="98"/>
+                                        <state key="normal" image="photo14"/>
+                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="362" width="120" height="89"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="Cf0-oh-dKb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="500" id="MT4-X7-jZY">
+                                        <variation key="heightClass=compact" constant="100"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="NVP-Lt-z2f">
+                                        <variation key="heightClass=compact" constant="500"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="heightClass=compact" axis="horizontal" misplaced="YES">
+                                    <rect key="frame" x="11" y="219" width="500" height="87"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" axis="horizontal"/>
+                                <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
+                                <variation key="heightClass=regular-widthClass=compact" axis="vertical"/>
+                                <variation key="heightClass=regular-widthClass=regular" axis="vertical"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="pkb-GG-iBV" userLabel="Stack 1">
+                                <rect key="frame" x="30" y="95" width="143" height="500"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuX-Di-g3D" userLabel="Thumbnail 0">
+                                        <rect key="frame" x="0.0" y="0.0" width="143" height="98"/>
+                                        <state key="normal" image="photo0"/>
+                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="89"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="kWz-zr-OdQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nf9-bU-QYE" userLabel="Thumbnail 1">
+                                        <rect key="frame" x="0.0" y="101" width="143" height="98"/>
+                                        <state key="normal" image="photo1"/>
+                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="91" width="120" height="89"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="8JC-yl-wvk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDG-Rg-RW6" userLabel="Thumbnail 2">
+                                        <rect key="frame" x="0.0" y="201" width="143" height="98"/>
+                                        <state key="normal" image="photo2"/>
+                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="181" width="120" height="88"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="sEf-rv-bu2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqI-vK-r8Q" userLabel="Thumbnail 3">
+                                        <rect key="frame" x="0.0" y="302" width="143" height="98"/>
+                                        <state key="normal" image="photo3"/>
+                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="271" width="120" height="89"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="aph-ig-iHK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOa-F9-slL" userLabel="Thumbnail 4">
+                                        <rect key="frame" x="0.0" y="403" width="143" height="98"/>
+                                        <state key="normal" image="photo4"/>
+                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="362" width="120" height="89"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="VMr-xk-gwZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="500" id="NiB-92-NM9">
+                                        <variation key="heightClass=compact" constant="100"/>
+                                        <variation key="heightClass=compact-widthClass=compact" constant="100"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="100"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="v2X-cS-Fcb">
+                                        <variation key="heightClass=compact" constant="500"/>
+                                        <variation key="heightClass=compact-widthClass=compact" constant="500"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="500"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="heightClass=compact" axis="horizontal"/>
+                                <variation key="heightClass=compact-widthClass=compact" axis="horizontal"/>
+                                <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
+                                <variation key="heightClass=regular-widthClass=compact" axis="vertical"/>
+                                <variation key="heightClass=regular-widthClass=regular" axis="vertical"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="kfp-XU-0hb" userLabel="Stack 4">
+                                <rect key="frame" x="435" y="95" width="143" height="500"/>
+                                <subviews>
+                                    <button opaque="NO" tag="15" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcD-LW-2IX" userLabel="Thumbnail 15">
+                                        <rect key="frame" x="0.0" y="0.0" width="143" height="98"/>
+                                        <state key="normal" image="photo15"/>
+                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="89"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="7rt-22-Kid"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="16" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktP-lY-gdL" userLabel="Thumbnail 16">
+                                        <rect key="frame" x="0.0" y="101" width="143" height="98"/>
+                                        <state key="normal" image="photo16"/>
+                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="91" width="120" height="89"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="ZQb-MK-Jeo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="17" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4i-M5-bOn" userLabel="Thumbnail 17">
+                                        <rect key="frame" x="0.0" y="201" width="143" height="98"/>
+                                        <state key="normal" image="photo17"/>
+                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="181" width="120" height="88"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="uzQ-IU-aFg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="18" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1s-oW-4DK" userLabel="Thumbnail 18">
+                                        <rect key="frame" x="0.0" y="302" width="143" height="98"/>
+                                        <state key="normal" image="photo18"/>
+                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="271" width="120" height="89"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="QrY-gv-ZEc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="19" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0MH-fe-TZ1" userLabel="Thumbnail 19">
+                                        <rect key="frame" x="0.0" y="403" width="143" height="98"/>
+                                        <state key="normal" image="photo19"/>
+                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="362" width="120" height="89"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="1GY-kf-RUJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="JcP-yE-w7i">
+                                        <variation key="heightClass=compact" constant="500"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="500" id="yUG-zy-aVI">
+                                        <variation key="heightClass=compact" constant="100"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="heightClass=compact" axis="horizontal"/>
+                                <variation key="heightClass=compact-widthClass=compact" axis="horizontal"/>
+                                <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
+                                <variation key="heightClass=regular-widthClass=compact" axis="vertical"/>
+                                <variation key="heightClass=regular-widthClass=regular" axis="vertical"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="QdG-iP-btN" userLabel="Stack 2">
+                                <rect key="frame" x="158" y="95" width="143" height="500"/>
+                                <subviews>
+                                    <button opaque="NO" tag="5" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mb5-lR-9cl" userLabel="Thumbnail 5">
+                                        <rect key="frame" x="0.0" y="0.0" width="143" height="98"/>
+                                        <state key="normal" image="photo5"/>
+                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="89"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="tUo-jL-q7T"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="6" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKm-d1-ypI" userLabel="Thumbnail 6">
+                                        <rect key="frame" x="0.0" y="101" width="143" height="98"/>
+                                        <state key="normal" image="photo6"/>
+                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="91" width="120" height="89"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="TFv-LO-Y1c"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="7" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfM-yo-4mt" userLabel="Thumbnail 7">
+                                        <rect key="frame" x="0.0" y="201" width="143" height="98"/>
+                                        <state key="normal" image="photo7"/>
+                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="181" width="120" height="88"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="zNd-1w-64o"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="8" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGo-HI-JYo" userLabel="Thumbnail 8">
+                                        <rect key="frame" x="0.0" y="302" width="143" height="98"/>
+                                        <state key="normal" image="photo8"/>
+                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="271" width="120" height="89"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="1Xr-i6-34W"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="9" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cba-Os-MY8" userLabel="Thumbnail 9">
+                                        <rect key="frame" x="0.0" y="403" width="143" height="98"/>
+                                        <state key="normal" image="photo9"/>
+                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="362" width="120" height="89"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="thumbnailPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="25z-RJ-TPq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="500" id="Htt-fd-KUM">
+                                        <variation key="heightClass=compact" constant="100"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="Kfr-9l-t0b">
+                                        <variation key="heightClass=compact" constant="500"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="heightClass=compact" axis="horizontal" misplaced="YES">
+                                    <rect key="frame" x="11" y="130" width="500" height="87"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" axis="horizontal"/>
+                                <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
+                                <variation key="heightClass=regular-widthClass=compact" axis="vertical"/>
+                                <variation key="heightClass=regular-widthClass=regular" axis="vertical"/>
+                            </stackView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Nx-zD-Ney" userLabel="Photo">
+                                <rect key="frame" x="553" y="553" width="600" height="513"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="340" width="600" height="60"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="cnk-qW-z86" firstAttribute="top" secondItem="R3v-g9-02a" secondAttribute="bottom" constant="5" id="0hJ-z0-xta">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="cnk-qW-z86" firstAttribute="leading" secondItem="QdG-iP-btN" secondAttribute="trailing" constant="3" id="2Rj-vm-iCW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kfp-XU-0hb" secondAttribute="trailing" constant="-10" id="4EN-Rv-ovN">
+                                <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="QdG-iP-btN" firstAttribute="height" secondItem="pkb-GG-iBV" secondAttribute="height" id="67r-Ul-GLA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pkb-GG-iBV" secondAttribute="trailing" constant="-10" id="7FT-e0-kdT"/>
+                            <constraint firstItem="QdG-iP-btN" firstAttribute="leading" secondItem="7KM-Xy-w86" secondAttribute="leadingMargin" constant="-10" id="7ZF-7J-QRe"/>
                             <constraint firstItem="o46-So-H2E" firstAttribute="leading" secondItem="7KM-Xy-w86" secondAttribute="leadingMargin" id="8Dt-r1-Idz"/>
+                            <constraint firstItem="QdG-iP-btN" firstAttribute="top" secondItem="pkb-GG-iBV" secondAttribute="bottom" constant="3" id="DJ1-4L-3t4"/>
+                            <constraint firstItem="cnk-qW-z86" firstAttribute="leading" secondItem="7KM-Xy-w86" secondAttribute="leadingMargin" constant="-10" id="DeP-Ps-9E4"/>
                             <constraint firstItem="2Nx-zD-Ney" firstAttribute="top" secondItem="R3v-g9-02a" secondAttribute="bottom" id="EJT-gS-oJS"/>
-                            <constraint firstItem="wm7-NT-K4M" firstAttribute="centerY" secondItem="2Nx-zD-Ney" secondAttribute="centerY" id="GQe-jU-k1v"/>
+                            <constraint firstItem="pkb-GG-iBV" firstAttribute="top" secondItem="R3v-g9-02a" secondAttribute="bottom" constant="5" id="EUQ-q4-9Xp">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="QdG-iP-btN" firstAttribute="width" secondItem="pkb-GG-iBV" secondAttribute="width" id="EgC-Hr-Ny6"/>
+                            <constraint firstItem="QdG-iP-btN" firstAttribute="height" secondItem="pkb-GG-iBV" secondAttribute="height" id="GKU-MK-r16"/>
                             <constraint firstItem="o46-So-H2E" firstAttribute="centerY" secondItem="R3v-g9-02a" secondAttribute="centerY" id="HN5-bs-bce"/>
+                            <constraint firstItem="o46-So-H2E" firstAttribute="top" secondItem="kfp-XU-0hb" secondAttribute="bottom" constant="5" id="HNr-as-jSV"/>
+                            <constraint firstItem="QdG-iP-btN" firstAttribute="top" secondItem="R3v-g9-02a" secondAttribute="bottom" constant="5" id="HSm-Xn-lTz">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="kfp-XU-0hb" firstAttribute="top" secondItem="R3v-g9-02a" secondAttribute="bottom" constant="5" id="Jsh-dA-wuM">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="QdG-iP-btN" firstAttribute="leading" secondItem="pkb-GG-iBV" secondAttribute="trailing" constant="3" id="Kl7-5o-CdV"/>
+                            <constraint firstItem="kfp-XU-0hb" firstAttribute="leading" secondItem="7KM-Xy-w86" secondAttribute="leadingMargin" constant="-10" id="LRA-q2-4Te"/>
                             <constraint firstItem="2Nx-zD-Ney" firstAttribute="leading" secondItem="7KM-Xy-w86" secondAttribute="leading" id="LXe-fD-vLI"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="wm7-NT-K4M" secondAttribute="bottom" constant="35" id="OFt-0w-tAc"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="wm7-NT-K4M" secondAttribute="trailing" id="W5B-Iy-tzV"/>
+                            <constraint firstItem="QdG-iP-btN" firstAttribute="height" secondItem="pkb-GG-iBV" secondAttribute="height" id="PvQ-jg-Ryp"/>
+                            <constraint firstItem="pkb-GG-iBV" firstAttribute="leading" secondItem="7KM-Xy-w86" secondAttribute="leadingMargin" constant="-10" id="Q9h-nI-Z0u">
+                                <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="kfp-XU-0hb" firstAttribute="leading" secondItem="cnk-qW-z86" secondAttribute="trailing" constant="3" id="SXt-41-nqj"/>
                             <constraint firstItem="R3v-g9-02a" firstAttribute="top" secondItem="7KM-Xy-w86" secondAttribute="top" id="YLo-XX-y80"/>
-                            <constraint firstItem="wm7-NT-K4M" firstAttribute="top" secondItem="R3v-g9-02a" secondAttribute="bottom" constant="35" id="b8I-Gv-j2Q"/>
-                            <constraint firstItem="wm7-NT-K4M" firstAttribute="leading" secondItem="7KM-Xy-w86" secondAttribute="leadingMargin" id="eh2-kl-XHY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cnk-qW-z86" secondAttribute="trailing" constant="-10" id="YZG-Vr-HKc"/>
+                            <constraint firstItem="kfp-XU-0hb" firstAttribute="width" secondItem="pkb-GG-iBV" secondAttribute="width" id="aBn-MM-JaB"/>
+                            <constraint firstItem="cnk-qW-z86" firstAttribute="height" secondItem="pkb-GG-iBV" secondAttribute="height" id="aLn-uE-EAA"/>
+                            <constraint firstItem="1O3-s5-MDu" firstAttribute="top" secondItem="pkb-GG-iBV" secondAttribute="bottom" constant="5" id="awB-7B-g4p">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="QdG-iP-btN" secondAttribute="trailing" constant="-10" id="b5F-1X-Rgm"/>
+                            <constraint firstItem="QdG-iP-btN" firstAttribute="top" secondItem="pkb-GG-iBV" secondAttribute="bottom" constant="3" id="eCe-DI-7fN"/>
+                            <constraint firstItem="cnk-qW-z86" firstAttribute="top" secondItem="QdG-iP-btN" secondAttribute="bottom" constant="3" id="fI4-rv-8eo"/>
                             <constraint firstAttribute="trailing" secondItem="2Nx-zD-Ney" secondAttribute="trailing" id="fSX-nH-r7u"/>
-                            <constraint firstItem="wm7-NT-K4M" firstAttribute="centerX" secondItem="2Nx-zD-Ney" secondAttribute="centerX" id="gDN-hR-5FI"/>
                             <constraint firstItem="1O3-s5-MDu" firstAttribute="top" secondItem="2Nx-zD-Ney" secondAttribute="bottom" id="kqP-mi-mMU"/>
-                            <constraint firstItem="wm7-NT-K4M" firstAttribute="centerY" secondItem="2Nx-zD-Ney" secondAttribute="centerY" id="lJV-8E-LWY"/>
-                            <constraint firstItem="wm7-NT-K4M" firstAttribute="centerX" secondItem="2Nx-zD-Ney" secondAttribute="centerX" id="oTj-DS-HSU"/>
+                            <constraint firstItem="cnk-qW-z86" firstAttribute="height" secondItem="pkb-GG-iBV" secondAttribute="height" id="mqz-iV-qfL"/>
+                            <constraint firstItem="kfp-XU-0hb" firstAttribute="top" secondItem="cnk-qW-z86" secondAttribute="bottom" constant="3" id="nAU-FI-hM8"/>
+                            <constraint firstItem="kfp-XU-0hb" firstAttribute="height" secondItem="pkb-GG-iBV" secondAttribute="height" id="pUx-1o-6RX"/>
                             <constraint firstItem="R3v-g9-02a" firstAttribute="leading" secondItem="7KM-Xy-w86" secondAttribute="leading" id="poZ-Pd-nek"/>
-                            <constraint firstItem="wm7-NT-K4M" firstAttribute="top" relation="greaterThanOrEqual" secondItem="R3v-g9-02a" secondAttribute="bottom" constant="20" id="s3N-FK-Lae"/>
-                            <constraint firstItem="o46-So-H2E" firstAttribute="top" secondItem="doe-CV-3GP" secondAttribute="bottom" constant="8" id="sJZ-nG-iCJ"/>
-                            <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="wm7-NT-K4M" secondAttribute="bottom" constant="20" id="vES-1b-YH2"/>
+                            <constraint firstItem="1O3-s5-MDu" firstAttribute="top" secondItem="cnk-qW-z86" secondAttribute="bottom" constant="5" id="suY-4M-X1Y">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="1O3-s5-MDu" firstAttribute="top" secondItem="kfp-XU-0hb" secondAttribute="bottom" constant="5" id="u2Q-Zc-qcJ">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="cnk-qW-z86" firstAttribute="width" secondItem="pkb-GG-iBV" secondAttribute="width" id="v9k-sZ-5ha"/>
+                            <constraint firstItem="1O3-s5-MDu" firstAttribute="top" secondItem="QdG-iP-btN" secondAttribute="bottom" constant="5" id="vJh-kc-kTY">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
                             <constraint firstAttribute="trailing" secondItem="R3v-g9-02a" secondAttribute="trailing" id="yUv-Uz-846"/>
+                            <constraint firstItem="kfp-XU-0hb" firstAttribute="height" secondItem="pkb-GG-iBV" secondAttribute="height" id="zYq-D1-ugF"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="sJZ-nG-iCJ"/>
-                                <exclude reference="GQe-jU-k1v"/>
-                                <exclude reference="OFt-0w-tAc"/>
-                                <exclude reference="b8I-Gv-j2Q"/>
-                                <exclude reference="gDN-hR-5FI"/>
-                                <exclude reference="lJV-8E-LWY"/>
-                                <exclude reference="oTj-DS-HSU"/>
+                                <exclude reference="HNr-as-jSV"/>
+                                <exclude reference="7FT-e0-kdT"/>
+                                <exclude reference="67r-Ul-GLA"/>
+                                <exclude reference="7ZF-7J-QRe"/>
+                                <exclude reference="DJ1-4L-3t4"/>
+                                <exclude reference="GKU-MK-r16"/>
+                                <exclude reference="PvQ-jg-Ryp"/>
+                                <exclude reference="b5F-1X-Rgm"/>
+                                <exclude reference="eCe-DI-7fN"/>
+                                <exclude reference="DeP-Ps-9E4"/>
+                                <exclude reference="YZG-Vr-HKc"/>
+                                <exclude reference="aLn-uE-EAA"/>
+                                <exclude reference="fI4-rv-8eo"/>
+                                <exclude reference="mqz-iV-qfL"/>
+                                <exclude reference="LRA-q2-4Te"/>
+                                <exclude reference="nAU-FI-hM8"/>
+                                <exclude reference="pUx-1o-6RX"/>
+                                <exclude reference="zYq-D1-ugF"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="7FT-e0-kdT"/>
+                                <include reference="67r-Ul-GLA"/>
+                                <include reference="7ZF-7J-QRe"/>
+                                <include reference="DJ1-4L-3t4"/>
+                                <exclude reference="EgC-Hr-Ny6"/>
+                                <exclude reference="GKU-MK-r16"/>
+                                <exclude reference="HSm-Xn-lTz"/>
+                                <exclude reference="Kl7-5o-CdV"/>
+                                <exclude reference="PvQ-jg-Ryp"/>
+                                <include reference="b5F-1X-Rgm"/>
+                                <exclude reference="eCe-DI-7fN"/>
+                                <exclude reference="0hJ-z0-xta"/>
+                                <exclude reference="2Rj-vm-iCW"/>
+                                <include reference="DeP-Ps-9E4"/>
+                                <include reference="YZG-Vr-HKc"/>
+                                <exclude reference="aLn-uE-EAA"/>
+                                <include reference="fI4-rv-8eo"/>
+                                <include reference="mqz-iV-qfL"/>
+                                <exclude reference="v9k-sZ-5ha"/>
+                                <exclude reference="Jsh-dA-wuM"/>
+                                <include reference="LRA-q2-4Te"/>
+                                <exclude reference="SXt-41-nqj"/>
+                                <exclude reference="aBn-MM-JaB"/>
+                                <include reference="nAU-FI-hM8"/>
+                                <include reference="pUx-1o-6RX"/>
+                                <exclude reference="zYq-D1-ugF"/>
+                                <exclude reference="awB-7B-g4p"/>
+                                <exclude reference="suY-4M-X1Y"/>
+                                <exclude reference="vJh-kc-kTY"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="bigPhoto" destination="2Nx-zD-Ney" id="ZKi-U7-ZiB"/>
                         <outlet property="home" destination="o46-So-H2E" id="Mud-0w-WMx"/>
-                        <outletCollection property="thumbnails" destination="sOa-F9-slL" collectionClass="NSMutableArray" id="Tmg-Vi-2jS"/>
-                        <outletCollection property="thumbnails" destination="qqI-vK-r8Q" collectionClass="NSMutableArray" id="kh7-1C-l5g"/>
-                        <outletCollection property="thumbnails" destination="kDG-Rg-RW6" collectionClass="NSMutableArray" id="CIz-ek-oge"/>
                         <outletCollection property="thumbnails" destination="xuX-Di-g3D" collectionClass="NSMutableArray" id="h8o-ye-UYv"/>
                         <outletCollection property="thumbnails" destination="Nf9-bU-QYE" collectionClass="NSMutableArray" id="iEi-VZ-KQu"/>
-                        <outletCollection property="thumbnails" destination="cba-Os-MY8" collectionClass="NSMutableArray" id="UtN-1i-hTS"/>
+                        <outletCollection property="thumbnails" destination="kDG-Rg-RW6" collectionClass="NSMutableArray" id="CIz-ek-oge"/>
+                        <outletCollection property="thumbnails" destination="qqI-vK-r8Q" collectionClass="NSMutableArray" id="kh7-1C-l5g"/>
+                        <outletCollection property="thumbnails" destination="sOa-F9-slL" collectionClass="NSMutableArray" id="Tmg-Vi-2jS"/>
                         <outletCollection property="thumbnails" destination="mb5-lR-9cl" collectionClass="NSMutableArray" id="eA9-gf-rNb"/>
                         <outletCollection property="thumbnails" destination="jKm-d1-ypI" collectionClass="NSMutableArray" id="TFL-GS-ILL"/>
                         <outletCollection property="thumbnails" destination="EfM-yo-4mt" collectionClass="NSMutableArray" id="yft-NW-qhb"/>
                         <outletCollection property="thumbnails" destination="nGo-HI-JYo" collectionClass="NSMutableArray" id="jf1-pJ-9ya"/>
+                        <outletCollection property="thumbnails" destination="cba-Os-MY8" collectionClass="NSMutableArray" id="UtN-1i-hTS"/>
+                        <outletCollection property="thumbnails" destination="TJZ-sI-atF" collectionClass="NSMutableArray" id="Njh-YY-1to"/>
+                        <outletCollection property="thumbnails" destination="Atx-m4-uHm" collectionClass="NSMutableArray" id="1Bv-qQ-n36"/>
+                        <outletCollection property="thumbnails" destination="8d5-MJ-Wp0" collectionClass="NSMutableArray" id="wN2-HU-sgk"/>
                         <outletCollection property="thumbnails" destination="HTU-SB-gG2" collectionClass="NSMutableArray" id="oED-Yp-l3d"/>
                         <outletCollection property="thumbnails" destination="SoR-Ak-lhp" collectionClass="NSMutableArray" id="PtF-SR-DLY"/>
-                        <outletCollection property="thumbnails" destination="Atx-m4-uHm" collectionClass="NSMutableArray" id="1Bv-qQ-n36"/>
-                        <outletCollection property="thumbnails" destination="TJZ-sI-atF" collectionClass="NSMutableArray" id="Njh-YY-1to"/>
-                        <outletCollection property="thumbnails" destination="8d5-MJ-Wp0" collectionClass="NSMutableArray" id="wN2-HU-sgk"/>
-                        <outletCollection property="thumbnails" destination="d1s-oW-4DK" collectionClass="NSMutableArray" id="uMb-GI-Bl8"/>
+                        <outletCollection property="thumbnails" destination="gcD-LW-2IX" collectionClass="NSMutableArray" id="2wW-6Y-63q"/>
                         <outletCollection property="thumbnails" destination="ktP-lY-gdL" collectionClass="NSMutableArray" id="PW8-fG-s1f"/>
                         <outletCollection property="thumbnails" destination="c4i-M5-bOn" collectionClass="NSMutableArray" id="o5c-1J-TUb"/>
+                        <outletCollection property="thumbnails" destination="d1s-oW-4DK" collectionClass="NSMutableArray" id="uMb-GI-Bl8"/>
                         <outletCollection property="thumbnails" destination="0MH-fe-TZ1" collectionClass="NSMutableArray" id="3CE-vb-RCR"/>
-                        <outletCollection property="thumbnails" destination="gcD-LW-2IX" collectionClass="NSMutableArray" id="2wW-6Y-63q"/>
+                        <outletCollection property="stackViews" destination="pkb-GG-iBV" collectionClass="NSMutableArray" id="BFs-O4-HB1"/>
+                        <outletCollection property="stackViews" destination="QdG-iP-btN" collectionClass="NSMutableArray" id="xp4-fw-x9D"/>
+                        <outletCollection property="stackViews" destination="cnk-qW-z86" collectionClass="NSMutableArray" id="LGm-nM-tLj"/>
+                        <outletCollection property="stackViews" destination="kfp-XU-0hb" collectionClass="NSMutableArray" id="4n7-cr-r1G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uCY-hP-I16" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1066" y="709"/>
+            <point key="canvasLocation" x="1066" y="708"/>
         </scene>
     </scenes>
     <resources>
