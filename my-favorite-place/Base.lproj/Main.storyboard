@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A270f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -19,22 +19,15 @@
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue</string>
-            <string>HelveticaNeue</string>
-            <string>HelveticaNeue</string>
-            <string>HelveticaNeue</string>
-            <string>HelveticaNeue</string>
-            <string>HelveticaNeue</string>
-            <string>HelveticaNeue</string>
-            <string>HelveticaNeue</string>
-            <string>HelveticaNeue</string>
-            <string>HelveticaNeue</string>
-            <string>HelveticaNeue</string>
-            <string>HelveticaNeue-Bold</string>
-            <string>HelveticaNeue</string>
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue</string>
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -50,7 +43,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="palm trees" translatesAutoresizingMaskIntoConstraints="NO" id="Mbf-LX-8v5">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="home screen" translatesAutoresizingMaskIntoConstraints="NO" id="Mbf-LX-8v5">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="compass" translatesAutoresizingMaskIntoConstraints="NO" id="GqZ-wp-8ma" userLabel="compassStroke">
@@ -231,7 +224,7 @@
                                     <rect key="frame" x="31" y="192" width="255" height="50"/>
                                 </variation>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="prF-vk-wEJ" userLabel="HEADER">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="prF-vk-wEJ" userLabel="HEADER">
                                 <rect key="frame" x="419" y="53" width="116" height="62"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="OUTDOOR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="McS-oy-R6o">
@@ -332,8 +325,8 @@
                                     <rect key="frame" x="31" y="636" width="760" height="42"/>
                                 </variation>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="lDP-Ll-dCz" userLabel="Buttons">
-                                <rect key="frame" x="218" y="553" width="181" height="34"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="lDP-Ll-dCz" userLabel="Buttons">
+                                <rect key="frame" x="210" y="540" width="181" height="34"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frN-a6-nte">
                                         <rect key="frame" x="0.0" y="0.0" width="78" height="34"/>
@@ -462,7 +455,7 @@
                             <constraint firstItem="uCo-7l-mLt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="Jgs-eg-GG6"/>
                             <constraint firstItem="D7m-7L-YeV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="KoC-8S-JJG"/>
                             <constraint firstItem="prF-vk-wEJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="M7b-2j-lEf"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lDP-Ll-dCz" secondAttribute="bottom" constant="10" id="MJd-cZ-aCH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lDP-Ll-dCz" secondAttribute="bottom" constant="36" id="MJd-cZ-aCH"/>
                             <constraint firstItem="uCo-7l-mLt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="OoR-MN-JlR"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="prF-vk-wEJ" secondAttribute="bottom" constant="29" id="Ora-pQ-btM"/>
                             <constraint firstItem="uCo-7l-mLt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="PaN-gV-gp0"/>
@@ -486,8 +479,8 @@
                                 <variation key="widthClass=compact" constant="50"/>
                             </constraint>
                             <constraint firstItem="GqZ-wp-8ma" firstAttribute="centerX" secondItem="TXy-nv-TeI" secondAttribute="centerX" id="ldC-ke-hk0"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lDP-Ll-dCz" secondAttribute="bottom" constant="13" id="pKn-k8-kRN">
-                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lDP-Ll-dCz" secondAttribute="bottom" constant="26" id="pKn-k8-kRN">
+                                <variation key="heightClass=regular-widthClass=regular" constant="35"/>
                             </constraint>
                             <constraint firstItem="prF-vk-wEJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pcI-w7-W5K"/>
                             <constraint firstItem="lDP-Ll-dCz" firstAttribute="top" secondItem="prF-vk-wEJ" secondAttribute="bottom" constant="15" id="qPR-LL-mcM"/>
@@ -506,6 +499,9 @@
                             <constraint firstItem="prF-vk-wEJ" firstAttribute="leading" secondItem="D7m-7L-YeV" secondAttribute="trailing" id="zZG-ia-ewV"/>
                         </constraints>
                         <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="prF-vk-wEJ"/>
+                            </mask>
                             <mask key="constraints">
                                 <exclude reference="1LL-1t-nH7"/>
                                 <exclude reference="9bm-0r-E7S"/>
@@ -543,6 +539,13 @@
                                 <exclude reference="VyE-pQ-J1K"/>
                                 <exclude reference="rEz-Kc-MVf"/>
                                 <exclude reference="rbV-2e-m1w"/>
+                                <exclude reference="DTf-eK-7Vk"/>
+                                <exclude reference="Z9u-yN-9kN"/>
+                                <exclude reference="qPR-LL-mcM"/>
+                                <exclude reference="wC0-xx-Ugi"/>
+                                <exclude reference="MJd-cZ-aCH"/>
+                                <exclude reference="Ora-pQ-btM"/>
+                                <exclude reference="Xpw-sX-pcy"/>
                                 <exclude reference="8Y6-Fw-bFF"/>
                                 <exclude reference="Fo8-C6-jEW"/>
                                 <exclude reference="IhH-r4-2bT"/>
@@ -557,13 +560,6 @@
                                 <exclude reference="yG4-Kl-qwN"/>
                                 <exclude reference="yfo-XZ-tg3"/>
                                 <exclude reference="zZG-ia-ewV"/>
-                                <exclude reference="DTf-eK-7Vk"/>
-                                <exclude reference="Z9u-yN-9kN"/>
-                                <exclude reference="qPR-LL-mcM"/>
-                                <exclude reference="wC0-xx-Ugi"/>
-                                <exclude reference="MJd-cZ-aCH"/>
-                                <exclude reference="Ora-pQ-btM"/>
-                                <exclude reference="Xpw-sX-pcy"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
@@ -606,17 +602,17 @@
                                 <exclude reference="PaN-gV-gp0"/>
                                 <exclude reference="rEz-Kc-MVf"/>
                                 <exclude reference="rbV-2e-m1w"/>
-                                <exclude reference="8Y6-Fw-bFF"/>
-                                <include reference="Fo8-C6-jEW"/>
-                                <exclude reference="VlK-es-BBa"/>
-                                <include reference="yG4-Kl-qwN"/>
-                                <exclude reference="yfo-XZ-tg3"/>
                                 <include reference="DTf-eK-7Vk"/>
                                 <exclude reference="Z9u-yN-9kN"/>
                                 <exclude reference="wC0-xx-Ugi"/>
                                 <include reference="MJd-cZ-aCH"/>
                                 <exclude reference="Ora-pQ-btM"/>
                                 <exclude reference="pKn-k8-kRN"/>
+                                <exclude reference="8Y6-Fw-bFF"/>
+                                <include reference="Fo8-C6-jEW"/>
+                                <exclude reference="VlK-es-BBa"/>
+                                <include reference="yG4-Kl-qwN"/>
+                                <exclude reference="yfo-XZ-tg3"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
@@ -625,11 +621,11 @@
                                 <exclude reference="Izr-Qv-DCp"/>
                                 <exclude reference="6d4-fI-wPU"/>
                                 <exclude reference="Jgs-eg-GG6"/>
+                                <exclude reference="DTf-eK-7Vk"/>
                                 <exclude reference="Fo8-C6-jEW"/>
                                 <include reference="WMd-NR-JJg"/>
                                 <exclude reference="XAb-6J-rsa"/>
                                 <exclude reference="yG4-Kl-qwN"/>
-                                <exclude reference="DTf-eK-7Vk"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
@@ -644,13 +640,13 @@
                                 <exclude reference="x7f-2A-JKB"/>
                                 <include reference="D8o-lH-BlA"/>
                                 <include reference="VyE-pQ-J1K"/>
+                                <include reference="qPR-LL-mcM"/>
                                 <exclude reference="IhH-r4-2bT"/>
                                 <include reference="JW0-re-Ms8"/>
                                 <exclude reference="pcI-w7-W5K"/>
                                 <include reference="txL-ye-bax"/>
                                 <include reference="waq-z9-kaw"/>
                                 <exclude reference="zZG-ia-ewV"/>
-                                <include reference="qPR-LL-mcM"/>
                             </mask>
                         </variation>
                     </view>
@@ -688,7 +684,7 @@
                                     <segue destination="pGD-rn-ZOF" kind="embed" id="p8K-nJ-GRc"/>
                                 </connections>
                             </containerView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bridge" translatesAutoresizingMaskIntoConstraints="NO" id="8GX-yS-ORM">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="croppedBridge1" translatesAutoresizingMaskIntoConstraints="NO" id="8GX-yS-ORM">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="D60-R7-jja">
@@ -772,106 +768,6 @@
             <point key="canvasLocation" x="1704" y="-613"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="T2m-BQ-5ao">
-            <objects>
-                <viewController storyboardIdentifier="SecondPage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TYf-Im-t8Y" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="tXE-vY-OtW"/>
-                        <viewControllerLayoutGuide type="bottom" id="NFw-cH-c4Y"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Nnl-xJ-cNd">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Bridge" translatesAutoresizingMaskIntoConstraints="NO" id="nyd-XW-ern">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="181"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="181" id="pxn-hT-OUS"/>
-                                </constraints>
-                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="800" height="181"/>
-                                </variation>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="THINGS TO DO:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4z-K4-oUK">
-                                <rect key="frame" x="18" y="189" width="214" height="28"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="• option 8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRf-2j-iEC">
-                                <rect key="frame" x="20" y="234" width="108" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="• option 8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PyS-mZ-VAg">
-                                <rect key="frame" x="20" y="270" width="108" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="• option 8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8E-AE-69u">
-                                <rect key="frame" x="20" y="303" width="108" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="• option 8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S82-oF-9ej">
-                                <rect key="frame" x="20" y="335" width="108" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="• option 8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5G-3F-SER">
-                                <rect key="frame" x="20" y="371" width="108" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="• option 8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9y-2K-wbX">
-                                <rect key="frame" x="20" y="406" width="108" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="• option 8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SM4-Mu-k19">
-                                <rect key="frame" x="20" y="443" width="108" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="• option 8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nV-hN-U36">
-                                <rect key="frame" x="20" y="477" width="108" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="• option 8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="108-WW-Ufz">
-                                <rect key="frame" x="20" y="506" width="108" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="• option 8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iMd-fM-Wzi">
-                                <rect key="frame" x="20" y="543" width="108" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="• option 8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r4F-Ct-qPw">
-                                <rect key="frame" x="20" y="577" width="108" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hsh-wU-MZV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1704" y="45"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="jvS-Cb-Pl2">
             <objects>
                 <viewController storyboardIdentifier="FirstPage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fhO-Rp-bGb" sceneMemberID="viewController">
@@ -887,7 +783,7 @@
                                 <rect key="frame" x="0.0" y="165" width="600" height="418"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="slt-V7-2dZ">
-                                        <rect key="frame" x="20" y="8" width="560" height="638"/>
+                                        <rect key="frame" x="20" y="8" width="560" height="645"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="POPULATION:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJA-EQ-0p9">
                                                 <rect key="frame" x="0.0" y="0.0" width="156" height="28"/>
@@ -961,6 +857,12 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
                                                     <rect key="frame" x="0.0" y="132" width="760" height="1265"/>
                                                 </variation>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="(Source: Wikipedia)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAl-3L-jPY">
+                                                <rect key="frame" x="0.0" y="638" width="52" height="7"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="6"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <variation key="heightClass=compact" misplaced="YES">
                                             <rect key="frame" x="20" y="190" width="560" height="638"/>
@@ -1005,40 +907,6 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AwI-WY-9Xg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1066" y="45"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="hQ6-gH-P9s">
-            <objects>
-                <viewController storyboardIdentifier="ThirdPage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ME9-q0-5Pf" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="cAJ-eY-dox"/>
-                        <viewControllerLayoutGuide type="bottom" id="JLe-GV-pGN"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="0Wo-Mr-Qf5">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Where to eat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61f-Vz-hO9">
-                                <rect key="frame" x="16" y="191" width="99" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Bridge" translatesAutoresizingMaskIntoConstraints="NO" id="I1l-Gu-eHA">
-                                <rect key="frame" x="0.0" y="2" width="600" height="181"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="181" id="KaT-Sw-17F"/>
-                                </constraints>
-                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="800" height="181"/>
-                                </variation>
-                            </imageView>
-                        </subviews>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PRW-cX-xY5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2332" y="45"/>
         </scene>
         <!--PhotosVC-->
         <scene sceneID="8i2-0g-ZHA">
@@ -1358,6 +1226,15 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
                                 <variation key="heightClass=regular-widthClass=compact" axis="vertical"/>
                                 <variation key="heightClass=regular-widthClass=regular" axis="vertical"/>
                             </stackView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0X-3M-TRv">
+                                <rect key="frame" x="282" y="562" width="46" height="30"/>
+                                <connections>
+                                    <action selector="bgBtnPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="Yfy-IN-eHi"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="CroppedBridge" translatesAutoresizingMaskIntoConstraints="NO" id="v6H-6K-fjq">
+                                <rect key="frame" x="185" y="154" width="240" height="128"/>
+                            </imageView>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Nx-zD-Ney" userLabel="Photo">
                                 <rect key="frame" x="553" y="553" width="600" height="513"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -1372,6 +1249,7 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
                                 <variation key="heightClass=regular-widthClass=regular" constant="20"/>
                             </constraint>
                             <constraint firstItem="cnk-qW-z86" firstAttribute="leading" secondItem="QdG-iP-btN" secondAttribute="trailing" constant="3" id="2Rj-vm-iCW"/>
+                            <constraint firstItem="x0X-3M-TRv" firstAttribute="top" secondItem="R3v-g9-02a" secondAttribute="bottom" id="2fT-hM-1pS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="kfp-XU-0hb" secondAttribute="trailing" constant="-10" id="4EN-Rv-ovN">
                                 <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
                             </constraint>
@@ -1379,6 +1257,8 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
                             <constraint firstAttribute="trailingMargin" secondItem="pkb-GG-iBV" secondAttribute="trailing" constant="-10" id="7FT-e0-kdT"/>
                             <constraint firstItem="QdG-iP-btN" firstAttribute="leading" secondItem="7KM-Xy-w86" secondAttribute="leadingMargin" constant="-10" id="7ZF-7J-QRe"/>
                             <constraint firstItem="o46-So-H2E" firstAttribute="leading" secondItem="7KM-Xy-w86" secondAttribute="leadingMargin" id="8Dt-r1-Idz"/>
+                            <constraint firstItem="2Nx-zD-Ney" firstAttribute="width" secondItem="x0X-3M-TRv" secondAttribute="width" id="9kD-Yd-6q6"/>
+                            <constraint firstItem="kfp-XU-0hb" firstAttribute="leading" secondItem="x0X-3M-TRv" secondAttribute="trailing" id="DCJ-RJ-AI6"/>
                             <constraint firstItem="QdG-iP-btN" firstAttribute="top" secondItem="pkb-GG-iBV" secondAttribute="bottom" constant="3" id="DJ1-4L-3t4"/>
                             <constraint firstItem="cnk-qW-z86" firstAttribute="leading" secondItem="7KM-Xy-w86" secondAttribute="leadingMargin" constant="-10" id="DeP-Ps-9E4"/>
                             <constraint firstItem="2Nx-zD-Ney" firstAttribute="top" secondItem="R3v-g9-02a" secondAttribute="bottom" id="EJT-gS-oJS"/>
@@ -1386,6 +1266,7 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
                                 <variation key="heightClass=regular-widthClass=regular" constant="20"/>
                             </constraint>
                             <constraint firstItem="QdG-iP-btN" firstAttribute="width" secondItem="pkb-GG-iBV" secondAttribute="width" id="EgC-Hr-Ny6"/>
+                            <constraint firstItem="1O3-s5-MDu" firstAttribute="top" secondItem="x0X-3M-TRv" secondAttribute="bottom" id="EoI-Le-Bz0"/>
                             <constraint firstItem="QdG-iP-btN" firstAttribute="height" secondItem="pkb-GG-iBV" secondAttribute="height" id="GKU-MK-r16"/>
                             <constraint firstItem="o46-So-H2E" firstAttribute="centerY" secondItem="R3v-g9-02a" secondAttribute="centerY" id="HN5-bs-bce"/>
                             <constraint firstItem="o46-So-H2E" firstAttribute="top" secondItem="kfp-XU-0hb" secondAttribute="bottom" constant="5" id="HNr-as-jSV"/>
@@ -1411,9 +1292,12 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
                                 <variation key="heightClass=regular-widthClass=regular" constant="20"/>
                             </constraint>
                             <constraint firstAttribute="trailingMargin" secondItem="QdG-iP-btN" secondAttribute="trailing" constant="-10" id="b5F-1X-Rgm"/>
+                            <constraint firstItem="2Nx-zD-Ney" firstAttribute="centerX" secondItem="v6H-6K-fjq" secondAttribute="centerX" id="bJQ-cq-iIo"/>
+                            <constraint firstItem="x0X-3M-TRv" firstAttribute="leading" secondItem="pkb-GG-iBV" secondAttribute="trailing" id="bzV-9u-dBh"/>
                             <constraint firstItem="QdG-iP-btN" firstAttribute="top" secondItem="pkb-GG-iBV" secondAttribute="bottom" constant="3" id="eCe-DI-7fN"/>
                             <constraint firstItem="cnk-qW-z86" firstAttribute="top" secondItem="QdG-iP-btN" secondAttribute="bottom" constant="3" id="fI4-rv-8eo"/>
                             <constraint firstAttribute="trailing" secondItem="2Nx-zD-Ney" secondAttribute="trailing" id="fSX-nH-r7u"/>
+                            <constraint firstItem="2Nx-zD-Ney" firstAttribute="centerY" secondItem="v6H-6K-fjq" secondAttribute="centerY" id="gB7-xK-yEF"/>
                             <constraint firstItem="1O3-s5-MDu" firstAttribute="top" secondItem="2Nx-zD-Ney" secondAttribute="bottom" id="kqP-mi-mMU"/>
                             <constraint firstItem="cnk-qW-z86" firstAttribute="height" secondItem="pkb-GG-iBV" secondAttribute="height" id="mqz-iV-qfL"/>
                             <constraint firstItem="kfp-XU-0hb" firstAttribute="top" secondItem="cnk-qW-z86" secondAttribute="bottom" constant="3" id="nAU-FI-hM8"/>
@@ -1425,6 +1309,8 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
                             <constraint firstItem="1O3-s5-MDu" firstAttribute="top" secondItem="kfp-XU-0hb" secondAttribute="bottom" constant="5" id="u2Q-Zc-qcJ">
                                 <variation key="heightClass=regular-widthClass=regular" constant="20"/>
                             </constraint>
+                            <constraint firstItem="2Nx-zD-Ney" firstAttribute="centerY" secondItem="x0X-3M-TRv" secondAttribute="centerY" id="ux5-ax-8Eq"/>
+                            <constraint firstItem="2Nx-zD-Ney" firstAttribute="centerX" secondItem="x0X-3M-TRv" secondAttribute="centerX" id="v7t-gi-FzH"/>
                             <constraint firstItem="cnk-qW-z86" firstAttribute="width" secondItem="pkb-GG-iBV" secondAttribute="width" id="v9k-sZ-5ha"/>
                             <constraint firstItem="1O3-s5-MDu" firstAttribute="top" secondItem="QdG-iP-btN" secondAttribute="bottom" constant="5" id="vJh-kc-kTY">
                                 <variation key="heightClass=regular-widthClass=regular" constant="20"/>
@@ -1448,10 +1334,12 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
                                 <exclude reference="aLn-uE-EAA"/>
                                 <exclude reference="fI4-rv-8eo"/>
                                 <exclude reference="mqz-iV-qfL"/>
+                                <exclude reference="DCJ-RJ-AI6"/>
                                 <exclude reference="LRA-q2-4Te"/>
                                 <exclude reference="nAU-FI-hM8"/>
                                 <exclude reference="pUx-1o-6RX"/>
                                 <exclude reference="zYq-D1-ugF"/>
+                                <exclude reference="bzV-9u-dBh"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
@@ -1489,7 +1377,9 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="bgBtn" destination="x0X-3M-TRv" id="737-hf-N9y"/>
                         <outlet property="bigPhoto" destination="2Nx-zD-Ney" id="ZKi-U7-ZiB"/>
+                        <outlet property="blockingView" destination="v6H-6K-fjq" id="izN-0c-GuE"/>
                         <outlet property="home" destination="o46-So-H2E" id="Mud-0w-WMx"/>
                         <outletCollection property="thumbnails" destination="xuX-Di-g3D" collectionClass="NSMutableArray" id="h8o-ye-UYv"/>
                         <outletCollection property="thumbnails" destination="Nf9-bU-QYE" collectionClass="NSMutableArray" id="iEi-VZ-KQu"/>
@@ -1521,11 +1411,344 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
             </objects>
             <point key="canvasLocation" x="1066" y="708"/>
         </scene>
+        <!--TableVC-->
+        <scene sceneID="10b-cb-HGH">
+            <objects>
+                <viewController storyboardIdentifier="SecondPage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Fsk-Jp-vD1" customClass="TableVC" customModule="San_Diego" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HCD-vS-tqO"/>
+                        <viewControllerLayoutGuide type="bottom" id="7pZ-0o-Oyf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7gj-KP-sNH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="92" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="l9B-cF-1nA">
+                                <rect key="frame" x="0.0" y="82" width="600" height="498"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ToDoCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="ToDoCell" rowHeight="92" id="9nk-oE-5kE" customClass="tableCells" customModule="San_Diego" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="92"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9nk-oE-5kE" id="aaY-zG-bfZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="91.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yKP-NW-bWz">
+                                                    <rect key="frame" x="18" y="8" width="75" height="75"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="75" id="4io-ol-MTX"/>
+                                                        <constraint firstAttribute="width" constant="75" id="ibV-bQ-Zr3"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placeholder Lbl" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="lu6-9S-fPy">
+                                                    <rect key="frame" x="101" y="8" width="481" height="75.5"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="lu6-9S-fPy" firstAttribute="top" secondItem="aaY-zG-bfZ" secondAttribute="topMargin" id="7Rh-ni-0ab"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="yKP-NW-bWz" secondAttribute="bottom" constant="0.5" id="Cid-DG-MOZ"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="lu6-9S-fPy" secondAttribute="trailing" constant="10" id="Og5-9a-qR5"/>
+                                                <constraint firstItem="lu6-9S-fPy" firstAttribute="leading" secondItem="yKP-NW-bWz" secondAttribute="trailing" constant="8" id="QKu-td-Nsu"/>
+                                                <constraint firstItem="yKP-NW-bWz" firstAttribute="leading" secondItem="aaY-zG-bfZ" secondAttribute="leadingMargin" constant="10" id="TeV-6e-ann"/>
+                                                <constraint firstItem="yKP-NW-bWz" firstAttribute="top" secondItem="aaY-zG-bfZ" secondAttribute="topMargin" id="UcG-hT-JpY"/>
+                                                <constraint firstItem="lu6-9S-fPy" firstAttribute="bottom" secondItem="aaY-zG-bfZ" secondAttribute="bottomMargin" id="nwo-7z-r47"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="Cid-DG-MOZ"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="mainImg" destination="yKP-NW-bWz" id="1cr-he-1wL"/>
+                                            <outlet property="mainLbl" destination="lu6-9S-fPy" id="1wA-G9-QY4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="l9B-cF-1nA" firstAttribute="top" secondItem="HCD-vS-tqO" secondAttribute="bottom" constant="145" id="65O-1h-NdF">
+                                <variation key="heightClass=compact" constant="115"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="195"/>
+                            </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="l9B-cF-1nA" secondAttribute="trailing" constant="-20" id="GWl-Sd-bk7"/>
+                            <constraint firstItem="l9B-cF-1nA" firstAttribute="leading" secondItem="7gj-KP-sNH" secondAttribute="leadingMargin" constant="-20" id="Vyb-cw-0N6"/>
+                            <constraint firstItem="7pZ-0o-Oyf" firstAttribute="top" secondItem="l9B-cF-1nA" secondAttribute="bottom" constant="20" id="ooo-Qw-I3i"/>
+                            <constraint firstItem="l9B-cF-1nA" firstAttribute="trailing" secondItem="7gj-KP-sNH" secondAttribute="trailingMargin" constant="-20" id="sRX-Wo-0h4"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="sRX-Wo-0h4"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="l9B-cF-1nA" id="AOt-Ng-Sz5"/>
+                        <segue destination="iyl-i3-hfA" kind="show" identifier="ThingToDo" id="YjC-Ta-Fy6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y0C-NH-2Nc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1704" y="45"/>
+        </scene>
+        <!--Thing To DoVC-->
+        <scene sceneID="4AZ-Nu-ayX">
+            <objects>
+                <viewController storyboardIdentifier="ThingsToDo" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iyl-i3-hfA" customClass="ThingToDoVC" customModule="San_Diego" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YX0-ow-Y6z"/>
+                        <viewControllerLayoutGuide type="bottom" id="fFf-Wk-dfs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="D1s-a0-aS1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VSy-oN-grU">
+                                <rect key="frame" x="20" y="69" width="560" height="309"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Description" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="15I-rp-Cqc">
+                                <rect key="frame" x="0.0" y="378" width="600" height="222"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="KNk-4v-bNF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L8h-qa-ugH">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Placeholder" id="7rj-Qz-jnx">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="1Pf-qA-wdh">
+                                            <connections>
+                                                <action selector="goBack:" destination="iyl-i3-hfA" id="GGK-ou-bZ3"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="15I-rp-Cqc" secondAttribute="trailing" id="1ph-Xh-nPl"/>
+                            <constraint firstItem="L8h-qa-ugH" firstAttribute="top" secondItem="YX0-ow-Y6z" secondAttribute="bottom" id="3w1-9w-VIp"/>
+                            <constraint firstItem="VSy-oN-grU" firstAttribute="top" secondItem="L8h-qa-ugH" secondAttribute="bottom" id="5ZA-vf-sfb"/>
+                            <constraint firstItem="VSy-oN-grU" firstAttribute="top" secondItem="D1s-a0-aS1" secondAttribute="top" id="Cun-L3-6aU"/>
+                            <constraint firstItem="VSy-oN-grU" firstAttribute="leading" secondItem="D1s-a0-aS1" secondAttribute="leading" id="FBq-Lp-GEn"/>
+                            <constraint firstItem="L8h-qa-ugH" firstAttribute="top" secondItem="D1s-a0-aS1" secondAttribute="top" id="FgJ-6a-ILT"/>
+                            <constraint firstItem="L8h-qa-ugH" firstAttribute="leading" secondItem="D1s-a0-aS1" secondAttribute="leading" id="LWE-Df-My1"/>
+                            <constraint firstItem="VSy-oN-grU" firstAttribute="top" secondItem="YX0-ow-Y6z" secondAttribute="bottom" constant="8" id="cCt-ap-NZP"/>
+                            <constraint firstItem="VSy-oN-grU" firstAttribute="leading" secondItem="D1s-a0-aS1" secondAttribute="leadingMargin" id="djC-hX-udE"/>
+                            <constraint firstItem="VSy-oN-grU" firstAttribute="trailing" secondItem="D1s-a0-aS1" secondAttribute="trailingMargin" id="fk9-EV-obN"/>
+                            <constraint firstItem="15I-rp-Cqc" firstAttribute="leading" secondItem="D1s-a0-aS1" secondAttribute="leading" id="jjC-m5-LFy"/>
+                            <constraint firstItem="VSy-oN-grU" firstAttribute="top" secondItem="L8h-qa-ugH" secondAttribute="bottom" constant="5" id="lNh-Hs-Io3"/>
+                            <constraint firstItem="15I-rp-Cqc" firstAttribute="top" secondItem="VSy-oN-grU" secondAttribute="bottom" id="m58-tT-NRS"/>
+                            <constraint firstItem="15I-rp-Cqc" firstAttribute="top" secondItem="VSy-oN-grU" secondAttribute="bottom" id="oan-kQ-6ev"/>
+                            <constraint firstItem="15I-rp-Cqc" firstAttribute="leading" secondItem="D1s-a0-aS1" secondAttribute="leading" id="opD-dR-Gv2"/>
+                            <constraint firstItem="fFf-Wk-dfs" firstAttribute="top" secondItem="15I-rp-Cqc" secondAttribute="bottom" id="t4G-n3-Yoy"/>
+                            <constraint firstAttribute="trailing" secondItem="VSy-oN-grU" secondAttribute="trailing" id="uGa-Hb-uNv"/>
+                            <constraint firstAttribute="trailing" secondItem="L8h-qa-ugH" secondAttribute="trailing" id="x5E-As-Bbw"/>
+                            <constraint firstAttribute="trailing" secondItem="15I-rp-Cqc" secondAttribute="trailing" id="zSw-us-xLG"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="FgJ-6a-ILT"/>
+                                <exclude reference="5ZA-vf-sfb"/>
+                                <exclude reference="Cun-L3-6aU"/>
+                                <exclude reference="FBq-Lp-GEn"/>
+                                <exclude reference="cCt-ap-NZP"/>
+                                <exclude reference="uGa-Hb-uNv"/>
+                                <exclude reference="jjC-m5-LFy"/>
+                                <exclude reference="oan-kQ-6ev"/>
+                                <exclude reference="zSw-us-xLG"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="thingImg" destination="VSy-oN-grU" id="AHU-Lr-sUK"/>
+                        <outlet property="thingLabel" destination="15I-rp-Cqc" id="sSS-Ok-zHh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="76e-2H-mcV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1704" y="708"/>
+        </scene>
+        <!--Places TableVC-->
+        <scene sceneID="6ka-p6-OOc">
+            <objects>
+                <viewController storyboardIdentifier="ThirdPage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zqO-72-ZnF" customClass="PlacesTableVC" customModule="San_Diego" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QUu-0o-gfO"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qcm-a9-EWY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FsU-eS-vCq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="92" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="n4i-r2-2k2">
+                                <rect key="frame" x="0.0" y="82" width="600" height="498"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ToDoCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="ToDoCell" rowHeight="92" id="RX3-CO-l7a" customClass="tableCells" customModule="San_Diego" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="92"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RX3-CO-l7a" id="06m-pb-lRH">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="91.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qP6-J8-R30">
+                                                    <rect key="frame" x="18" y="8" width="75" height="75"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="75" id="Op3-My-Y9o"/>
+                                                        <constraint firstAttribute="width" constant="75" id="UWQ-r0-4Zo"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placeholder Lbl" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="KW0-h7-wOU">
+                                                    <rect key="frame" x="101" y="8" width="481" height="75.5"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="qP6-J8-R30" secondAttribute="bottom" constant="0.5" id="12v-ZF-AI1"/>
+                                                <constraint firstItem="qP6-J8-R30" firstAttribute="leading" secondItem="06m-pb-lRH" secondAttribute="leadingMargin" constant="10" id="Gqp-RU-0SX"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="KW0-h7-wOU" secondAttribute="trailing" constant="10" id="GyR-8L-Cl6"/>
+                                                <constraint firstItem="qP6-J8-R30" firstAttribute="top" secondItem="06m-pb-lRH" secondAttribute="topMargin" id="JTJ-bU-IXj"/>
+                                                <constraint firstItem="KW0-h7-wOU" firstAttribute="trailing" secondItem="06m-pb-lRH" secondAttribute="trailingMargin" constant="10" id="WDh-87-GIV"/>
+                                                <constraint firstItem="KW0-h7-wOU" firstAttribute="bottom" secondItem="06m-pb-lRH" secondAttribute="bottomMargin" id="Wfq-2l-UYE"/>
+                                                <constraint firstItem="KW0-h7-wOU" firstAttribute="leading" secondItem="qP6-J8-R30" secondAttribute="trailing" constant="8" id="ZxF-k5-ru7"/>
+                                                <constraint firstItem="KW0-h7-wOU" firstAttribute="top" secondItem="06m-pb-lRH" secondAttribute="topMargin" id="iMq-z6-G3v"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="12v-ZF-AI1"/>
+                                                    <exclude reference="WDh-87-GIV"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="mainImg" destination="qP6-J8-R30" id="Bl0-vj-kYS"/>
+                                            <outlet property="mainLbl" destination="KW0-h7-wOU" id="W3y-qq-NPF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="n4i-r2-2k2" firstAttribute="leading" secondItem="FsU-eS-vCq" secondAttribute="leadingMargin" constant="-20" id="EDW-gu-R6f"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="n4i-r2-2k2" secondAttribute="trailing" constant="-20" id="JVN-Bl-dBw"/>
+                            <constraint firstItem="n4i-r2-2k2" firstAttribute="top" secondItem="QUu-0o-gfO" secondAttribute="bottom" constant="145" id="Y5f-gQ-tuN">
+                                <variation key="heightClass=compact" constant="115"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="195"/>
+                            </constraint>
+                            <constraint firstItem="Qcm-a9-EWY" firstAttribute="top" secondItem="n4i-r2-2k2" secondAttribute="bottom" constant="20" id="l7N-P4-B4u"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="placesTable" destination="n4i-r2-2k2" id="0Sz-hC-Lod"/>
+                        <segue destination="IA5-kP-jA7" kind="show" identifier="PlaceToEat" id="8rm-ZM-ymO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kXp-Zr-ip7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2330" y="45"/>
+        </scene>
+        <!--Place To EatVC-->
+        <scene sceneID="3sQ-Sw-fUe">
+            <objects>
+                <viewController storyboardIdentifier="PlaceToGo" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IA5-kP-jA7" customClass="PlaceToEatVC" customModule="San_Diego" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HHI-1M-UYL"/>
+                        <viewControllerLayoutGuide type="bottom" id="A50-rl-T4b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OXt-5N-NQy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YHI-iI-FB7">
+                                <rect key="frame" x="20" y="69" width="560" height="309"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Description" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Xc9-HS-OMq">
+                                <rect key="frame" x="0.0" y="378" width="600" height="222"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="dxh-Yl-Tde"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I5q-7K-Ukb">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Placeholder" id="kPc-ih-2X5">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="aRC-CJ-CFj">
+                                            <connections>
+                                                <action selector="goBack:" destination="IA5-kP-jA7" id="ait-wA-IQk"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YHI-iI-FB7" firstAttribute="trailing" secondItem="OXt-5N-NQy" secondAttribute="trailingMargin" id="0lE-nK-4gI"/>
+                            <constraint firstItem="A50-rl-T4b" firstAttribute="top" secondItem="Xc9-HS-OMq" secondAttribute="bottom" id="14f-Sm-1JV"/>
+                            <constraint firstItem="YHI-iI-FB7" firstAttribute="top" secondItem="HHI-1M-UYL" secondAttribute="bottom" constant="8" id="5nx-SJ-xlN"/>
+                            <constraint firstItem="YHI-iI-FB7" firstAttribute="leading" secondItem="OXt-5N-NQy" secondAttribute="leadingMargin" id="AGt-gx-utm"/>
+                            <constraint firstItem="I5q-7K-Ukb" firstAttribute="leading" secondItem="OXt-5N-NQy" secondAttribute="leading" id="DFo-qJ-dRb"/>
+                            <constraint firstAttribute="trailing" secondItem="Xc9-HS-OMq" secondAttribute="trailing" id="EzQ-RZ-Y7J"/>
+                            <constraint firstAttribute="trailing" secondItem="Xc9-HS-OMq" secondAttribute="trailing" id="GkB-SK-qPi"/>
+                            <constraint firstItem="YHI-iI-FB7" firstAttribute="leading" secondItem="OXt-5N-NQy" secondAttribute="leading" id="NEn-e2-Od3"/>
+                            <constraint firstItem="I5q-7K-Ukb" firstAttribute="top" secondItem="OXt-5N-NQy" secondAttribute="top" id="RtG-Hb-9z2"/>
+                            <constraint firstItem="YHI-iI-FB7" firstAttribute="top" secondItem="I5q-7K-Ukb" secondAttribute="bottom" id="V53-7T-SML"/>
+                            <constraint firstItem="I5q-7K-Ukb" firstAttribute="top" secondItem="HHI-1M-UYL" secondAttribute="bottom" id="VBu-3x-NJH"/>
+                            <constraint firstItem="Xc9-HS-OMq" firstAttribute="leading" secondItem="OXt-5N-NQy" secondAttribute="leading" id="aLF-AC-Q1C"/>
+                            <constraint firstItem="Xc9-HS-OMq" firstAttribute="top" secondItem="YHI-iI-FB7" secondAttribute="bottom" id="b4q-zc-K2F"/>
+                            <constraint firstAttribute="trailing" secondItem="YHI-iI-FB7" secondAttribute="trailing" id="mpA-j5-Nw7"/>
+                            <constraint firstAttribute="trailing" secondItem="I5q-7K-Ukb" secondAttribute="trailing" id="nBg-lg-laI"/>
+                            <constraint firstItem="Xc9-HS-OMq" firstAttribute="leading" secondItem="OXt-5N-NQy" secondAttribute="leading" id="ocD-nY-qbc"/>
+                            <constraint firstItem="YHI-iI-FB7" firstAttribute="top" secondItem="I5q-7K-Ukb" secondAttribute="bottom" constant="5" id="ofb-0H-VNj"/>
+                            <constraint firstItem="Xc9-HS-OMq" firstAttribute="top" secondItem="YHI-iI-FB7" secondAttribute="bottom" id="vJP-9b-5vg"/>
+                            <constraint firstItem="YHI-iI-FB7" firstAttribute="top" secondItem="OXt-5N-NQy" secondAttribute="top" id="vU1-7b-itS"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="RtG-Hb-9z2"/>
+                                <exclude reference="V53-7T-SML"/>
+                                <exclude reference="vU1-7b-itS"/>
+                                <exclude reference="NEn-e2-Od3"/>
+                                <exclude reference="5nx-SJ-xlN"/>
+                                <exclude reference="mpA-j5-Nw7"/>
+                                <exclude reference="ocD-nY-qbc"/>
+                                <exclude reference="vJP-9b-5vg"/>
+                                <exclude reference="GkB-SK-qPi"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="placeImg" destination="YHI-iI-FB7" id="bEj-qw-snl"/>
+                        <outlet property="placeLabel" destination="Xc9-HS-OMq" id="ImG-rx-hQ5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yg1-m7-cM8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2330" y="708"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="Bridge" width="1200" height="400"/>
+        <image name="CroppedBridge" width="1200" height="250"/>
         <image name="compass" width="35" height="35"/>
-        <image name="palm trees" width="1440" height="882"/>
+        <image name="croppedBridge1" width="1200" height="330"/>
+        <image name="home screen" width="3840" height="2160"/>
         <image name="photo0" width="1600" height="1067"/>
         <image name="photo1" width="1600" height="1067"/>
         <image name="photo10" width="3840" height="2160"/>
@@ -1540,8 +1763,8 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
         <image name="photo19" width="3840" height="2160"/>
         <image name="photo2" width="616" height="347"/>
         <image name="photo3" width="1280" height="885"/>
-        <image name="photo4" width="3840" height="2160"/>
-        <image name="photo5" width="3840" height="2160"/>
+        <image name="photo4" width="1000" height="673"/>
+        <image name="photo5" width="630" height="421"/>
         <image name="photo6" width="3840" height="2160"/>
         <image name="photo7" width="3840" height="2160"/>
         <image name="photo8" width="3840" height="2160"/>

@@ -7,17 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F92BE30B1D505FCE001334C6 /* TableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92BE30A1D505FCE001334C6 /* TableVC.swift */; };
+		F92BE30D1D50610D001334C6 /* tableCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92BE30C1D50610D001334C6 /* tableCells.swift */; };
+		F92BE30F1D506822001334C6 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92BE30E1D506822001334C6 /* ToDo.swift */; };
 		F92D80DA1D438805006778DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92D80D91D438805006778DB /* AppDelegate.swift */; };
 		F92D80DC1D438805006778DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92D80DB1D438805006778DB /* ViewController.swift */; };
 		F92D80DF1D438805006778DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92D80DD1D438805006778DB /* Main.storyboard */; };
 		F92D80E11D438805006778DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F92D80E01D438805006778DB /* Assets.xcassets */; };
 		F92D80E41D438805006778DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92D80E21D438805006778DB /* LaunchScreen.storyboard */; };
+		F974F3DD1D53404D003D208E /* ThingToDoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F974F3DC1D53404D003D208E /* ThingToDoVC.swift */; };
 		F98636ED1D44A85C0058B88D /* PhotosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98636EC1D44A85C0058B88D /* PhotosVC.swift */; };
 		F98636F31D44C5040058B88D /* AboutPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98636F21D44C5040058B88D /* AboutPageVC.swift */; };
 		F98636F51D44DAC90058B88D /* PageDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98636F41D44DAC90058B88D /* PageDots.swift */; };
+		F9FA1A851D5484F10079646E /* PlacesTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FA1A841D5484F10079646E /* PlacesTableVC.swift */; };
+		F9FA1A871D548AC40079646E /* PlaceToEatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FA1A861D548AC40079646E /* PlaceToEatVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F92BE30A1D505FCE001334C6 /* TableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableVC.swift; sourceTree = "<group>"; };
+		F92BE30C1D50610D001334C6 /* tableCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tableCells.swift; sourceTree = "<group>"; };
+		F92BE30E1D506822001334C6 /* ToDo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		F92D80D61D438805006778DB /* San Diego.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "San Diego.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92D80D91D438805006778DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F92D80DB1D438805006778DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,9 +34,12 @@
 		F92D80E01D438805006778DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F92D80E31D438805006778DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F92D80E51D438805006778DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F974F3DC1D53404D003D208E /* ThingToDoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingToDoVC.swift; sourceTree = "<group>"; };
 		F98636EC1D44A85C0058B88D /* PhotosVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosVC.swift; sourceTree = "<group>"; };
 		F98636F21D44C5040058B88D /* AboutPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutPageVC.swift; path = ../AboutPageVC.swift; sourceTree = "<group>"; };
 		F98636F41D44DAC90058B88D /* PageDots.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageDots.swift; sourceTree = "<group>"; };
+		F9FA1A841D5484F10079646E /* PlacesTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesTableVC.swift; sourceTree = "<group>"; };
+		F9FA1A861D548AC40079646E /* PlaceToEatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceToEatVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +81,12 @@
 				F98636EC1D44A85C0058B88D /* PhotosVC.swift */,
 				F98636F21D44C5040058B88D /* AboutPageVC.swift */,
 				F98636F41D44DAC90058B88D /* PageDots.swift */,
+				F92BE30A1D505FCE001334C6 /* TableVC.swift */,
+				F92BE30C1D50610D001334C6 /* tableCells.swift */,
+				F92BE30E1D506822001334C6 /* ToDo.swift */,
+				F974F3DC1D53404D003D208E /* ThingToDoVC.swift */,
+				F9FA1A841D5484F10079646E /* PlacesTableVC.swift */,
+				F9FA1A861D548AC40079646E /* PlaceToEatVC.swift */,
 			);
 			path = "my-favorite-place";
 			sourceTree = "<group>";
@@ -147,8 +165,14 @@
 			files = (
 				F92D80DC1D438805006778DB /* ViewController.swift in Sources */,
 				F92D80DA1D438805006778DB /* AppDelegate.swift in Sources */,
+				F92BE30D1D50610D001334C6 /* tableCells.swift in Sources */,
+				F92BE30F1D506822001334C6 /* ToDo.swift in Sources */,
+				F9FA1A871D548AC40079646E /* PlaceToEatVC.swift in Sources */,
 				F98636F51D44DAC90058B88D /* PageDots.swift in Sources */,
+				F92BE30B1D505FCE001334C6 /* TableVC.swift in Sources */,
 				F98636ED1D44A85C0058B88D /* PhotosVC.swift in Sources */,
+				F9FA1A851D5484F10079646E /* PlacesTableVC.swift in Sources */,
+				F974F3DD1D53404D003D208E /* ThingToDoVC.swift in Sources */,
 				F98636F31D44C5040058B88D /* AboutPageVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

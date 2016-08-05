@@ -38,13 +38,13 @@ class ViewController: UIViewController {
         aboutBtn.layer.cornerRadius = 5.0
         photosBtn.layer.cornerRadius = 5.0
         
-        stroke(san, text: "SAN", width: -0.8)
+       /* stroke(san, text: "SAN", width: -0.8)
         stroke(diego, text: "DIEGO", width: -0.8)
         stroke(california, text: "CALIFORNIA", width: -3.0)
         stroke(outdoor, text: "OUTDOOR", width: -2.0)
         stroke(adventure, text: "ADVENTURES", width: -2.0)
         stroke(beach, text: "BEACH", width: -2.0)
-        compassStroke(compass.image!)
+        compassStroke(compass.image!) */
         
     }
 

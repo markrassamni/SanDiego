@@ -28,7 +28,7 @@ class PageDots: UIViewController {
         
         backBtn.layer.cornerRadius = 5.0
         
-        aboutLbl.attributedText = NSAttributedString(string: "ABOUT SAN DIEGO", attributes: [NSStrokeColorAttributeName: UIColor.blackColor(), NSStrokeWidthAttributeName: -3.5])
+        //aboutLbl.attributedText = NSAttributedString(string: "ABOUT SAN DIEGO", attributes: [NSStrokeColorAttributeName: UIColor.blackColor(), NSStrokeWidthAttributeName: -3.5])
         
       //  backBtn.titleLabel?.attributedText = NSAttributedString(string: "< Back", attributes: [NSStrokeColorAttributeName: UIColor.blackColor(), NSStrokeWidthAttributeName: -2.5])
     }
@@ -49,6 +49,13 @@ extension PageDots: AboutPageVCDelegate {
     
     func aboutPageVC(aboutPageVC: AboutPageVC, didUpdatePageIndex index: Int) {
         dotsView.currentPage = index
+        if index == 0{
+            aboutLbl.text = "ABOUT SAN DIEGO"
+        } else if index == 1{
+            aboutLbl.text = "THINGS TO DO"
+        } else if index == 2{
+            aboutLbl.text = "PLACES TO EAT"
+        }
     }
     
 }
