@@ -34,10 +34,7 @@ class PlaceToEatVC: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         placeImg.image = UIImage(named: "photo\(place)")
+        //name images placeX
         placeLabel.text = placeDescription[place]
-        if place == 2{
-            placeImg.image = UIImage(named: "princess")
-        }
-
     }
 }

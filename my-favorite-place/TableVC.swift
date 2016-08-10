@@ -26,16 +26,17 @@ class TableVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         super.viewWillAppear(animated)
       
         if let indexPath: NSIndexPath = self.tableView.indexPathForSelectedRow {
-            self.tableView.deselectRowAtIndexPath(indexPath, animated: animated)
+            self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
         }
     }
     
     func initToDo(){
         toDo = []
+        //rename img to thingX
         let activity0 = ToDo(img: UIImage(named: "photo0")!, description: "Thing 1")
         let activity1 = ToDo(img: UIImage(named: "photo1")!, description: "Thing 2")
         
-        let activity2 = ToDo(img: UIImage(named: "princess")!, description: "I need help thinking of things to do princess")
+        let activity2 = ToDo(img: UIImage(named: "photo2")!, description: "Thing 3")
        
         
 
@@ -43,7 +44,7 @@ class TableVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         toDo.append(activity1)
         toDo.append(activity2)
         
-
+//        tableView.reloadData() // ADD IN SAN DIEGO APP???
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -71,16 +72,18 @@ class TableVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
         
-        let cellIndex = indexPath.row
-        performSegueWithIdentifier("ThingToDo", sender: cellIndex)
+        let cellIndex = toDo[indexPath.row]
+        performSegueWithIdentifier("PlaceToGo", sender: cellIndex)
         
         return indexPath
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let thingToDo = segue.destinationViewController as? ThingToDoVC{
-            if let index = sender as? Int {
-                thingToDo.thing = index
+        if segue.identifier == "PlaceToGo" {
+            if let thingToDo = segue.destinationViewController as? PlaceToGoVC{
+                if let place = sender as? ToDo {
+                    thingToDo.place = place
+                }
             }
         }
     }

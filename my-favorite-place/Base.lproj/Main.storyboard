@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A270f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -21,13 +21,15 @@
             <string>HelveticaNeue</string>
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
-            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Bold</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -1235,7 +1237,7 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
                             <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="CroppedBridge" translatesAutoresizingMaskIntoConstraints="NO" id="v6H-6K-fjq">
                                 <rect key="frame" x="185" y="154" width="240" height="128"/>
                             </imageView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Nx-zD-Ney" userLabel="Photo">
+                            <imageView hidden="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Nx-zD-Ney" userLabel="Photo">
                                 <rect key="frame" x="553" y="553" width="600" height="513"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=compact" misplaced="YES">
@@ -1490,17 +1492,17 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
                     </view>
                     <connections>
                         <outlet property="tableView" destination="l9B-cF-1nA" id="AOt-Ng-Sz5"/>
-                        <segue destination="iyl-i3-hfA" kind="show" identifier="ThingToDo" id="YjC-Ta-Fy6"/>
+                        <segue destination="iyl-i3-hfA" kind="show" identifier="PlaceToGo" id="YjC-Ta-Fy6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y0C-NH-2Nc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1704" y="45"/>
         </scene>
-        <!--Thing To DoVC-->
+        <!--Place To GoVC-->
         <scene sceneID="4AZ-Nu-ayX">
             <objects>
-                <viewController storyboardIdentifier="ThingsToDo" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iyl-i3-hfA" customClass="ThingToDoVC" customModule="San_Diego" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ThingsToDo" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iyl-i3-hfA" customClass="PlaceToGoVC" customModule="San_Diego" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YX0-ow-Y6z"/>
                         <viewControllerLayoutGuide type="bottom" id="fFf-Wk-dfs"/>
@@ -1509,70 +1511,101 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VSy-oN-grU">
-                                <rect key="frame" x="20" y="69" width="560" height="309"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Description" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="15I-rp-Cqc">
-                                <rect key="frame" x="0.0" y="378" width="600" height="222"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="15I-rp-Cqc">
+                                <rect key="frame" x="20" y="500" width="560" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="KNk-4v-bNF"/>
+                                    <constraint firstAttribute="height" constant="100" id="KNk-4v-bNF"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="Xqd-h3-ec4"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="KNk-4v-bNF"/>
+                                    </mask>
+                                </variation>
                             </label>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L8h-qa-ugH">
-                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
-                                <items>
-                                    <navigationItem title="Placeholder" id="7rj-Qz-jnx">
-                                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="1Pf-qA-wdh">
-                                            <connections>
-                                                <action selector="goBack:" destination="iyl-i3-hfA" id="GGK-ou-bZ3"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thing/Place" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jr7-SZ-Gnx">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="87"/>
+                                <color key="backgroundColor" red="0.96470588239999999" green="0.32156862749999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="YnY-sE-qu5">
+                                        <variation key="heightClass=compact" constant="35"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Swv-Uo-96M" userLabel="&lt;Back Home">
+                                <rect key="frame" x="20" y="28" width="53" height="32"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="&lt; Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=compact" misplaced="YES">
+                                    <rect key="frame" x="10" y="303" width="53" height="32"/>
+                                </variation>
+                                <connections>
+                                    <action selector="goBack:" destination="iyl-i3-hfA" eventType="touchUpInside" id="atz-XQ-U3N"/>
+                                    <action selector="onBackPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="Ysj-j7-rGG"/>
+                                    <action selector="onBackPressed:" destination="kc2-Lm-pd5" eventType="touchUpInside" id="uXM-sh-HQ5"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VSy-oN-grU">
+                                <rect key="frame" x="20" y="95" width="560" height="397"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="15I-rp-Cqc" secondAttribute="trailing" id="1ph-Xh-nPl"/>
-                            <constraint firstItem="L8h-qa-ugH" firstAttribute="top" secondItem="YX0-ow-Y6z" secondAttribute="bottom" id="3w1-9w-VIp"/>
-                            <constraint firstItem="VSy-oN-grU" firstAttribute="top" secondItem="L8h-qa-ugH" secondAttribute="bottom" id="5ZA-vf-sfb"/>
+                            <constraint firstItem="15I-rp-Cqc" firstAttribute="top" secondItem="VSy-oN-grU" secondAttribute="bottom" constant="8" id="3CA-Ht-3kA"/>
+                            <constraint firstItem="Swv-Uo-96M" firstAttribute="leading" secondItem="D1s-a0-aS1" secondAttribute="leadingMargin" id="53H-BL-tpv"/>
+                            <constraint firstItem="VSy-oN-grU" firstAttribute="trailing" secondItem="D1s-a0-aS1" secondAttribute="trailingMargin" id="8ax-Ww-7o2"/>
+                            <constraint firstItem="Jr7-SZ-Gnx" firstAttribute="leading" secondItem="D1s-a0-aS1" secondAttribute="leading" id="BVx-EY-ytC"/>
                             <constraint firstItem="VSy-oN-grU" firstAttribute="top" secondItem="D1s-a0-aS1" secondAttribute="top" id="Cun-L3-6aU"/>
                             <constraint firstItem="VSy-oN-grU" firstAttribute="leading" secondItem="D1s-a0-aS1" secondAttribute="leading" id="FBq-Lp-GEn"/>
-                            <constraint firstItem="L8h-qa-ugH" firstAttribute="top" secondItem="D1s-a0-aS1" secondAttribute="top" id="FgJ-6a-ILT"/>
-                            <constraint firstItem="L8h-qa-ugH" firstAttribute="leading" secondItem="D1s-a0-aS1" secondAttribute="leading" id="LWE-Df-My1"/>
+                            <constraint firstItem="Swv-Uo-96M" firstAttribute="centerY" secondItem="Jr7-SZ-Gnx" secondAttribute="centerY" id="Fe8-iO-BnM"/>
+                            <constraint firstItem="VSy-oN-grU" firstAttribute="top" secondItem="Jr7-SZ-Gnx" secondAttribute="bottom" constant="10" id="NSg-Al-l72"/>
+                            <constraint firstItem="VSy-oN-grU" firstAttribute="top" secondItem="Jr7-SZ-Gnx" secondAttribute="bottom" constant="10" id="ZEJ-Wr-U5v"/>
                             <constraint firstItem="VSy-oN-grU" firstAttribute="top" secondItem="YX0-ow-Y6z" secondAttribute="bottom" constant="8" id="cCt-ap-NZP"/>
                             <constraint firstItem="VSy-oN-grU" firstAttribute="leading" secondItem="D1s-a0-aS1" secondAttribute="leadingMargin" id="djC-hX-udE"/>
+                            <constraint firstItem="VSy-oN-grU" firstAttribute="leading" secondItem="D1s-a0-aS1" secondAttribute="leadingMargin" id="dsa-0A-SIW"/>
                             <constraint firstItem="VSy-oN-grU" firstAttribute="trailing" secondItem="D1s-a0-aS1" secondAttribute="trailingMargin" id="fk9-EV-obN"/>
+                            <constraint firstItem="Jr7-SZ-Gnx" firstAttribute="top" secondItem="D1s-a0-aS1" secondAttribute="top" id="g2M-uX-O6C"/>
                             <constraint firstItem="15I-rp-Cqc" firstAttribute="leading" secondItem="D1s-a0-aS1" secondAttribute="leading" id="jjC-m5-LFy"/>
-                            <constraint firstItem="VSy-oN-grU" firstAttribute="top" secondItem="L8h-qa-ugH" secondAttribute="bottom" constant="5" id="lNh-Hs-Io3"/>
+                            <constraint firstItem="15I-rp-Cqc" firstAttribute="leading" secondItem="D1s-a0-aS1" secondAttribute="leadingMargin" id="kpx-fE-p4z"/>
+                            <constraint firstAttribute="trailing" secondItem="Jr7-SZ-Gnx" secondAttribute="trailing" id="l7h-HO-x34"/>
                             <constraint firstItem="15I-rp-Cqc" firstAttribute="top" secondItem="VSy-oN-grU" secondAttribute="bottom" id="m58-tT-NRS"/>
                             <constraint firstItem="15I-rp-Cqc" firstAttribute="top" secondItem="VSy-oN-grU" secondAttribute="bottom" id="oan-kQ-6ev"/>
                             <constraint firstItem="15I-rp-Cqc" firstAttribute="leading" secondItem="D1s-a0-aS1" secondAttribute="leading" id="opD-dR-Gv2"/>
                             <constraint firstItem="fFf-Wk-dfs" firstAttribute="top" secondItem="15I-rp-Cqc" secondAttribute="bottom" id="t4G-n3-Yoy"/>
                             <constraint firstAttribute="trailing" secondItem="VSy-oN-grU" secondAttribute="trailing" id="uGa-Hb-uNv"/>
-                            <constraint firstAttribute="trailing" secondItem="L8h-qa-ugH" secondAttribute="trailing" id="x5E-As-Bbw"/>
+                            <constraint firstItem="15I-rp-Cqc" firstAttribute="trailing" secondItem="D1s-a0-aS1" secondAttribute="trailingMargin" id="zB8-F3-dyr"/>
                             <constraint firstAttribute="trailing" secondItem="15I-rp-Cqc" secondAttribute="trailing" id="zSw-us-xLG"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="FgJ-6a-ILT"/>
-                                <exclude reference="5ZA-vf-sfb"/>
+                                <exclude reference="8ax-Ww-7o2"/>
                                 <exclude reference="Cun-L3-6aU"/>
                                 <exclude reference="FBq-Lp-GEn"/>
+                                <exclude reference="NSg-Al-l72"/>
                                 <exclude reference="cCt-ap-NZP"/>
+                                <exclude reference="djC-hX-udE"/>
                                 <exclude reference="uGa-Hb-uNv"/>
+                                <exclude reference="1ph-Xh-nPl"/>
                                 <exclude reference="jjC-m5-LFy"/>
+                                <exclude reference="m58-tT-NRS"/>
                                 <exclude reference="oan-kQ-6ev"/>
+                                <exclude reference="opD-dR-Gv2"/>
                                 <exclude reference="zSw-us-xLG"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="thingImg" destination="VSy-oN-grU" id="AHU-Lr-sUK"/>
-                        <outlet property="thingLabel" destination="15I-rp-Cqc" id="sSS-Ok-zHh"/>
+                        <outlet property="mainImg" destination="VSy-oN-grU" id="9hj-pv-WaQ"/>
+                        <outlet property="mainLbl" destination="15I-rp-Cqc" id="Fm8-kj-aaT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="76e-2H-mcV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1655,6 +1688,7 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
                     <connections>
                         <outlet property="placesTable" destination="n4i-r2-2k2" id="0Sz-hC-Lod"/>
                         <segue destination="IA5-kP-jA7" kind="show" identifier="PlaceToEat" id="8rm-ZM-ymO"/>
+                        <segue destination="iyl-i3-hfA" kind="show" identifier="PlaceToGo" id="5qz-2H-62Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kXp-Zr-ip7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1723,14 +1757,14 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="RtG-Hb-9z2"/>
-                                <exclude reference="V53-7T-SML"/>
-                                <exclude reference="vU1-7b-itS"/>
-                                <exclude reference="NEn-e2-Od3"/>
                                 <exclude reference="5nx-SJ-xlN"/>
+                                <exclude reference="NEn-e2-Od3"/>
+                                <exclude reference="V53-7T-SML"/>
                                 <exclude reference="mpA-j5-Nw7"/>
+                                <exclude reference="vU1-7b-itS"/>
+                                <exclude reference="GkB-SK-qPi"/>
                                 <exclude reference="ocD-nY-qbc"/>
                                 <exclude reference="vJP-9b-5vg"/>
-                                <exclude reference="GkB-SK-qPi"/>
                             </mask>
                         </variation>
                     </view>
@@ -1741,7 +1775,7 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yg1-m7-cM8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2330" y="708"/>
+            <point key="canvasLocation" x="2406" y="811"/>
         </scene>
     </scenes>
     <resources>
@@ -1765,9 +1799,12 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
         <image name="photo3" width="1280" height="885"/>
         <image name="photo4" width="1000" height="673"/>
         <image name="photo5" width="630" height="421"/>
-        <image name="photo6" width="3840" height="2160"/>
+        <image name="photo6" width="1440" height="882"/>
         <image name="photo7" width="3840" height="2160"/>
         <image name="photo8" width="3840" height="2160"/>
         <image name="photo9" width="3840" height="2160"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="5qz-2H-62Z"/>
+    </inferredMetricsTieBreakers>
 </document>

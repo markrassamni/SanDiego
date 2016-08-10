@@ -27,6 +27,8 @@ class PhotosVC: UIViewController {
     
     @IBOutlet weak var blockingView: UIImageView!
     
+    var gesture = UITapGestureRecognizer()
+    
     
     @IBAction func onBackPressed(sender: UIButton) {
         if bigPhoto?.hidden == true {
@@ -144,8 +146,19 @@ class PhotosVC: UIViewController {
         for thumbnail in self.thumbnails {
             thumbnail.imageView?.contentMode = UIViewContentMode.ScaleAspectFill
         }
-        
-        //var shownPhoto = UIImage(named: "")
+        gesture = UITapGestureRecognizer(target: bigPhoto, action: #selector(PhotosVC.gestureActivated))
+        gesture.numberOfTapsRequired = 1
+        gesture.numberOfTouchesRequired = 1
+    }
+    
+    func gestureActivated(){
+        print("Works")
+        let tap = gesture.locationInView(bigPhoto)
+        if let image = bigPhoto.image?.accessibilityFrame {
+            if !image.contains(tap) {
+                bigPhoto.hidden = true
+            }
+        }
     }
     
     func hideThumbnails(){
@@ -161,9 +174,4 @@ class PhotosVC: UIViewController {
             thumbnails.userInteractionEnabled = true
         }
     }
-    
-    
-    
-    
-    
 }

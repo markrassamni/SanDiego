@@ -23,17 +23,18 @@ class PlacesTableVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     
     func initToDo(){
         places = []
+        //rename img to placeX
         let activity0 = ToDo(img: UIImage(named: "photo0")!, description: "Place 1")
         let activity1 = ToDo(img: UIImage(named: "photo1")!, description: "Place 2")
         
-        let activity2 = ToDo(img: UIImage(named: "princess")!, description: "I need help thinking of places to eat princess")
+        let activity2 = ToDo(img: UIImage(named: "photo2")!, description: "Place 3")
         
         
         
         places.append(activity0)
         places.append(activity1)
         places.append(activity2)
-        
+//        tableView.reloadData() // ADD IN SAN DIEGO APP???
         
     }
     
@@ -68,16 +69,18 @@ class PlacesTableVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     
     func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
         
-        let cellIndex = indexPath.row
-        performSegueWithIdentifier("PlaceToEat", sender: cellIndex)
+        let cellIndex = places[indexPath.row]
+        performSegueWithIdentifier("PlaceToGo", sender: cellIndex)
         
         return indexPath
     }
-    
+
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let placeToEat = segue.destinationViewController as? PlaceToEatVC{
-            if let index = sender as? Int {
-                placeToEat.place = index
+        if segue.identifier == "PlaceToGo" {
+            if let placeToEat = segue.destinationViewController as? PlaceToGoVC {
+                if let place = sender as? ToDo {
+                    placeToEat.place = place
+                }
             }
         }
     }

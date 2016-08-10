@@ -24,6 +24,7 @@ class ThingToDoVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadDescriptions()
+        thingImg.clipsToBounds = true
     }
     
     func loadDescriptions(){
@@ -33,10 +34,8 @@ class ThingToDoVC: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
        thingImg.image = UIImage(named: "photo\(thing)")
+        //name images thingX
         thingLabel.text = thingDescription[thing]
-        if thing == 2{
-            thingImg.image = UIImage(named: "princess")
-        }
     }
  
     

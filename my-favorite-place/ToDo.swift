@@ -11,8 +11,8 @@ import UIKit
 
 class ToDo {
     
-    var _img: UIImage!
-    var _description: String!
+    private var _img: UIImage!
+    private var _description: String!
         
     var img: UIImage{
         get{

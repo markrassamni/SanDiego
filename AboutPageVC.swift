@@ -24,7 +24,7 @@ class AboutPageVC: UIPageViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         dataSource = self
         delegate = self
         
