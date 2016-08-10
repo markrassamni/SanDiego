@@ -24,16 +24,19 @@ class PlacesTableVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     func initToDo(){
         places = []
         //rename img to placeX
-        let activity0 = ToDo(img: UIImage(named: "photo0")!, description: "description 1", name: "Place 1")
-        let activity1 = ToDo(img: UIImage(named: "photo1")!, description: "description 2", name: "Place 2")
+        let activity0 = ToDo(img: UIImage(named: "outback")!, description: "description 1", name: "Outback Steakhouse")
+        let activity1 = ToDo(img: UIImage(named: "phils")!, description: "description 2", name: "Phil's BBQ")
         
-        let activity2 = ToDo(img: UIImage(named: "photo2")!, description: "description 3", name: "Place 3")
+        let activity2 = ToDo(img: UIImage(named: "slaters")!, description: "description 3", name: "Slater's 50/50")
+        
+        let activity3 = ToDo(img: UIImage(named: "phipsi")!, description: "description 4", name: "Mark's Kitchen")
         
         
         
         places.append(activity0)
         places.append(activity1)
         places.append(activity2)
+        places.append(activity3)
 //        tableView.reloadData() // ADD IN SAN DIEGO APP???
         
     }
@@ -42,7 +45,7 @@ class PlacesTableVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         super.viewWillAppear(animated)
         
         if let indexPath: NSIndexPath = self.placesTable.indexPathForSelectedRow {
-            self.placesTable.deselectRowAtIndexPath(indexPath, animated: animated)
+            self.placesTable.deselectRowAtIndexPath(indexPath, animated: true)
         }
     }
     

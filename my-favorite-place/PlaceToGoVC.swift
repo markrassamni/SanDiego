@@ -12,8 +12,6 @@ class PlaceToGoVC: UIViewController {
 
     var place: ToDo!
     
-    //var desc = [String]()
-    
     @IBOutlet weak var mainImg: UIImageView!
     @IBOutlet weak var mainLbl: UILabel!
     @IBOutlet weak var desc: UILabel!
@@ -23,15 +21,11 @@ class PlaceToGoVC: UIViewController {
         mainImg.clipsToBounds = true
    
     }
-
-//    func loadDescriptions(){
-//        thingDescription += ["D0", "D1", "D2"]
-//    }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         mainImg.image = place.img
-        //mainLbl.text = place.name
+        mainLbl.text = place.name
         desc.text = place.description
     }
     

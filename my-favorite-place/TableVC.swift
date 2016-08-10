@@ -33,16 +33,19 @@ class TableVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func initToDo(){
         toDo = []
         //rename img to thingX
-        let activity0 = ToDo(img: UIImage(named: "photo0")!, description: "description 1", name: "Thing 1")
-        let activity1 = ToDo(img: UIImage(named: "photo1")!, description: "description 2", name: "Thing 2")
+        let activity0 = ToDo(img: UIImage(named: "zoo")!, description: "description 1", name: "San Diego Zoo")
+        let activity1 = ToDo(img: UIImage(named: "chargers")!, description: "description 2", name: "Chargers Game")
         
-        let activity2 = ToDo(img: UIImage(named: "photo2")!, description: "description 3", name: "Thing 3")
+        let activity2 = ToDo(img: UIImage(named: "aerospace")!, description: "description 3", name: "Aerospace Museum")
+        
+        let activity3 = ToDo(img: UIImage(named: "belmontPark")!, description: "description 3", name: "Belmont Park")
        
         
 
         toDo.append(activity0)
         toDo.append(activity1)
         toDo.append(activity2)
+        toDo.append(activity3)
         
 //        tableView.reloadData() // ADD IN SAN DIEGO APP???
     }

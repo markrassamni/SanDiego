@@ -16,12 +16,10 @@
 		F92D80E11D438805006778DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F92D80E01D438805006778DB /* Assets.xcassets */; };
 		F92D80E41D438805006778DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92D80E21D438805006778DB /* LaunchScreen.storyboard */; };
 		F9427BB31D5ADEF2005F1458 /* PlaceToGoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9427BB21D5ADEF2005F1458 /* PlaceToGoVC.swift */; };
-		F974F3DD1D53404D003D208E /* ThingToDoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F974F3DC1D53404D003D208E /* ThingToDoVC.swift */; };
 		F98636ED1D44A85C0058B88D /* PhotosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98636EC1D44A85C0058B88D /* PhotosVC.swift */; };
 		F98636F31D44C5040058B88D /* AboutPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98636F21D44C5040058B88D /* AboutPageVC.swift */; };
 		F98636F51D44DAC90058B88D /* PageDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98636F41D44DAC90058B88D /* PageDots.swift */; };
 		F9FA1A851D5484F10079646E /* PlacesTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FA1A841D5484F10079646E /* PlacesTableVC.swift */; };
-		F9FA1A871D548AC40079646E /* PlaceToEatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FA1A861D548AC40079646E /* PlaceToEatVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,12 +34,10 @@
 		F92D80E31D438805006778DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F92D80E51D438805006778DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9427BB21D5ADEF2005F1458 /* PlaceToGoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceToGoVC.swift; sourceTree = "<group>"; };
-		F974F3DC1D53404D003D208E /* ThingToDoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThingToDoVC.swift; sourceTree = "<group>"; };
 		F98636EC1D44A85C0058B88D /* PhotosVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosVC.swift; sourceTree = "<group>"; };
 		F98636F21D44C5040058B88D /* AboutPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutPageVC.swift; path = ../AboutPageVC.swift; sourceTree = "<group>"; };
 		F98636F41D44DAC90058B88D /* PageDots.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageDots.swift; sourceTree = "<group>"; };
 		F9FA1A841D5484F10079646E /* PlacesTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesTableVC.swift; sourceTree = "<group>"; };
-		F9FA1A861D548AC40079646E /* PlaceToEatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceToEatVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,9 +82,7 @@
 				F92BE30A1D505FCE001334C6 /* TableVC.swift */,
 				F92BE30C1D50610D001334C6 /* tableCells.swift */,
 				F92BE30E1D506822001334C6 /* ToDo.swift */,
-				F974F3DC1D53404D003D208E /* ThingToDoVC.swift */,
 				F9FA1A841D5484F10079646E /* PlacesTableVC.swift */,
-				F9FA1A861D548AC40079646E /* PlaceToEatVC.swift */,
 				F9427BB21D5ADEF2005F1458 /* PlaceToGoVC.swift */,
 			);
 			path = "my-favorite-place";
@@ -171,12 +165,10 @@
 				F92BE30D1D50610D001334C6 /* tableCells.swift in Sources */,
 				F9427BB31D5ADEF2005F1458 /* PlaceToGoVC.swift in Sources */,
 				F92BE30F1D506822001334C6 /* ToDo.swift in Sources */,
-				F9FA1A871D548AC40079646E /* PlaceToEatVC.swift in Sources */,
 				F98636F51D44DAC90058B88D /* PageDots.swift in Sources */,
 				F92BE30B1D505FCE001334C6 /* TableVC.swift in Sources */,
 				F98636ED1D44A85C0058B88D /* PhotosVC.swift in Sources */,
 				F9FA1A851D5484F10079646E /* PlacesTableVC.swift in Sources */,
-				F974F3DD1D53404D003D208E /* ThingToDoVC.swift in Sources */,
 				F98636F31D44C5040058B88D /* AboutPageVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

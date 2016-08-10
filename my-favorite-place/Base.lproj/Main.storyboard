@@ -26,9 +26,9 @@
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue</string>
-            <string>HelveticaNeue-Bold</string>
-            <string>HelveticaNeue-Bold</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -1722,6 +1722,6 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
         <image name="photo9" width="3840" height="2160"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5qz-2H-62Z"/>
+        <segue reference="YjC-Ta-Fy6"/>
     </inferredMetricsTieBreakers>
 </document>
