@@ -10,13 +10,13 @@ import UIKit
 
 class PlaceToGoVC: UIViewController {
 
-    //var toDo: Int?
     var place: ToDo!
     
-    var desc = [String]()
+    //var desc = [String]()
     
     @IBOutlet weak var mainImg: UIImageView!
     @IBOutlet weak var mainLbl: UILabel!
+    @IBOutlet weak var desc: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,9 +30,9 @@ class PlaceToGoVC: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        mainImg.image = place.img //UIImage(named: "photo\(place)")
-        //name images thingX
-        mainLbl.text = place.description
+        mainImg.image = place.img
+        //mainLbl.text = place.name
+        desc.text = place.description
     }
     
     

@@ -27,7 +27,6 @@
             <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
-            <string>HelveticaNeue</string>
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue-Bold</string>
         </mutableArray>
@@ -1604,13 +1603,14 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="desc" destination="15I-rp-Cqc" id="MLD-Wp-ExQ"/>
                         <outlet property="mainImg" destination="VSy-oN-grU" id="9hj-pv-WaQ"/>
-                        <outlet property="mainLbl" destination="15I-rp-Cqc" id="Fm8-kj-aaT"/>
+                        <outlet property="mainLbl" destination="Jr7-SZ-Gnx" id="8Zg-V6-hKe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="76e-2H-mcV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1704" y="708"/>
+            <point key="canvasLocation" x="2017" y="822"/>
         </scene>
         <!--Places TableVC-->
         <scene sceneID="6ka-p6-OOc">
@@ -1687,95 +1687,12 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
                     </view>
                     <connections>
                         <outlet property="placesTable" destination="n4i-r2-2k2" id="0Sz-hC-Lod"/>
-                        <segue destination="IA5-kP-jA7" kind="show" identifier="PlaceToEat" id="8rm-ZM-ymO"/>
                         <segue destination="iyl-i3-hfA" kind="show" identifier="PlaceToGo" id="5qz-2H-62Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kXp-Zr-ip7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2330" y="45"/>
-        </scene>
-        <!--Place To EatVC-->
-        <scene sceneID="3sQ-Sw-fUe">
-            <objects>
-                <viewController storyboardIdentifier="PlaceToGo" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IA5-kP-jA7" customClass="PlaceToEatVC" customModule="San_Diego" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="HHI-1M-UYL"/>
-                        <viewControllerLayoutGuide type="bottom" id="A50-rl-T4b"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="OXt-5N-NQy">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YHI-iI-FB7">
-                                <rect key="frame" x="20" y="69" width="560" height="309"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Description" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Xc9-HS-OMq">
-                                <rect key="frame" x="0.0" y="378" width="600" height="222"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="dxh-Yl-Tde"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I5q-7K-Ukb">
-                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
-                                <items>
-                                    <navigationItem title="Placeholder" id="kPc-ih-2X5">
-                                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="aRC-CJ-CFj">
-                                            <connections>
-                                                <action selector="goBack:" destination="IA5-kP-jA7" id="ait-wA-IQk"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="YHI-iI-FB7" firstAttribute="trailing" secondItem="OXt-5N-NQy" secondAttribute="trailingMargin" id="0lE-nK-4gI"/>
-                            <constraint firstItem="A50-rl-T4b" firstAttribute="top" secondItem="Xc9-HS-OMq" secondAttribute="bottom" id="14f-Sm-1JV"/>
-                            <constraint firstItem="YHI-iI-FB7" firstAttribute="top" secondItem="HHI-1M-UYL" secondAttribute="bottom" constant="8" id="5nx-SJ-xlN"/>
-                            <constraint firstItem="YHI-iI-FB7" firstAttribute="leading" secondItem="OXt-5N-NQy" secondAttribute="leadingMargin" id="AGt-gx-utm"/>
-                            <constraint firstItem="I5q-7K-Ukb" firstAttribute="leading" secondItem="OXt-5N-NQy" secondAttribute="leading" id="DFo-qJ-dRb"/>
-                            <constraint firstAttribute="trailing" secondItem="Xc9-HS-OMq" secondAttribute="trailing" id="EzQ-RZ-Y7J"/>
-                            <constraint firstAttribute="trailing" secondItem="Xc9-HS-OMq" secondAttribute="trailing" id="GkB-SK-qPi"/>
-                            <constraint firstItem="YHI-iI-FB7" firstAttribute="leading" secondItem="OXt-5N-NQy" secondAttribute="leading" id="NEn-e2-Od3"/>
-                            <constraint firstItem="I5q-7K-Ukb" firstAttribute="top" secondItem="OXt-5N-NQy" secondAttribute="top" id="RtG-Hb-9z2"/>
-                            <constraint firstItem="YHI-iI-FB7" firstAttribute="top" secondItem="I5q-7K-Ukb" secondAttribute="bottom" id="V53-7T-SML"/>
-                            <constraint firstItem="I5q-7K-Ukb" firstAttribute="top" secondItem="HHI-1M-UYL" secondAttribute="bottom" id="VBu-3x-NJH"/>
-                            <constraint firstItem="Xc9-HS-OMq" firstAttribute="leading" secondItem="OXt-5N-NQy" secondAttribute="leading" id="aLF-AC-Q1C"/>
-                            <constraint firstItem="Xc9-HS-OMq" firstAttribute="top" secondItem="YHI-iI-FB7" secondAttribute="bottom" id="b4q-zc-K2F"/>
-                            <constraint firstAttribute="trailing" secondItem="YHI-iI-FB7" secondAttribute="trailing" id="mpA-j5-Nw7"/>
-                            <constraint firstAttribute="trailing" secondItem="I5q-7K-Ukb" secondAttribute="trailing" id="nBg-lg-laI"/>
-                            <constraint firstItem="Xc9-HS-OMq" firstAttribute="leading" secondItem="OXt-5N-NQy" secondAttribute="leading" id="ocD-nY-qbc"/>
-                            <constraint firstItem="YHI-iI-FB7" firstAttribute="top" secondItem="I5q-7K-Ukb" secondAttribute="bottom" constant="5" id="ofb-0H-VNj"/>
-                            <constraint firstItem="Xc9-HS-OMq" firstAttribute="top" secondItem="YHI-iI-FB7" secondAttribute="bottom" id="vJP-9b-5vg"/>
-                            <constraint firstItem="YHI-iI-FB7" firstAttribute="top" secondItem="OXt-5N-NQy" secondAttribute="top" id="vU1-7b-itS"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="RtG-Hb-9z2"/>
-                                <exclude reference="5nx-SJ-xlN"/>
-                                <exclude reference="NEn-e2-Od3"/>
-                                <exclude reference="V53-7T-SML"/>
-                                <exclude reference="mpA-j5-Nw7"/>
-                                <exclude reference="vU1-7b-itS"/>
-                                <exclude reference="GkB-SK-qPi"/>
-                                <exclude reference="ocD-nY-qbc"/>
-                                <exclude reference="vJP-9b-5vg"/>
-                            </mask>
-                        </variation>
-                    </view>
-                    <connections>
-                        <outlet property="placeImg" destination="YHI-iI-FB7" id="bEj-qw-snl"/>
-                        <outlet property="placeLabel" destination="Xc9-HS-OMq" id="ImG-rx-hQ5"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Yg1-m7-cM8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2406" y="811"/>
         </scene>
     </scenes>
     <resources>

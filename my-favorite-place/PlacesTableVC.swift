@@ -24,10 +24,10 @@ class PlacesTableVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     func initToDo(){
         places = []
         //rename img to placeX
-        let activity0 = ToDo(img: UIImage(named: "photo0")!, description: "Place 1")
-        let activity1 = ToDo(img: UIImage(named: "photo1")!, description: "Place 2")
+        let activity0 = ToDo(img: UIImage(named: "photo0")!, description: "description 1", name: "Place 1")
+        let activity1 = ToDo(img: UIImage(named: "photo1")!, description: "description 2", name: "Place 2")
         
-        let activity2 = ToDo(img: UIImage(named: "photo2")!, description: "Place 3")
+        let activity2 = ToDo(img: UIImage(named: "photo2")!, description: "description 3", name: "Place 3")
         
         
         
@@ -51,7 +51,7 @@ class PlacesTableVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         if let cell = tableView.dequeueReusableCellWithIdentifier("ToDoCell") as? tableCells {
             let pic = places[indexPath.row].img
             //let pic = UIImage(named: "photo1.jpg")
-            let text = places[indexPath.row].description
+            let text = places[indexPath.row].name
             cell.configureCell(pic, text: text)
             return cell
         } else{

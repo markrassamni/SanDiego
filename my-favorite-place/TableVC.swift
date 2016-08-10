@@ -33,10 +33,10 @@ class TableVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func initToDo(){
         toDo = []
         //rename img to thingX
-        let activity0 = ToDo(img: UIImage(named: "photo0")!, description: "Thing 1")
-        let activity1 = ToDo(img: UIImage(named: "photo1")!, description: "Thing 2")
+        let activity0 = ToDo(img: UIImage(named: "photo0")!, description: "description 1", name: "Thing 1")
+        let activity1 = ToDo(img: UIImage(named: "photo1")!, description: "description 2", name: "Thing 2")
         
-        let activity2 = ToDo(img: UIImage(named: "photo2")!, description: "Thing 3")
+        let activity2 = ToDo(img: UIImage(named: "photo2")!, description: "description 3", name: "Thing 3")
        
         
 
@@ -52,7 +52,7 @@ class TableVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         if let cell = tableView.dequeueReusableCellWithIdentifier("ToDoCell") as? tableCells {
             let pic = toDo[indexPath.row].img
             //let pic = UIImage(named: "photo1.jpg")
-            let text = toDo[indexPath.row].description
+            let text = toDo[indexPath.row].name
             cell.configureCell(pic, text: text)
             return cell
         } else{
