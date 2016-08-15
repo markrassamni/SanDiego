@@ -698,7 +698,9 @@
                                 <rect key="frame" x="20" y="16" width="49" height="25"/>
                                 <color key="backgroundColor" red="0.96470588235294119" green="0.32156862745098036" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="Vqq-ey-zl2"/>
+                                    <constraint firstAttribute="height" constant="25" id="Vqq-ey-zl2">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="35"/>
+                                    </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                 <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
@@ -932,15 +934,21 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="36"/>
+                                </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o46-So-H2E" userLabel="&lt;Back Home">
-                                <rect key="frame" x="20" y="30" width="53" height="32"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o46-So-H2E" userLabel="&lt;Back Home">
+                                <rect key="frame" x="27" y="30" width="39" height="32"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
-                                <state key="normal" title="&lt; Back">
+                                <state key="normal" title="Back">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=compact" misplaced="YES">
                                     <rect key="frame" x="10" y="303" width="53" height="32"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
                                 </variation>
                                 <connections>
                                     <action selector="onBackPressed:" destination="3cH-Lj-Xwu" eventType="touchUpInside" id="12s-oP-7h0"/>
@@ -1438,20 +1446,28 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yKP-NW-bWz">
                                                     <rect key="frame" x="18" y="8" width="75" height="75"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="75" id="4io-ol-MTX"/>
-                                                        <constraint firstAttribute="width" constant="75" id="ibV-bQ-Zr3"/>
+                                                        <constraint firstAttribute="height" constant="75" id="4io-ol-MTX">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                                        </constraint>
+                                                        <constraint firstAttribute="width" constant="75" id="ibV-bQ-Zr3">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                                        </constraint>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placeholder Lbl" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="lu6-9S-fPy">
                                                     <rect key="frame" x="101" y="8" width="481" height="75.5"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="56"/>
+                                                    </variation>
                                                 </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="lu6-9S-fPy" firstAttribute="top" secondItem="aaY-zG-bfZ" secondAttribute="topMargin" id="7Rh-ni-0ab"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="yKP-NW-bWz" secondAttribute="bottom" constant="0.5" id="Cid-DG-MOZ"/>
+                                                <constraint firstItem="yKP-NW-bWz" firstAttribute="centerY" secondItem="aaY-zG-bfZ" secondAttribute="centerY" id="M8E-Rk-IcX"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="lu6-9S-fPy" secondAttribute="trailing" constant="10" id="Og5-9a-qR5"/>
                                                 <constraint firstItem="lu6-9S-fPy" firstAttribute="leading" secondItem="yKP-NW-bWz" secondAttribute="trailing" constant="8" id="QKu-td-Nsu"/>
                                                 <constraint firstItem="yKP-NW-bWz" firstAttribute="leading" secondItem="aaY-zG-bfZ" secondAttribute="leadingMargin" constant="10" id="TeV-6e-ann"/>
@@ -1461,6 +1477,7 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
                                             <variation key="default">
                                                 <mask key="constraints">
                                                     <exclude reference="Cid-DG-MOZ"/>
+                                                    <exclude reference="UcG-hT-JpY"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -1516,13 +1533,16 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
                                     <constraint firstAttribute="height" constant="100" id="KNk-4v-bNF"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="Xqd-h3-ec4"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="KNk-4v-bNF"/>
                                     </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thing/Place" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jr7-SZ-Gnx">
@@ -1536,15 +1556,21 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="36"/>
+                                </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Swv-Uo-96M" userLabel="&lt;Back Home">
-                                <rect key="frame" x="20" y="28" width="53" height="32"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Swv-Uo-96M" userLabel="&lt;Back Home">
+                                <rect key="frame" x="27" y="28" width="39" height="32"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
-                                <state key="normal" title="&lt; Back">
+                                <state key="normal" title="Back">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=compact" misplaced="YES">
                                     <rect key="frame" x="10" y="303" width="53" height="32"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
                                 </variation>
                                 <connections>
                                     <action selector="goBack:" destination="iyl-i3-hfA" eventType="touchUpInside" id="atz-XQ-U3N"/>
@@ -1638,15 +1664,22 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qP6-J8-R30">
                                                     <rect key="frame" x="18" y="8" width="75" height="75"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="75" id="Op3-My-Y9o"/>
-                                                        <constraint firstAttribute="width" constant="75" id="UWQ-r0-4Zo"/>
+                                                        <constraint firstAttribute="height" constant="75" id="Op3-My-Y9o">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                                        </constraint>
+                                                        <constraint firstAttribute="width" constant="75" id="UWQ-r0-4Zo">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                                        </constraint>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placeholder Lbl" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="KW0-h7-wOU">
                                                     <rect key="frame" x="101" y="8" width="481" height="75.5"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="56"/>
+                                                    </variation>
                                                 </label>
                                             </subviews>
                                             <constraints>
@@ -1658,10 +1691,14 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
                                                 <constraint firstItem="KW0-h7-wOU" firstAttribute="bottom" secondItem="06m-pb-lRH" secondAttribute="bottomMargin" id="Wfq-2l-UYE"/>
                                                 <constraint firstItem="KW0-h7-wOU" firstAttribute="leading" secondItem="qP6-J8-R30" secondAttribute="trailing" constant="8" id="ZxF-k5-ru7"/>
                                                 <constraint firstItem="KW0-h7-wOU" firstAttribute="top" secondItem="06m-pb-lRH" secondAttribute="topMargin" id="iMq-z6-G3v"/>
+                                                <constraint firstItem="qP6-J8-R30" firstAttribute="centerY" secondItem="06m-pb-lRH" secondAttribute="centerY" id="igU-A9-7HA"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="qP6-J8-R30" secondAttribute="bottom" constant="0.5" id="mzY-ve-EM6"/>
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="constraints">
                                                     <exclude reference="12v-ZF-AI1"/>
+                                                    <exclude reference="JTJ-bU-IXj"/>
+                                                    <exclude reference="mzY-ve-EM6"/>
                                                     <exclude reference="WDh-87-GIV"/>
                                                 </mask>
                                             </variation>
@@ -1702,26 +1739,26 @@ San Diego became part of the U.S. in 1848, and the town was named the county sea
         <image name="home screen" width="3840" height="2160"/>
         <image name="photo0" width="1600" height="1067"/>
         <image name="photo1" width="1600" height="1067"/>
-        <image name="photo10" width="3840" height="2160"/>
-        <image name="photo11" width="3840" height="2160"/>
-        <image name="photo12" width="3840" height="2160"/>
-        <image name="photo13" width="3840" height="2160"/>
-        <image name="photo14" width="3840" height="2160"/>
-        <image name="photo15" width="3840" height="2160"/>
-        <image name="photo16" width="3840" height="2160"/>
-        <image name="photo17" width="3840" height="2160"/>
-        <image name="photo18" width="3840" height="2160"/>
-        <image name="photo19" width="3840" height="2160"/>
-        <image name="photo2" width="616" height="347"/>
+        <image name="photo10" width="1383" height="702"/>
+        <image name="photo11" width="1700" height="960"/>
+        <image name="photo12" width="2000" height="800"/>
+        <image name="photo13" width="2000" height="2000"/>
+        <image name="photo14" width="2500" height="1664"/>
+        <image name="photo15" width="2500" height="1786"/>
+        <image name="photo16" width="5639" height="3758"/>
+        <image name="photo17" width="3872" height="2582"/>
+        <image name="photo18" width="2500" height="1872"/>
+        <image name="photo19" width="1700" height="960"/>
+        <image name="photo2" width="1800" height="1200"/>
         <image name="photo3" width="1280" height="885"/>
         <image name="photo4" width="1000" height="673"/>
         <image name="photo5" width="630" height="421"/>
         <image name="photo6" width="1440" height="882"/>
-        <image name="photo7" width="3840" height="2160"/>
-        <image name="photo8" width="3840" height="2160"/>
-        <image name="photo9" width="3840" height="2160"/>
+        <image name="photo7" width="3328" height="2254"/>
+        <image name="photo8" width="1280" height="854"/>
+        <image name="photo9" width="1800" height="962"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="YjC-Ta-Fy6"/>
+        <segue reference="5qz-2H-62Z"/>
     </inferredMetricsTieBreakers>
 </document>

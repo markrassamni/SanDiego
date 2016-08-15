@@ -38,6 +38,10 @@ class ViewController: UIViewController {
         aboutBtn.layer.cornerRadius = 5.0
         photosBtn.layer.cornerRadius = 5.0
         
+        if UIDevice.currentDevice().model == "iPad" {
+            aboutBtn.layer.cornerRadius = 12.0
+            photosBtn.layer.cornerRadius = 12.0
+        }
        /* stroke(san, text: "SAN", width: -0.8)
         stroke(diego, text: "DIEGO", width: -0.8)
         stroke(california, text: "CALIFORNIA", width: -3.0)

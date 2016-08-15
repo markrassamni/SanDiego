@@ -19,6 +19,9 @@ class TableVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.delegate = self
         tableView.dataSource = self
         initToDo()
+        if UIDevice.currentDevice().model == "iPad" {
+            tableView.rowHeight = 250
+        }
         
     }
     
@@ -33,12 +36,12 @@ class TableVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func initToDo(){
         toDo = []
         //rename img to thingX
-        let activity0 = ToDo(img: UIImage(named: "zoo")!, description: "description 1", name: "San Diego Zoo")
-        let activity1 = ToDo(img: UIImage(named: "chargers")!, description: "description 2", name: "Chargers Game")
+        let activity0 = ToDo(img: UIImage(named: "zoo")!, description: "Come support Harambe's family", name: "San Diego Zoo")
+        let activity1 = ToDo(img: UIImage(named: "chargers")!, description: "Support the team before they are forced to move", name: "Chargers Game")
         
-        let activity2 = ToDo(img: UIImage(named: "aerospace")!, description: "description 3", name: "Aerospace Museum")
+        let activity2 = ToDo(img: UIImage(named: "aerospace")!, description: "They have flying things here", name: "Aerospace Museum")
         
-        let activity3 = ToDo(img: UIImage(named: "belmontPark")!, description: "description 3", name: "Belmont Park")
+        let activity3 = ToDo(img: UIImage(named: "belmontPark2")!, description: "There's a roller coaster with no loops", name: "Belmont Park")
        
         
 

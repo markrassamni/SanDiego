@@ -18,18 +18,25 @@ class PlacesTableVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         super.viewDidLoad()
         placesTable.delegate = self
         placesTable.dataSource = self
+        
+        if UIDevice.currentDevice().model == "iPad" {
+            placesTable.rowHeight = 250
+        }
+        
         initToDo()
     }
     
     func initToDo(){
         places = []
         //rename img to placeX
-        let activity0 = ToDo(img: UIImage(named: "outback")!, description: "description 1", name: "Outback Steakhouse")
-        let activity1 = ToDo(img: UIImage(named: "phils")!, description: "description 2", name: "Phil's BBQ")
+        let activity0 = ToDo(img: UIImage(named: "outback")!, description: "The best steak around town", name: "Outback Steakhouse")
+        let activity1 = ToDo(img: UIImage(named: "phils")!, description: "Ask Phil to BBQ his special for you", name: "Phil's BBQ")
         
-        let activity2 = ToDo(img: UIImage(named: "slaters")!, description: "description 3", name: "Slater's 50/50")
+        let activity2 = ToDo(img: UIImage(named: "slaters")!, description: "Try their delicious burgers made with 50% beef and 50% bacon!", name: "Slater's 50/50")
         
-        let activity3 = ToDo(img: UIImage(named: "phipsi")!, description: "description 4", name: "Mark's Kitchen")
+        let activity3 = ToDo(img: UIImage(named: "phipsi")!, description: "The best food in San Diego", name: "Mark's Kitchen")
+        
+        let activity4 = ToDo(img: UIImage(named: "yummySushi")!, description: "A favorite among San Diego sushi lovers", name: "Yummy Sushi")
         
         
         
@@ -37,6 +44,7 @@ class PlacesTableVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         places.append(activity1)
         places.append(activity2)
         places.append(activity3)
+        places.append(activity4)
 //        tableView.reloadData() // ADD IN SAN DIEGO APP???
         
     }

@@ -19,6 +19,10 @@ class tableCells: UITableViewCell {
         mainImg.layer.cornerRadius = mainImg.frame.size.width/2
         mainImg.clipsToBounds = true
         
+        if UIDevice.currentDevice().model == "iPad" {
+            mainImg.layer.cornerRadius = 100
+        }
+        
         
         
     }

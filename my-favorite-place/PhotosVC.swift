@@ -34,7 +34,7 @@ class PhotosVC: UIViewController {
         if bigPhoto?.hidden == true {
             dismissViewControllerAnimated(true, completion: nil)
         } else {
-            home.setTitle("< Back", forState: .Normal)
+            home.setTitle("Back", forState: .Normal)
             showThumbnails()
             bigPhoto?.hidden = true
            // bgBtn.hidden = true
@@ -49,7 +49,7 @@ class PhotosVC: UIViewController {
     
     @IBAction func thumbnailPressed(btn: UIButton) {
         hideThumbnails()
-        home.setTitle("X Close", forState: .Normal)
+        home.setTitle("Close", forState: .Normal)
         bigPhoto.image = UIImage(named: "photo\(btn.tag)")
         bigPhoto!.hidden = false
         bigPhoto!.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.5)
